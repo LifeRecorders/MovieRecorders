@@ -18,4 +18,7 @@ urlpatterns = [
     path('<int:movie_id>/reviews/', views.review_create),
     # update and delete api
     path('<int:movie_id>/reviews/<int:review_id>/', views.review_update_and_delete),
+
+    # 장르별 영화검색
+    path('movies/<str:genretype>/', views.moviewithgenre, name="moviewithgenre"),
 ]

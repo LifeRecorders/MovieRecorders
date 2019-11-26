@@ -89,3 +89,10 @@ def review_update_and_delete(request, movie_id, review_id):
     else:
         review.delete()
         return Response({'message':'Review has been deleted!'})
+
+@api_view(['GET'])
+def moviewithgenre(request, genretype):
+    genres = Genre.objects.get(genreType=genretype)
+    movies = Movie.objects.filter(genres=genres.id)
+    serializer = MovieSerializer(movies, many=True)
+    return Response(serializer.data)
