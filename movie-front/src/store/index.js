@@ -9,9 +9,11 @@ export default new Vuex.Store({
     token: null,
     info: {
       movies: [],
-      artists: [],
+      directors: [],
+      actors: [],
       users: [],
     },
+    detail: [],
   },
   getters: {
     isLoggedIn(state) {
@@ -34,17 +36,23 @@ export default new Vuex.Store({
     },
     setClearInfo(state) {
       state.info.movies = []
-      state.info.artists = []
+      state.info.directors = []
+      state.info.actors = []
       state.info.users = []
     },
-    setMovieInfo(state, data) {
-      state.info.movies.push(data)
+    setInfo(state, data) {
+      state.info.movies = data.movie
+      state.info.directors = data.director
+      state.info.actors = data.actor
+      state.info.users = data.user
+      console.log(state.info.movies)
+      console.log(state.info.director)
     },
-    setArtistInfo(state, data) {
-      state.info.artists.push(data)
+    clearDetail(state) {
+      state.detail = []
     },
-    setUserInfo(state, data) {
-      state.info.users.push(data)
+    setDetail(state, data){
+      state.detail = data
     }
   },
   actions: {
@@ -57,14 +65,14 @@ export default new Vuex.Store({
     clearInfo(context) {
       context.commit('setClearInfo')
     },
-    searchMovie(context, data) {
-      context.commit('setMovieInfo', data)
+    searchInfo(context, data) {
+      context.commit('setInfo', data)
     },
-    searchArtist(context, data) {
-      context.commit('setArtistInfo', data)
+    clearDetail(context) {
+      context.commit('clearDetail')
     },
-    setUserInfo(context, data) {
-      context.commit('setUserInfo', data)
-    }
+    showDetail(context, data) {
+      context.commit('setDetail', data)
+    },
   }
 })
