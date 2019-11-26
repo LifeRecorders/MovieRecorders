@@ -15,7 +15,7 @@
             tag="article"
             style="max-width: 10rem;"
             class="mb-2">
-              <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_poster_url" v-on:click="getDetail('movie', idx)">
+              <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail('movie', idx)">
               </b-card-img>
               <b-card-title>
                 {{ movie.title }}
