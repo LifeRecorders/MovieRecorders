@@ -5,6 +5,8 @@ from django.contrib.auth import get_user_model
 # 이거면 된다. settings.py에 등록되어서 사용
 User = get_user_model()
 
+
+
 # collection할때 사용
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
@@ -37,12 +39,19 @@ class DirectorSerializer(serializers.ModelSerializer):
         model = Director
         fields = ['pk', 'name', 'name_en', 'img_url']
 
+# 관련된 모든 사진
+class SceneSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Scene
+        fields = ['scene']
+
 class MovieDetailSerializer(MovieSerializer):
     actors = ActorSerializer(many=True)
     directors = DirectorSerializer(many=True)
+    scenes = SceneSerializer(many=True)
     class Meta(MovieSerializer.Meta):
         # model = Movie
-        fields = MovieSerializer.Meta.fields + ['actors', 'directors']
+        fields = MovieSerializer.Meta.fields + ['actors', 'directors', 'scenes']
 
 # review
 class ReviewSerializer(serializers.ModelSerializer):
