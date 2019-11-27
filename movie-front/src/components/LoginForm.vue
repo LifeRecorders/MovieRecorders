@@ -8,8 +8,8 @@
 
     <b-modal id="login-modal" ref="modal" title="로그인" v-on:show="resetModal" v-on:ok="loginOk">
       <form ref="form" v-on:submit.stop.prevent="login">
-        <b-form-group v-bind:state="emailState" invalid-feedback="아이디를 입력해주세요.">
-          <b-form-input id="email-input" v-model="credentials.email" v-bind:state="emailState" placeholder="e-mail" required></b-form-input>
+        <b-form-group v-bind:state="usernameState" invalid-feedback="아이디를 입력해주세요.">
+          <b-form-input id="username-input" v-model="credentials.username" v-bind:state="usernameState" placeholder="ID" required></b-form-input>
         </b-form-group>
         <b-form-group v-bind:state="passwordState" invalid-feedback="비밀번호를 입력해주세요.">
           <b-form-input type="password" id="password-input" v-model="credentials.password" v-bind:state="passwordState" placeholder="비밀번호" required></b-form-input>
@@ -30,10 +30,10 @@ export default {
   data() {
     return {
       credentials: {
-        email: '',
+        username: '',
         password: '',
       },
-      emailState: null,
+      usernameState: null,
       passwordState: null,
       loading: false,
       errors: [],
@@ -41,8 +41,8 @@ export default {
   },
   methods: {
     resetModal() {
-      this.credentials.email = ''
-      this.emailState = null
+      this.credentials.username = ''
+      this.usernameState = null
       this.credentials.password = ''
       this.passwordState = null
     },
@@ -55,8 +55,7 @@ export default {
       if(this.checkForm()) {
         this.loading = true
         const SERVER_IP = process.env.VUE_APP_SERVER_IP
-        
-
+        console.log(this.credentials)
         axios.post(SERVER_IP + '/api-token-auth/', this.credentials)
           .then(response => {
             console.log(response)
@@ -79,7 +78,7 @@ export default {
     },
     checkForm() {
       this.errors = []
-      if(!this.credentials.email) {
+      if(!this.credentials.username) {
         this.errors.push('이메일을 입력하세요')
       }
       if(this.credentials.password.length < 2) {

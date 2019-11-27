@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Search from '@/views/Search'
 import Detail from '@/views/Detail'
+import MyPage from '@/views/MyPage'
 
 
 Vue.use(VueRouter)
@@ -22,6 +23,11 @@ const routes = [
     path: '/detail/:keyword',
     name: 'detail',
     component: Detail
+  },
+  {
+    path: '/mypage/',
+    name: 'mypage',
+    component: MyPage
   }
 ]
 
