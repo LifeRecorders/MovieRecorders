@@ -11,8 +11,6 @@
     img-left
     tag="article"
     style="max-width: 100rem;">
-      <!-- <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="this.detail.naver_big_poster_url" v-on:click="getDetail('movie', idx)">
-      </b-card-img> -->
       <b-card-title>
         <h3>{{ this.detail.title }}</h3>
       </b-card-title>
@@ -37,7 +35,7 @@
         v-on:show="resetModal"
         v-on:hidden="resetModal"
         v-on:ok="reviewOk">
-          <star-rating></star-rating>
+          <star-rating v-bind:increment="0.5" v-bind:star-size="30"></star-rating>
           <b-form-group v-bind:state="reviewState">
             <b-form-input id="review-input" v-model="review" v-bind:state="reviewState" placeholder="이 작품은 어떠셨나요?" required>
             </b-form-input>
@@ -115,7 +113,8 @@ export default {
     return {
       review: '',
       reviewState: null,
-      reviews: []
+      reviews: [],
+      score: null,
     }
   },
   components: {
@@ -164,7 +163,8 @@ export default {
       const data = {
         movie: this.detail.pk,
         user: this.userId,
-        content: this.review,        
+        content: this.review,   
+        score: this.score,     
       }
       console.log(data)
       axios.post(`${SERVER_IP}/api/v1/reviews_create_update_delete/?movieId=${this.detail.pk}`, data, this.options)
@@ -177,7 +177,10 @@ export default {
       this.$nextTick(() => {
         this.$refs.modal.hide()
       })
-    }
+    },
+    setScore(score) {
+      this.score = score
+    },
   },
   mounted() {
     this.getReview(this.detail.pk)

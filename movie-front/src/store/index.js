@@ -14,6 +14,9 @@ export default new Vuex.Store({
       users: [],
     },
     detail: [],
+    user: [],
+    userMovieList: [],
+    diary: [],
   },
   getters: {
     isLoggedIn(state) {
@@ -28,7 +31,7 @@ export default new Vuex.Store({
     },
     userId(state) {
       return state.token ? jwtDecode(state.token).user_id : null
-    }
+    },
   },
   mutations: {
     setToken(state, token) {
@@ -51,8 +54,26 @@ export default new Vuex.Store({
     clearDetail(state) {
       state.detail = []
     },
-    setDetail(state, data){
+    setDetail(state, data) {
       state.detail = data
+    },
+    setUser(state, data) {
+      state.user = data
+    },
+    clearUser(state) {
+      state.user = []
+    },
+    setUserMovie(state, data) {
+      state.userMovieList = data
+    },
+    clearUserMovie(state) {
+      state.userMovieList = []
+    },
+    setDiary(state, data) {
+      state.diary = data
+    },
+    clearDiary(state) {
+      state.diary = []
     }
   },
   actions: {
@@ -74,5 +95,23 @@ export default new Vuex.Store({
     showDetail(context, data) {
       context.commit('setDetail', data)
     },
+    setUser(context, data) {
+      context.commit('setUser', data)
+    },
+    clearUser(context) {
+      context.commit('clearUser')
+    },
+    setUserMovie(context, data) {
+      context.commit('setUserMovie', data)
+    },
+    clearUserMovie(context) {
+      context.commit('clearUserMovie')
+    },
+    setDiary(context, data) {
+      context.commit('setDiary', data)
+    },
+    clearDiary(context) {
+      context.commit('clearDiary')
+    }
   }
 })
