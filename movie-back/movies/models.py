@@ -72,7 +72,7 @@ class Review(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='reviews')
     content = models.CharField(max_length=140)
-    score = models.IntegerField(blank=True, null=True)
+    score = models.FloatField()
     liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_reviews')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
