@@ -16,6 +16,7 @@ urlpatterns = [
     # 리뷰 보여주기와 작성용, 영화 디테일 하단에 누적될 것
     # detail api create api update and delete api
     path('reviews/', views.review_detail, name="review_detail"), 
+    path('reviews_create_update_delete/', views.reviews_create_update_delete, name="reviews_create_update_delete"),
     # 장르별 영화검색
     path('movies/<str:genretype>/', views.moviewithgenre, name="moviewithgenre"),
 ]

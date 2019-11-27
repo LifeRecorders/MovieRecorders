@@ -70,7 +70,9 @@ def search_data(request):
 
 # review
 # get요청으로 들어오고 movie_id -> 댓글 주면된다.
-@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+
+@api_view(['GET'])
+@permission_classes((AllowAny, ))
 def review_detail(request):
     if request.method == 'GET':
         movie_id = request.GET.get('movieId')
@@ -79,13 +81,14 @@ def review_detail(request):
         serializer = ReviewSerializer(reviews, many=True)
         return Response(serializer.data)
 
+@api_view(['POST', 'PUT', 'DELETE'])
+def reviews_create_update_delete(request):
     if request.method == 'POST':
         # nothing
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie_id=movie_id)
             return Response(serializer.data)
-
 
     if request.method == 'PUT':
         # movie_id
@@ -100,6 +103,7 @@ def review_detail(request):
         review = get_object_or_404(Review, id=review_id)
         review.delete()
         return Response({'message':'Review has been deleted!'})
+
 
 @api_view(['GET'])
 def moviewithgenre(request, genretype):
