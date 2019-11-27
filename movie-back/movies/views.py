@@ -76,7 +76,7 @@ def review_detail(request):
         movie_id = request.GET.get('movieId')
         movie = Movie.objects.get(pk=movie_id)
         reviews = movie.reviews.all()
-        serializer = ReviewSerializer(reviews. many=True)
+        serializer = ReviewSerializer(reviews, many=True)
         return Response(serializer.data)
 
     if request.method == 'POST':
@@ -90,11 +90,10 @@ def review_detail(request):
     if request.method == 'PUT':
         # movie_id
         review = get_object_or_404(Review, id=review_id)
-        if request.method == 'PUT':
-            serializer = ReviewSerializer(data=request.data, instance=review)
-            if serializer.is_valid(raise_exception=True):
-                serializer.save()
-                return Response({'message':'Review has been updated!'})
+        serializer = ReviewSerializer(data=request.data, instance=review)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response({'message':'Review has been updated!'})
 
     if request.method == 'DELETE':
         # movie_id, review_id

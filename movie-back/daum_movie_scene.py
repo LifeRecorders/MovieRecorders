@@ -27,4 +27,19 @@ for movie in movies:
     title = movie.title
     base_url = f'https://search.daum.net/search?q={title}'
     response = requests.get(base_url)
-    soup = BeautifulSoup(response.)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    #
+    first_url = soup.select_one('#nmovie_img_0 .thumb')['href']
+    movieId = first_url[43:]
+    first_url = f'https://movie.daum.net/moviedb/main?movieId={movieId}'
+    # https://movie.daum.net/data/movie/photo/movie/list.json?id=93004&pageNo=1&pageSize=10&adultFlag=F
+    print(first_url)
+    response = requests.get(first_url)
+    print(response)
+    # bs으로는 불가능
+    # 1. 셀레니움 2. 
+    soup = BeautifulSoup(response.content, 'html.parser')
+    print(soup)
+
+    break
