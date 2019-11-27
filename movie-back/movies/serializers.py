@@ -50,7 +50,6 @@ class MovieDetailSerializer(MovieSerializer):
     directors = DirectorSerializer(many=True)
     scenes = SceneSerializer(many=True)
     class Meta(MovieSerializer.Meta):
-        # model = Movie
         fields = MovieSerializer.Meta.fields + ['actors', 'directors', 'scenes']
 
 # review

@@ -63,13 +63,11 @@ def search_data(request):
         actorserializer = ActorSerializer(actor, many=True)
         directorserializer = DirectorSerializer(director, many=True)
         moviedetailserializer = MovieDetailSerializer(movie, many=True)
-        # sceneserializer = SceneSerializer(scene, many=True)
 
         results['user'] = userserializer.data
         results['movie'] = moviedetailserializer.data
         results['director'] = directorserializer.data
         results['actor'] = actorserializer.data
-        # results['movie']['scene'] = photos
         
         return Response(results)
 
