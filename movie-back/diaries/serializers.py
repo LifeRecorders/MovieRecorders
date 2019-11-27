@@ -13,8 +13,7 @@ class DiarySerializer(serializers.ModelSerializer):
         model = Diary
         fields = [
             'title', 'content', 'watched_at',
-            'movies', 'image', 'main_image', 'owner',
-            'created_at', 'updated_at'
+            'movies', 'user', 
             ]
 
 
