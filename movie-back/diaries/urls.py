@@ -10,8 +10,10 @@ app_name = 'diaries'
 urlpatterns = [
     path('', views.index, name='index'),
     # True or False 반환
+    # diaries/diaries/
     path('diaries/', views.diaries, name='diaries'),
     # diary정보 get, put, delete, post
+    # diaries/diaries/diaries_create_update_delete/
     path('diaries/diaries_create_update_delete/', views.diaries_create_update_delete, name='diaries_create_update_delete'),
     path('collections/', views.collections, name='collections'),
 ]

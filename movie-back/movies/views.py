@@ -128,3 +128,11 @@ def myreviews(request):
         myReviewedMovies.add(mymovie.title)
     myReviewedMovies = list(myReviewedMovies)
     return Response(myReviewedMovies)
+
+# serializer 사용시 꼭 api_view추가
+@api_view(['GET'])
+@permission_classes((AllowAny, ))
+def bestmovies(request):
+    movies = Movie.objects.all().order_by('rank').order_by('-rating').order_by('-audience').order_by('-open_date')[:30]
+    serializer = MovieDetailSerializer(movies, many=True)
+    return Response(serializer.data)

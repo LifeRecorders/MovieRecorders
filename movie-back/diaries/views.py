@@ -50,6 +50,9 @@ def diaries_create_update_delete(request):
     if request.method == 'POST':
         diary = Diary()
         print(user_id, datetime)
+        # {'title': '겨울왕국', 'content': '너무 좋았죠', 'watched_at': '2019-11-26', 'movies': 2512, 'user': 2}
+        # movies => pk를 가지고 다르게 구성함
+        
         serializer = DiarySerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(user_id=user_id)

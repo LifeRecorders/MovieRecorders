@@ -19,6 +19,9 @@ urlpatterns = [
     path('reviews_create_update_delete/', views.reviews_create_update_delete, name="reviews_create_update_delete"),
     # 장르별 영화검색
     path('movies/<str:genretype>/', views.moviewithgenre, name="moviewithgenre"),
+    
+    # 영화 최신순, 평점높고, 관객수 상위 30개
+    path('bestmovies/', views.bestmovies, name="bestmovies"),
 
     # 어떤 유저인지 보내줘야함
     path('myreviews/', views.myreviews, name="myreviews")
