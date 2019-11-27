@@ -37,6 +37,7 @@ def diaries_create_update_delete(request):
     # user_id, datetime 정보를 받아옴
     # 2019-11-07
     user_id = request.GET.get('userId')
+    print(user_id)
     datetime = request.GET.get('datetime') 
     # 보여주기
     if request.method == 'GET':
@@ -49,14 +50,21 @@ def diaries_create_update_delete(request):
     # 등록
     if request.method == 'POST':
         diary = Diary()
-        print(user_id, datetime)
+        result = {}
         # {'title': '겨울왕국', 'content': '너무 좋았죠', 'watched_at': '2019-11-26', 'movies': 2512, 'user': 2}
         # movies => pk를 가지고 다르게 구성함
-        
-        serializer = DiarySerializer(data=request.data)
+        serializer = DiarySerializer(data=request.data, allow_null=True)
+        print(serializer)
+        print('---')
         if serializer.is_valid(raise_exception=True):
+            print('----')
             serializer.save(user_id=user_id)
-            return Response(serializer.data)
+            movie_pk = request.data['movies']
+            movie = Movie.objects.get(pk=movie_pk)
+            result['serializer'] = serializer.data
+            result['movie'] = movie
+            print(result)
+            return Response(result)
     # 수정
     if request.method == 'PUT':
         diary = Diary.objects.filter(user_id=user_id, watched_at=datetime)
