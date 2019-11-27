@@ -117,7 +117,7 @@ def moviewithgenre(request, genretype):
     return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 def myreviews(request):
     user_id = request.GET.get('userId')
     user = User.objects.get(pk=user_id)
