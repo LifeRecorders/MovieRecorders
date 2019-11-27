@@ -49,7 +49,7 @@ class Collection(models.Model):
     # serializer movies(many=True) => 이런식
     # collection id movie id정보 로 collection만들어서 세이브하고
     # add해주기
-    movies = models.ManyToManyField("movies.Movie", related_name="collections")
+    movies = models.ManyToManyField("movies.Movie", related_name='collections')
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     
     title = models.CharField(max_length=150)
