@@ -9,7 +9,10 @@ from django.conf.urls.static import static
 app_name = 'diaries'
 urlpatterns = [
     path('', views.index, name='index'),
+    # True or False 반환
     path('diaries/', views.diaries, name='diaries'),
+    # diary정보 get, put, delete, post
+    path('diaries/diaries_create_update_delete/', views.diaries_create_update_delete, name='diaries_create_update_delete'),
     path('collections/', views.collections, name='collections'),
 ]
 

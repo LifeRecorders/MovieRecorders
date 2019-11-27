@@ -18,37 +18,55 @@ def index(request):
     pass
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
-@permission_classes((AllowAny, ))
+# @permission_classes((AllowAny, ))
 def diaries(request):
     user_id = request.GET.get('userId')
     datetime = request.GET.get('datetime') 
-    if Diary.objects.filter(user_id=user_id).exists() == True:
+    # filter 조건 더 세부적으로 함
+    if Diary.objects.filter(user_id=user_id, watched_at=datetime).exists() == True:
         diary = Diary.objects.filter(user_id=user_id)
         return Response(True)   
-        # if request.method == 'GET':
-        #     # 이미 있는 다이어리 정보를 보여준다
 
-        #     pass
-            
-        # if request.method == 'PUT':
-        #     pass
-
-        # if request.method == 'DELETE':
-        #     pass
-
-    elif Diary.objects.filter(user_id=user_id).exists() == False: 
+    elif Diary.objects.filter(user_id=user_id, watched_at=datetime).exists() == False: 
+        print(user_id, datetime)
         return Response(False)
-        # 다이어리가 없으므로 등록 가능하게 한다
-        # user_id, datetime 정보를 받아옴
-        # 2019-11-07
-        # diary = Diary()
-        # if request.method == 'POST':
-        #     print(user_id, datetime)
-        #     serializer = DiarySerializer(data=request.data)
-        #     if serializer.is_valid(raise_exception=True):
-        #         serializer.save(user_id=user_id)
-        #         return Response(serializer.data)
-        #     pass
+
+@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+def diaries_create_update_delete(request):
+    # 다이어리가 없으므로 등록 가능하게 한다
+    # user_id, datetime 정보를 받아옴
+    # 2019-11-07
+    user_id = request.GET.get('userId')
+    datetime = request.GET.get('datetime') 
+    # 보여주기
+    if request.method == 'GET':
+        # 이미 있는 다이어리 정보를 보여준다
+        # user_id와도 맞고, datetime과도 동일한 정보를 줘야한다.
+        diary = Diary.objects.filter(user_id=user_id, watched_at=datetime)
+        serializer = DiarySerializer(diary)
+        return Response(serializer.data)
+
+    # 등록
+    if request.method == 'POST':
+        diary = Diary()
+        print(user_id, datetime)
+        serializer = DiarySerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save(user_id=user_id)
+            return Response(serializer.data)
+    # 수정
+    if request.method == 'PUT':
+        diary = Diary.objects.filter(user_id=user_id, watched_at=datetime)
+        serializer = DiarySerializer(data=request.data, instance=diary)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response({'message':'Diary has been updated!'})
+    
+    # 삭제
+    if request.method == 'DELETE':
+        diary = Diary.objects.filter(user_id=user_id, watched_at=datetime)
+        diary.delete()
+        return Response({'message':'Diary has been deleted!'})
 
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
