@@ -1,10 +1,22 @@
-from django.db import model
+from django.db import models
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from movies.models import *
 
 User = get_user_model()
+
+
+def user_path(instance, filename): # instance는 Photo 클래스의 객체, filename은 업로드할 파일의 파일이름
+    from random import choice   # string으로 나온 결과에서 하나의 문자열만 뽑아냄
+    import string               # 무작위 문자열을 뽑아내기 위한 용도
+    arr = [choice(string.ascii_letters) for _ in range(8)] # 무작위로 8글자를 뽑아줌
+    pid = ''.join(arr)          # 파일 아이디생성
+    extension = filename.split('.')[-1] # 파일이름으로부터 확장자명가져오기
+    # ex) honux/asfqqwer.png
+    return '%s/%s.%s' % (instance.owner.username, pid, extension)
+
 # private :: diary -> only self
+# 이미지가 여러가지 1:N이 되도록 설정필요
 class Diary(models.Model):
     title = models.CharField(max_length=150)
     content = models.TextField()
@@ -15,7 +27,7 @@ class Diary(models.Model):
     # 검색한 이미지를 잘 추가 할 수 있을까? 생각해봐야한다.
     # 이미지 여러가지 할지 의논필
     image = models.ImageField(upload_to=user_path)
-    main_image = models.ImageField(bank=True) # 필수입력 해제
+    main_image = models.ImageField(blank=True) # 필수입력 해제
     # 등록한 사용자
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     

@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 
 app_name = 'diaries'
 urlpatterns = [
-    # path('', views.index, name='index'),
+    path('', views.index, name='index'),
 ]
 
 # 어떤 URL을 정적으로 추가할래? > MEDIA_URL을 static 파일 경로로 추가

@@ -14,7 +14,7 @@ class Genre(models.Model):
 
     def __str__(self):
         return self.genreType
-    
+
 
 class Movie(models.Model):
     genres = models.ManyToManyField(Genre, related_name='movies')
@@ -39,6 +39,12 @@ class Movie(models.Model):
     naver_link = models.TextField(blank=False)
     class Meta:
         ordering = ('-pk', )
+
+# 여러 사진을 가져오기 위한 모델
+# 1:N
+class Scene(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
+    scene = models.TextField()
 
 # M:N
 class Director(models.Model):

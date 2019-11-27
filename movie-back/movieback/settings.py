@@ -35,8 +35,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'accounts',
     'movies',
-    # 완성전까지 hold
-    # 'diaries',
+    'diaries',
 
 
     'rest_framework',
