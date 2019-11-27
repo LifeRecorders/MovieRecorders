@@ -41,11 +41,21 @@ export default {
         .then(response => {
           this.user = response.data
         })
+    },
+    getUserMovie() {
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/api/v1/myreviews/?userId=${this.userId}`, this.options)
+        .then(response => {
+          this.user = response.data
+          console.log(response.data)
+        })
     }
   },
   mounted() {
     console.log(this.userId)
     this.getUserInfo()
+    this.getUserMovie()
   }
 }
 </script>
