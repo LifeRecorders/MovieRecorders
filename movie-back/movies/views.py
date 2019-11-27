@@ -120,13 +120,14 @@ def moviewithgenre(request, genretype):
 @api_view(['GET'])
 def myreviews(request):
     user_id = request.GET.get('userId')
+    print(user_id)
     user = User.objects.get(pk=user_id)
-    myReviewedMovies = []
+    myReviewedMovies = set()
     userReviews = user.reviews.all()
     for review in userReviews:
         mymovie = review.movie
-        if mymovie not in myReviewedMovies:
-            myReviewedMovies.append(mymovie.title)
+        myReviewedMovies.add(mymovie.title)
+    myReviewedMovies = list(myReviewedMovies)
     return Response(myReviewedMovies)
 
     '''
