@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
-from .serializers import UserDetailSerializer
+from .serializers import *
 from .models import User
 
 User = get_user_model()
