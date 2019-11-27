@@ -18,6 +18,7 @@ def index(request):
     pass
 
 @api_view(['GET', 'POST', 'PUT', 'DELETE'])
+@permission_classes((AllowAny, ))
 def diaries(request):
     user_id = request.GET.get('userId')
     datetime = request.GET.get('datetime') 
@@ -26,6 +27,7 @@ def diaries(request):
         return Response(True)   
         # if request.method == 'GET':
         #     # 이미 있는 다이어리 정보를 보여준다
+
         #     pass
             
         # if request.method == 'PUT':
@@ -36,8 +38,6 @@ def diaries(request):
 
     elif Diary.objects.filter(user_id=user_id).exists() == False: 
         return Response(False)
-
-        
         # 다이어리가 없으므로 등록 가능하게 한다
         # user_id, datetime 정보를 받아옴
         # 2019-11-07
