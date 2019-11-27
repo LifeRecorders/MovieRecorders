@@ -46,24 +46,30 @@ def search_data(request):
         director = ''
         actor = ''
         user = ''
+        scene = ''
+        results = {}
         if Movie.objects.filter(title__icontains=searchKeyword).exists() == True:
             movie = Movie.objects.filter(title__icontains=searchKeyword)
+            # for m in movie:
+            #     scenes = Scene.objects.filter(movie_id=m.id)
+            #     print(scenes)
         if Director.objects.filter(name__icontains=searchKeyword).exists() == True:
             director = Director.objects.filter(name__icontains=searchKeyword)
         if Actor.objects.filter(name__icontains=searchKeyword).exists() == True:
             actor = Actor.objects.filter(name__icontains=searchKeyword)
         if User.objects.filter(username__icontains=searchKeyword).exists() == True:
             user = User.objects.filter(username__icontains=searchKeyword)
-        results = {}
         userserializer = UserSerializer(user, many=True)
         actorserializer = ActorSerializer(actor, many=True)
         directorserializer = DirectorSerializer(director, many=True)
         moviedetailserializer = MovieDetailSerializer(movie, many=True)
-        
+        # sceneserializer = SceneSerializer(scene, many=True)
+
         results['user'] = userserializer.data
         results['movie'] = moviedetailserializer.data
         results['director'] = directorserializer.data
         results['actor'] = actorserializer.data
+        # results['movie']['scene'] = photos
         
         return Response(results)
 

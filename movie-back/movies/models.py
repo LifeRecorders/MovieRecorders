@@ -43,7 +43,7 @@ class Movie(models.Model):
 # 여러 사진을 가져오기 위한 모델
 # 1:N
 class Scene(models.Model):
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='scenes')
     scene = models.TextField()
 
 # M:N
