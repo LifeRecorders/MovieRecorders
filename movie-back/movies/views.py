@@ -50,9 +50,6 @@ def search_data(request):
         results = {}
         if Movie.objects.filter(title__icontains=searchKeyword).exists() == True:
             movie = Movie.objects.filter(title__icontains=searchKeyword)
-            # for m in movie:
-            #     scenes = Scene.objects.filter(movie_id=m.id)
-            #     print(scenes)
         if Director.objects.filter(name__icontains=searchKeyword).exists() == True:
             director = Director.objects.filter(name__icontains=searchKeyword)
         if Actor.objects.filter(name__icontains=searchKeyword).exists() == True:
@@ -90,7 +87,7 @@ def reviews_create_update_delete(request):
     
     if request.method == 'POST':
         movie_id = request.GET.get('movieId')
-        serializer = ReviewSerializer(data=request.data)
+        serializer = ReviewSerializer(data=request.data, allow_null=True)
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie_id=movie_id)
             return Response(serializer.data)
@@ -118,3 +115,30 @@ def moviewithgenre(request, genretype):
     movies = Movie.objects.filter(genres=genres.id)
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def myreviews(request):
+    user_id = request.GET.get('userId')
+    user = User.objects.get(pk=user_id)
+    myReviewedMovies = []
+    userReviews = user.reviews.all()
+    for review in userReviews:
+        mymovie = review.movie
+        if mymovie not in myReviewedMovies:
+            myReviewedMovies.append(mymovie.title)
+    return Response(myReviewedMovies)
+
+    '''
+    # 평가를 남긴 애들 목록 보여주기
+    user review를 남기면, 그 review수를 세는데, movie가 겹치지 않은 상태로 세야함
+    user model에 review를 남긴 movie의 목록
+    reviews = user.reviews.all()
+    -> reviews가 나오는데,
+    review.id
+    movie.objects.get()
+    movie =>  []
+    안겹치는 애들만 추가해서 넣어주고
+    보내면 되겠다.
+
+    '''

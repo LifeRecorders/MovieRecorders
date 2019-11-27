@@ -54,6 +54,10 @@ class MovieDetailSerializer(MovieSerializer):
 
 # review
 class ReviewSerializer(serializers.ModelSerializer):
+    # 여기에 parent추가하고,
+    # views.py에서
+    # parent 위에 allow null 처리
+    # allow_null
     class Meta:
         model = Review
         fields = [
@@ -63,7 +67,8 @@ class ReviewSerializer(serializers.ModelSerializer):
         'content',
         'score', 
         'created_at', 
-        'updated_at'
+        'updated_at',
+        'parent', 
         ]
 
 # review 대댓글
