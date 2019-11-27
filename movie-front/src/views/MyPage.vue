@@ -89,7 +89,9 @@ export default {
       
       axios.get(`${SERVER_IP}/diaries/diaries/?userId=${this.userId}&datetime=${this.dateToStr(selectedDate)}`, this.options)
         .then(response => {
-          console.log(response.data)
+          if(response.data === false) {
+            router.push()
+          }
         })
         .catch(error => {
           console.error(error)
