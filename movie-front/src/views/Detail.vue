@@ -21,6 +21,29 @@
       <b-card-text>
         <p>평점 {{ this.detail.rating }}</p>
       </b-card-text>
+
+      <b-button v-b-modal.modal-diary size="md" variant="outline-secondary">내 다이어리 쓰기</b-button>
+        <b-modal
+        id="modal-diary"
+        ref="modal"
+        v-bind:title="this.detail.title"
+        v-on:show="resetDiaryModal"
+        v-on:hidden="resetDiaryModal"
+        v-on:ok="diaryOk">
+          <b-form-group v-bind:state="diaryTitleState">
+            <DiaryCalendar v-on:openDiary="openDiary" />
+            <br/>
+            <div class="text-center" v-text="this.watched_at"></div>
+            <br/>
+            <b-form-input id="title-input" v-model="diaryTitle" v-bind:state="diaryTitleState" placeholder="Title" required>
+            </b-form-input>
+          </b-form-group>
+          <b-form-group v-bind:state="diaryContentState">
+            <b-form-input id="content-input" v-model="diaryContent" v-bind:state="diaryContentState" placeholder="이 영화를 본 날은 어땠나요?" required>
+            </b-form-input>
+          </b-form-group>
+        </b-modal>
+
     </b-card>
     
     <!-- 감상평 남기기 -->
@@ -35,7 +58,8 @@
         v-on:show="resetModal"
         v-on:hidden="resetModal"
         v-on:ok="reviewOk">
-          <star-rating v-bind:increment="0.5" v-bind:star-size="30"></star-rating>
+          <star-rating v-bind:increment="0.5" v-bind:star-size="30" v-on:rating-selected="setScore"></star-rating>
+          <br/>
           <b-form-group v-bind:state="reviewState">
             <b-form-input id="review-input" v-model="review" v-bind:state="reviewState" placeholder="이 작품은 어떠셨나요?" required>
             </b-form-input>
@@ -106,6 +130,7 @@
 import axios from'axios'
 import { mapState, mapGetters } from 'vuex'
 import StarRating from 'vue-star-rating'
+import DiaryCalendar from '@/components/DiaryCalendar'
 
 export default {
   name: "Detail",
@@ -115,10 +140,17 @@ export default {
       reviewState: null,
       reviews: [],
       score: null,
+      diaryTitle: '',
+      diaryContent: '',
+      watched_at: '',
+      diaryFile: '',
+      diaryTitleState: null,
+      diaryContentState: null,
     }
   },
   components: {
-    StarRating
+    StarRating,
+    DiaryCalendar
   },
   computed: {
     ...mapGetters([
@@ -134,6 +166,13 @@ export default {
     resetModal () {
       this.review = ''
       this.reviewState = null
+    },
+    resetDiaryModal() {
+      this.diaryTitle = ''
+      this.diaryTitleState = null
+      this.diaryContent = ''
+      this.diaryContentState = null
+      this.watched_at = ''
     },
     reviewOk(byModalEvt) {
       byModalEvt.preventDefault()
@@ -181,6 +220,43 @@ export default {
     setScore(score) {
       this.score = score
     },
+    dateToStr(format) {
+      const year = format.getFullYear()
+      let month = format.getMonth() + 1
+      if(month<10) month = '0' + month
+      let day = format.getDate();
+      if(day<10) day = '0' + day
+      return year + "-" + month + "-" + day
+    },
+    openDiary(selectedDate) {
+      this.watched_at = this.dateToStr(selectedDate)
+      return this.watched_at
+    },
+    diaryOk(byModalEvt) {
+      byModalEvt.preventDefault()
+      this.writeDiary()
+    },
+    writeDiary() {
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+      const data = {
+        title: this.diaryTitle,
+        content: this.diaryContent,
+        watched_at: this.watched_at,
+        movies: this.detail.pk,
+        user: this.userId
+      }
+
+      axios.post(`${SERVER_IP}/diaries/diaries/diaries_create_update_delete/?userId=${data.user}&datetime=${data.watched_at}`, data, this.options)
+        .then(response => {
+          console.log(response)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+        this.$nextTick(() => {
+        this.$refs.modal.hide()
+      })
+    }
   },
   mounted() {
     this.getReview(this.detail.pk)
