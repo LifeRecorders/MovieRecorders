@@ -56,7 +56,16 @@ class MovieDetailSerializer(MovieSerializer):
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = ['id', 'user', 'content', 'score', 'liked_users', 'created_at', 'updated_at']
+        fields = [
+        'pk', 
+        'movie',
+        'user',
+        'content',
+        'score', 
+        'liked_users', 
+        'created_at', 
+        'updated_at'
+        ]
 
 # review 대댓글
 class ReviewDetailSerializer(ReviewSerializer):
