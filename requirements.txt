@@ -44,6 +44,7 @@ pandocfilters==1.4.2
 parso==0.5.1
 pdfminer.six==20181108
 pickleshare==0.7.5
+Pillow==6.2.1
 prometheus-client==0.7.1
 prompt-toolkit==2.0.9
 pycryptodome==3.8.2
