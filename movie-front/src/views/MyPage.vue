@@ -1,27 +1,43 @@
 <template>
-  <div>
-    {{ this.user }}
-    My Page
+  <div class="container mt-5 text-left">
+    <h2>{{ this.user.username }}</h2>
+    <br/>
+    <router-link to="/user-movie-list/" id="router-movie-list">
+      <h6>내가 본 영화 {{ this.userMovieList.length }} </h6>
+    </router-link>
+    <h6>앞으로 볼 영화 </h6>
+    <br/>
+    <hr/>
+    <DiaryCalendar v-on:openDiary="openDiary" />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
 import router from '@/router'
 import axios from 'axios'
+import DiaryCalendar from '@/components/DiaryCalendar'
 
 
 export default {
   name: "MyPage",
-  data () {
-    return {
-      user: []
-    }
+  // data () {
+  //   return {
+  //     user: [],
+  //     userMovie: []
+  //   }
+  // },
+  components: {
+    DiaryCalendar
   },
   computed: {
     ...mapGetters([
       'options',
-      'userId'
+      'userId',
+    ]),
+    ...mapState([
+      'user',
+      'userMovieList'
     ]),
     isLoggedIn() {
       return this.$store.getters.isLoggedIn;
@@ -35,20 +51,44 @@ export default {
       }
     },
     getUserInfo() {
+      this.$store.dispatch('clearUser')
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
 
       axios.get(`${SERVER_IP}/accounts/users/${this.userId}`, this.options)
         .then(response => {
-          this.user = response.data
+          this.$store.dispatch('setUser', response.data)
+        })
+        .then(error => {
+          console.error(error)
         })
     },
     getUserMovie() {
+      this.$store.dispatch('clearUserMovie')
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
 
       axios.get(`${SERVER_IP}/api/v1/myreviews/?userId=${this.userId}`, this.options)
         .then(response => {
-          this.user = response.data
+          this.$store.dispatch('setUserMovie', response.data)
           console.log(response.data)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
+    openDiary(selectedDate) {
+      this.$store.dispatch('clearDiary')
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+      const data = {
+        datetime: selectedDate,
+        userId: this.userId
+      }
+      
+      axios.get(`${SERVER_IP}/diaries/diaries`, data, this.options)
+        .then(response => {
+          console.log(response)
+        })
+        .catch(error => {
+          console.error(error)
         })
     }
   },
