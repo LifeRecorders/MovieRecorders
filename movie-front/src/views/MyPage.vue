@@ -75,14 +75,22 @@ export default {
           console.error(error)
         })
     },
+    dateToStr(format) {
+      const year = format.getFullYear()
+      let month = format.getMonth() + 1
+      if(month<10) month = '0' + month
+      let day = format.getDate();
+      if(day<10) day = '0' + day
+      return year + "-" + month + "-" + day
+    },
     openDiary(selectedDate) {
       this.$store.dispatch('clearDiary')
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
       const data = {
-        datetime: selectedDate,
+        datetime: this.dateToStr(selectedDate),
         userId: this.userId
       }
-      
+
       axios.get(`${SERVER_IP}/diaries/diaries`, data, this.options)
         .then(response => {
           console.log(response)
@@ -90,7 +98,8 @@ export default {
         .catch(error => {
           console.error(error)
         })
-    }
+    },
+    
   },
   mounted() {
     console.log(this.userId)
