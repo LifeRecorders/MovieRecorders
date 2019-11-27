@@ -11,7 +11,11 @@ User = get_user_model()
 class DiarySerializer(serializers.ModelSerializer):
     class Meta:
         model = Diary
-        fields = "__all__"
+        fields = [
+            'title', 'content', 'watched_at',
+            'movies', 'image', 'main_image', 'owner',
+            'created_at', 'updated_at'
+            ]
 
 
 

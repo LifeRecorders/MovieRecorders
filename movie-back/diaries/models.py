@@ -25,10 +25,10 @@ class Diary(models.Model):
     # movies를 등록하던지 image를 등록하던지
     movies = models.ManyToManyField("movies.Movie", related_name='diaries', blank=True)
     image = models.ImageField(upload_to=user_path, blank=True)
-    
+
     main_image = models.ImageField(blank=True) # 필수입력 해제
     # 등록한 사용자
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -48,7 +48,7 @@ class Collection(models.Model):
     # collection id movie id정보 로 collection만들어서 세이브하고
     # add해주기
     movies = models.ManyToManyField("movies.Movie", related_name='collections')
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     
     title = models.CharField(max_length=150)
     content = models.TextField()
