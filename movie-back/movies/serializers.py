@@ -62,7 +62,6 @@ class ReviewSerializer(serializers.ModelSerializer):
         'user',
         'content',
         'score', 
-        'liked_users', 
         'created_at', 
         'updated_at'
         ]

@@ -82,22 +82,22 @@ def review_detail(request):
         movie_id = request.GET.get('movieId')
         movie = Movie.objects.get(pk=movie_id)
         reviews = movie.reviews.all()
-        serializer = ReviewSerializer(reviews, many=True)
+        serializer = ReviewDetailSerializer(reviews, many=True)
         return Response(serializer.data)
 
 @api_view(['POST', 'PUT', 'DELETE'])
 def reviews_create_update_delete(request):
     
     if request.method == 'POST':
-        movie_id = request.POST.get('movieId')
+        movie_id = request.GET.get('movieId')
         serializer = ReviewSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie_id=movie_id)
             return Response(serializer.data)
 
     if request.method == 'PUT':
-        movie_id = request.PUT.get('movieId')
-        review_id = request.PUT.get('reviewId')
+        movie_id = request.GET.get('movieId')
+        review_id = request.GET.get('reviewId')
         review = get_object_or_404(Review, id=review_id)
         serializer = ReviewSerializer(data=request.data, instance=review)
         if serializer.is_valid(raise_exception=True):
@@ -105,8 +105,8 @@ def reviews_create_update_delete(request):
             return Response({'message':'Review has been updated!'})
 
     if request.method == 'DELETE':
-        movie_id = request.DELETE.get('movieId')
-        review_id = request.DELETE.get('reviewId')
+        movie_id = request.GET.get('movieId')
+        review_id = request.GET.get('reviewId')
         review = get_object_or_404(Review, id=review_id)
         review.delete()
         return Response({'message':'Review has been deleted!'})
