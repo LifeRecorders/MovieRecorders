@@ -6,7 +6,6 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-
 # collection할때 사용
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:

@@ -22,11 +22,10 @@ class Diary(models.Model):
     content = models.TextField()
     # 사용자가 본 날
     watched_at = models.DateField()
-    # 사용자가 등록한 이미지 
-    # db에 존재하는 영화 img를 사용할 수도 있게 해야하는데,
-    # 검색한 이미지를 잘 추가 할 수 있을까? 생각해봐야한다.
-    # 이미지 여러가지 할지 의논필
-    image = models.ImageField(upload_to=user_path)
+    # movies를 등록하던지 image를 등록하던지
+    movies = models.ManyToManyField("movies.Movie", related_name='diaries', blank=True)
+    image = models.ImageField(upload_to=user_path, blank=True)
+    
     main_image = models.ImageField(blank=True) # 필수입력 해제
     # 등록한 사용자
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -40,7 +39,6 @@ class Diary(models.Model):
 Like 기능이랑 비슷
 User 와 Movie 간에 M:N 관계를 맺어서 저장
 '''
-
 class Collection(models.Model):
     # 담기(한곳에서만 하면된다.)
 

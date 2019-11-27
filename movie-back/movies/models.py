@@ -28,7 +28,11 @@ class Movie(models.Model):
     watch_grade = models.CharField(max_length=50, blank=True)
     running_time = models.CharField(max_length=50, blank=True)
     nation = models.CharField(max_length=100, blank=True)
+    # 좋아요 누른 영화
     liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_movies')
+    # 보고싶어요 한 영화
+    want_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='want_movies')
+
     company = models.CharField(max_length=150, blank=True)
     # jinheungAPI를 위한 정보
     movieCd = models.TextField(blank=False)

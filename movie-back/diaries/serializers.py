@@ -4,3 +4,21 @@ from django.contrib.auth import get_user_model
 
 # 이거면 된다. settings.py에 등록되어서 사용
 User = get_user_model()
+
+
+
+# Diary
+class DiarySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Diary
+        fields = "__all__"
+
+
+
+# Collection
+class CollectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Collection
+        fields = "__all__"
+
+

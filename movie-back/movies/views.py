@@ -116,11 +116,10 @@ def moviewithgenre(request, genretype):
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
 
-
+# 평가를 남긴 애들 목록 보여주기
 @api_view(['GET'])
 def myreviews(request):
     user_id = request.GET.get('userId')
-    print(user_id)
     user = User.objects.get(pk=user_id)
     myReviewedMovies = set()
     userReviews = user.reviews.all()
@@ -129,17 +128,3 @@ def myreviews(request):
         myReviewedMovies.add(mymovie.title)
     myReviewedMovies = list(myReviewedMovies)
     return Response(myReviewedMovies)
-
-    '''
-    # 평가를 남긴 애들 목록 보여주기
-    user review를 남기면, 그 review수를 세는데, movie가 겹치지 않은 상태로 세야함
-    user model에 review를 남긴 movie의 목록
-    reviews = user.reviews.all()
-    -> reviews가 나오는데,
-    review.id
-    movie.objects.get()
-    movie =>  []
-    안겹치는 애들만 추가해서 넣어주고
-    보내면 되겠다.
-
-    '''
