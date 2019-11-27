@@ -1,6 +1,6 @@
 <template>
   <div id="movie_header">
-    <b-navbar toggleable="lg" type="dark" variant="white">
+    <b-navbar toggleable="lg" type="light" variant="white">
       <b-navbar-brand>
         <router-link to="/" id="router_home" class="text-dark">Home</router-link>
       </b-navbar-brand>
@@ -9,14 +9,15 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
-        <b-navbar-nav v-if="isLoggedIn">
-          <!-- <a v-on:click.prevent="logout" href="/logout">로그아웃</a> -->
-          <b-nav-item-dropdown right>
+        <b-navbar-nav v-if="isLoggedIn" class="ml-auto">
+          <!-- <a v-on:click.prevent="logout" href="/logout">로그아웃</a>   -->
+          <b-nav-item-dropdown class="text-dark" right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
               <em>User</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
+            </template> 
+            
+            <b-dropdown-item><router-link to="/mypage/" id="router_mypage">My Page</router-link></b-dropdown-item>
             <b-dropdown-item v-on:click.prevent="logout" href="/logout">로그아웃</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
