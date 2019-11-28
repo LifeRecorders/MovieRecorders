@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="bgBlur" v-bind:style="{ backgroundImage: 'url(' + this.bgImageUrl + ')' }"></div>
+    <!-- {{ this.detail }} -->
     <div id="detail">
       <header>
       <MovieHeader />
@@ -55,26 +56,41 @@
           
         </b-card>
         <b-card class="text-left">
-          <h6>제작</h6>
+          <br/>
+          <b-row>
+            <b-col md="10">
+              <div class="mb-0">{{ this.detail.description }}</div>
+            </b-col>
+          </b-row>
+          <br/>
+          <hr/>
+          <h4>제작/출연</h4>
+          <br/>  
           <b-row>
             <br/>
             <div style="font-size:small;" v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
-              <b-col style="padding-left: 1rem; padding-right: 0;">
+              <b-col style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
+                <b-img v-bind:src="director.img_url" rounded="circle" alt="director-img" id="director-img" class="mb-2"></b-img>
+                <br/>
                 {{ director.name }}
               </b-col>
             </div>
           </b-row>
           <br>
-          <h6>출연</h6>
           <b-row>
             <br/>
             <div style="font-size:small;" v-for="(actor, idx) in this.detail.actors" v-bind:key="idx">
-              <b-col style="padding-left: 1rem; padding-right: 0;">
+              <b-col style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
+                <b-img v-bind:src="actor.img_url" rounded="circle" alt="actor-img" id="actor-img" class="mb-2"></b-img>
+                <br/>
                 {{ actor.name }}
               </b-col>
             </div>
           </b-row>
-          <hr style="border: 0.5px solid white"/>
+          <br/>
+          <hr/>
+          <br/>
+
           <b-row>
             <b-col>
               <span style="font-size:x-large; position: relative; top: -1.2rem;">감상평</span>
@@ -98,18 +114,39 @@
               <br/>
               <b-row>
                 <div v-for="(review, idx) in this.reviews.slice(0, 3)" v-bind:key="idx">
-                  <b-col>
-                    {{ review.user.username }}
-                    ★{{ review.score }}
-                    <hr/>
-                    {{ review.content }}<br/>
-                  </b-col>
+                  <b-card class="mx-2" body-class="px-0 py-3">
+                    <b-col>
+                      {{ review.user.username }}
+                      ★{{ review.score }}
+                      <hr/>
+                      {{ review.content }}<br/>
+                    </b-col>
+                  </b-card>
                 </div>
               </b-row>
-              
             </b-col>
           </b-row>
-
+          <br/>
+          <hr/>
+          <h4>갤러리</h4>
+          <div>
+            <b-carousel
+              id="carousel-fade"
+              class="mt-5 mb-5"
+              style="text-shadow: 0px 0px 2px #000"
+              fade
+              controls
+              indicators
+              img-width="500"
+              img-height="200"
+            >
+              <div v-for="(scene, idx) in this.detail.scenes.slice(1, this.detail.scenes.length)" v-bind:key="idx">
+                <b-carousel-slide
+                v-bind:img-src="scene.scene">
+                </b-carousel-slide>
+              </div>
+            </b-carousel>
+          </div>
         </b-card>
       </b-container>
     </div>
@@ -278,7 +315,8 @@ export default {
         .catch(error => {
           console.error(error)
         })
-    }
+    },
+
   },
   mounted() {
     this.getReview(this.detail.pk)
@@ -331,5 +369,18 @@ export default {
 }
 #review-button {
   display: inline;
+}
+#director-img { 
+  width: 4rem; 
+  height: 4rem; 
+  object-fit: cover; 
+}
+#actor-img { 
+  width: 4rem; 
+  height: 4rem; 
+  object-fit: cover; 
+}
+b-carousel-slide {
+  overflow: hidden;
 }
 </style>
