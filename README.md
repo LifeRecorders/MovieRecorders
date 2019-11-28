@@ -25,16 +25,19 @@
 ## 목차
 
 1. [<movie프로젝트이름>란?](https://github.com/LifeRecorders/)
-2. [팀원 정보 및 업무 분담 내역](https://github.com/LifeRecorders/)
-3. [목표 서비스 구현 및 실제 구현 정도](https://github.com/LifeRecorders/)
+2. [팀원 정보 및 업무 분담 내역]([https://github.com/LifeRecorders/1126/blob/master/README.md#%ED%8C%80%EC%9B%90-%EC%A0%95%EB%B3%B4-%EB%B0%8F-%EC%97%85%EB%AC%B4-%EB%B6%84%EB%8B%B4-%EB%82%B4%EC%97%AD](https://github.com/LifeRecorders/1126/blob/master/README.md#팀원-정보-및-업무-분담-내역))
+3. [목표 서비스 구현 및 실제 구현 정도]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EB%AA%A9%ED%91%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84-%EB%B0%8F-%EC%8B%A4%EC%A0%9C-%EA%B5%AC%ED%98%84-%EC%A0%95%EB%8F%84](https://github.com/LifeRecorders/1126/blob/master/README.md#목표-서비스-구현-및-실제-구현-정도))
    - 일자별 업무 진행
-4. [데이터베이스 모델링(ERD)](https://github.com/LifeRecorders/)
-8. [핵심 기능](https://github.com/LifeRecorders/)
-9. [배포 서버 URL](https://github.com/LifeRecorders/)
+     - 프로젝트 관리 :: Notion
+     - 코드 관리 :: Github
+4. [데이터베이스 모델링(ERD)]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%AA%A8%EB%8D%B8%EB%A7%81erd](https://github.com/LifeRecorders/1126/blob/master/README.md#데이터베이스-모델링erd))
+8. [핵심 기능]([https://github.com/LifeRecorders/1126/blob/master/README.md#%ED%95%B5%EC%8B%AC-%EA%B8%B0%EB%8A%A5](https://github.com/LifeRecorders/1126/blob/master/README.md#핵심-기능))
+9. [배포 서버 URL]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EB%B0%B0%ED%8F%AC-%EC%84%9C%EB%B2%84-url](https://github.com/LifeRecorders/1126/blob/master/README.md#배포-서버-url))
    - Heroku 서버
-10. [기타 (느낀점)](https://github.com/LifeRecorders/)
-11. [부록](https://github.com/LifeRecorders/)
+10. [기타 (느낀점)]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EA%B8%B0%ED%83%80%EB%8A%90%EB%82%80%EC%A0%90](https://github.com/LifeRecorders/1126/blob/master/README.md#기타느낀점))
+11. [부록]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EB%B6%80%EB%A1%9D](https://github.com/LifeRecorders/1126/blob/master/README.md#부록))
     - 로컬 실행 방법
+    - 개인정보처리방침
 
 
 
