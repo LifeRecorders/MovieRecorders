@@ -189,6 +189,7 @@ def want(request):
         movie.want_users.add(user)
         wanted = True
 
+    # wanted에 대한 결과와 movie에 대해서 보고싶어요를 한 총 인원 수를 리턴
     context = {'wanted': wanted, 'count': movie.want_users.count()}
     return JsonResponse(context)
 
