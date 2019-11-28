@@ -83,7 +83,6 @@ class ReviewDetailSerializer(ReviewSerializer):
         model = Review
         fields = ReviewSerializer.Meta.fields + ['children', 'user']
 
-
 class UserDetailSerializer(UserSerializer):
     liked_movies = MovieSerializer(many=True) # user.like_movies.all()
     want_movies = MovieSerializer(many=True)
