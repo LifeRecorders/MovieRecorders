@@ -27,7 +27,7 @@ urlpatterns = [
     path('myreviews/', views.myreviews, name="myreviews"),
 
     # 좋아요 기능
-    path('like/', views.like, name="like"),
+    path('like/<int:movieId>/<int:userId>/', views.like, name="like"),
 
     # 보고싶어요 기능
     path('want/<int:movieId>/<int:userId>/', views.want, name="want"),

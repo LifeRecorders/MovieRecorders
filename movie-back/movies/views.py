@@ -150,14 +150,14 @@ def bestmovies(request):
 
 
 # 좋아요 serializer
-@api_view(['POST'])
-def like(request):
+# @api_view(['POST'])
+def like(request, movieId, userId):
     # movie_pk, user_id 를 받음
-    movie_pk = request.GET.get('movieId')
-    user_id = request.GET.get('userId')
+    # movie_pk = request.GET.get('movieId')
+    # user_id = request.GET.get('userId')
 
-    movie = get_object_or_404(Movie, pk=movie_pk)
-    user = User.objects.get(pk=user_id)
+    movie = get_object_or_404(Movie, pk=movieId)
+    user = User.objects.get(pk=userId)
 
     if user in movie.like_users.all():
         movie.like_users.remove(user)

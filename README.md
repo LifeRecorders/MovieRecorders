@@ -2,9 +2,11 @@
 
 **01150813** 
 
-![logo_small](README.assets/logo_small.png)
+<div style="text-align:center">
+<img src="README.assets/logo_small.png">
+</div>
 
-사이트 주소
+
 
 <p align="center">
   <img src="http://img.shields.io/:license-Seungwon(Tess)-green.svg"/>
@@ -22,18 +24,18 @@
 
 ## 목차
 
-1. [<movie프로젝트이름>란?][https://github.com/LifeRecorders/]
-2. [팀원 정보 및 업무 분담 내역][https://github.com/LifeRecorders/]
-3. [목표 서비스 구현 및 실제 구현 정도][https://github.com/LifeRecorders/]
+1. [<movie프로젝트이름>란?](https://github.com/LifeRecorders/)
+2. [팀원 정보 및 업무 분담 내역](https://github.com/LifeRecorders/)
+3. [목표 서비스 구현 및 실제 구현 정도](https://github.com/LifeRecorders/)
    - 일자별 업무 진행
-4. [데이터베이스 모델링(ERD)][https://github.com/LifeRecorders/]
-5. [Backend :: Django][https://github.com/LifeRecorders/]
-6. [Frontend :: View][https://github.com/LifeRecorders/]
-8. [핵심 기능][https://github.com/LifeRecorders/]
-9. [배포 서버 URL][https://github.com/LifeRecorders/]
+4. [데이터베이스 모델링(ERD)](https://github.com/LifeRecorders/)
+5. [Backend :: Django](https://github.com/LifeRecorders/)
+6. [Frontend :: View](https://github.com/LifeRecorders/)
+8. [핵심 기능](https://github.com/LifeRecorders/)
+9. [배포 서버 URL](https://github.com/LifeRecorders/)
    - Heroku 서버
-10. [기타 (느낀점)][https://github.com/LifeRecorders/]
-11. [부록][https://github.com/LifeRecorders/]
+10. [기타 (느낀점)](https://github.com/LifeRecorders/)
+11. [부록](https://github.com/LifeRecorders/)
     - 로컬 실행 방법
 
 
@@ -59,20 +61,24 @@ makeartweek@gmail.com
 
 #### **Backend**
 
-<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:25%;" />   [**정승원**](https://github.com/tesschung): DB / 장고 REST API 설계, 장고 로직 구현, 데이터 스크래핑
+<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:15%;" />   [**정승원**](https://github.com/tesschung): DB / 장고 REST API 설계, 장고 로직 구현, 데이터 스크래핑
 
 
 
 #### **Frontend**
 
-<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:25%;" />   [**이인동**](https://github.com/IndongLee): 화면 설계 및 디자인, Vue 로직 구현, REST API 활용
+<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:15%;" />   [**이인동**](https://github.com/IndongLee): 화면 설계 및 디자인, Vue 로직 구현, REST API 활용
 
 
 
 
 ## 목표 서비스 구현 및 실제 구현 정도
 
-### 사용 기술 :: Django와 Vue CDN 이용
+### 사용 기술 :: 
+
+### Django REST API 서버(djangorestframework)
+
+### VueJS (Node, SFC) 
 
 #### Backend
 
@@ -155,68 +161,33 @@ makeartweek@gmail.com
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Backend :: Django
 
 ### 데이터 스크래핑
 
-- 최대한 깨끗한 영화 데이터를 얻기위해서 데이터 스크래핑시 총 6단계를 거치게 됩니다.
-
-  - :one: 단계: 해당 단계에서 총 `5단계`로 데이터를 스크래핑합니다.
+- 최대한 깨끗한 영화 데이터를 얻기위해서 데이터 스크래핑시 수집-정제라는 큰 틀에서 총 6단계를 거치게 됩니다.
+- `1 단계` 해당 단계에서 총 `5단계`로 데이터를 스크래핑합니다.
     - 영화진흥원 API - 주간 박스오피스
     - 영화진흥원 API - 영화목록
     - 영화진흥원 API - 영화상세
     - 네이버 API - 영화상세
     - 네이버 크롤링 - 영화상세
-  - :two: 단계:
+  - `2 단계`
     - 네이버 크롤링 - 영화 포스터
-  - :three: 단계:
+  - `3 단계`
     - 네이버 크롤링 - Actor의 빈데이터 수정
-  - :four: 단계:
+  - `4 단계`
     - 네이버 크롤링 - Director의 빈데이터 수정
-  - :five: 단계:
+  - `5 단계`
     - 다음 크롤링 - Scene 데이터 추가
-  - :six: 단계:
+  - `6 단계`
     - 불필요한 데이터 모두 정제
 
-> 이러한 6단계를 통하여 데이터에 대한 위험요소를 최대한 줄이면서, 최대한 다양하고 많은 데이터를 스크래핑하였습니다. 이를 통하여 사용자는 풍부한 데이터에 대한 사용자 경험을 하게 될 것이라 생각하였습니다.
-
-
-
-### 파일구조
-
-
-
-
+> 이러한 6단계를 통하여 데이터에 대한 위험요소를 최대한 줄이면서, 최대한 다양하고 많은 데이터를 스크래핑하였습니다. 이를 통하여 사용자는 풍부한 데이터에 대한 사용자 경험을 보장합니다.
 
 
 
 ## Frontend :: View
-
-
-
-
-
-### 파일구조
-
-
 
 
 
@@ -280,7 +251,11 @@ makeartweek@gmail.com
 
 ## 배포 서버 URL
 
-### Heroku 서버
+### 배포환경
+
+서버 : Firebase
+
+DB: Heroku 서버
 
 
 
@@ -315,6 +290,11 @@ migrate를 한 뒤 Django 프로젝트를 실행합니다.
 ```
 
 ```
+pip install djangorestframework-jwt
+pip install djangorestframework
+pip install django-cors-headers
+pip install drf-yasg
+pip install pillow
 $ python manage.py dumpdata [app_name].[model.name] --indent [INDENT] > [fixture_name].json
 ```
 
@@ -327,7 +307,8 @@ $ python manage.py dumpdata movies.actor --indent 2 > actor-data.json
 
 ### :information_source: [개인정보처리방침](https://github.com/makeartweek/bixby/tree/master/Privacy-policy) 
 
-![logo_small](README.assets/logo_small.png)
-
+<div style="text-align:center">
+<img src="README.assets/logo_small.png">
+</div>
 "from `LifeRecorders` import `inspiration`"
 
