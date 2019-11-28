@@ -28,18 +28,20 @@ for movie in movies:
     link = movie.naver_link
     directors = movie.directors.all()
     for director in directors:
-        directorname = director.name
-        # href="./detail.nhn?code=136873"
-        base_url = f'https://movie.naver.com/movie/bi/mi/detail.nhn?code={link[51:]}'
-        response = requests.get(base_url)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        try:
-            if director.img_url == '':
+        if director.img_url == '':
+            directorname = director.name
+            # href="./detail.nhn?code=136873"
+            base_url = f'https://movie.naver.com/movie/bi/mi/detail.nhn?code={link[51:]}'
+            response = requests.get(base_url)
+            soup = BeautifulSoup(response.content, 'html.parser')
+            try:
                 photo = soup.select_one(f'img[alt="{directorname}"]')['src']    
                 director.img_url = photo
                 print(director.img_url)
                 print(photo)
                 print(director)
                 director.save()
-        except:
-            continue
+            except:
+                director.img_url = 'https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png'
+                print(director.img_url)
+                director.save()

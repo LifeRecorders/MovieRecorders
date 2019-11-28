@@ -24,6 +24,12 @@ urlpatterns = [
     path('bestmovies/', views.bestmovies, name="bestmovies"),
 
     # 어떤 유저인지 보내줘야함
-    path('myreviews/', views.myreviews, name="myreviews")
+    path('myreviews/', views.myreviews, name="myreviews"),
+
+    # 좋아요 기능
+    path('like/', views.like, name="like"),
+    
+    # 유저가 행동한 모든 정보 / 내가 좋아요한 영화 목록
+    path('myinfo/', views.myinfo, name="myinfo"),
 ]
 

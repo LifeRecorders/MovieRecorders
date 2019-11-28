@@ -13,8 +13,7 @@ class DiarySerializer(serializers.ModelSerializer):
     class Meta:
         model = Diary
         fields = [
-            'title', 'content', 'watched_at',
-            'user', 
+            'title', 'content', 'watched_at', 'movies', 'user', 
             ]
 
 
@@ -23,6 +22,8 @@ class DiarySerializer(serializers.ModelSerializer):
 class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Collection
-        fields = "__all__"
+        fields = [
+            'title', 'content', 'movies', 'user', 
+        ]
 
 

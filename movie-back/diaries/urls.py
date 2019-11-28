@@ -16,6 +16,7 @@ urlpatterns = [
     # diaries/diaries/diaries_create_update_delete/
     path('diaries/diaries_create_update_delete/', views.diaries_create_update_delete, name='diaries_create_update_delete'),
     path('collections/', views.collections, name='collections'),
+    path('collections/collections_create_update_delete/', views.collections_create_update_delete, name='collections_create_update_delete'), 
 ]
 
 # 어떤 URL을 정적으로 추가할래? > MEDIA_URL을 static 파일 경로로 추가

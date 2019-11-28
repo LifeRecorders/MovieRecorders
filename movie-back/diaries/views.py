@@ -63,7 +63,7 @@ def diaries_create_update_delete(request):
             # print(diary)
             result['serializer'] = serializer.data
             return Response(result)
-    # 수정
+    # 수정 :: 이부분 필요한가?
     if request.method == 'PUT':
         diary = Diary.objects.filter(user_id=user_id, watched_at=datetime)
         serializer = DiarySerializer(data=request.data, instance=diary)
@@ -77,15 +77,31 @@ def diaries_create_update_delete(request):
         diary.delete()
         return Response({'message':'Diary has been deleted!'})
 
-
-@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+# main화면에서 모든 사람들이 그냥 볼 수도 있어야 하므로
+@permission_classes((AllowAny, ))
 def collections(request):
-    if request.method == 'GET':
-        pass
+    collection_id = request.GET.get('collectionId') 
+    if Collection.objects.filter(collection_id=collection_id).exists() == True:
+        collection = Collection.objects.filter(collection_id=collection_id)
+        serializer = CollectionSerializer(collection, many=True)
+        return Response(serializer.data)   
 
+@api_view(['POST', 'PUT', 'DELETE'])
+def collections_create_update_delete(request):
+    # user_id를 보내주면 된다.
+    user_id = request.GET.get('userId')
     # collection 작성
     if request.method == 'POST':
-        pass
+        result = {}
+        serializer = CollectionSerializer(data=request.data, allow_null=True)
+        if serializer.is_valid(raise_exception=True):
+            collection = serializer.save(user_id=user_id)
+            movies = request.data['movies']
+            for movie in movies:
+                movie = Movie.objects.get(pk=movie_pk)
+                collection.movies.add(movie)
+            result['serializer'] = serializer.data
+            return Response(result)
 
     # collection 수정
     if request.method == 'PUT':

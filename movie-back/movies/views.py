@@ -84,8 +84,9 @@ def review_detail(request):
 
 @api_view(['POST', 'PUT', 'DELETE'])
 def reviews_create_update_delete(request):
-    
     if request.method == 'POST':
+        # 감상평을 남기면 보고싶어요 목록에서 자동삭제하는 로직 필요
+
         movie_id = request.GET.get('movieId')
         serializer = ReviewSerializer(data=request.data, allow_null=True)
         print(serializer)
@@ -103,7 +104,6 @@ def reviews_create_update_delete(request):
             return Response({'message':'Review has been updated!'})
 
     if request.method == 'DELETE':
-        movie_id = request.GET.get('movieId')
         review_id = request.GET.get('reviewId')
         review = get_object_or_404(Review, id=review_id)
         review.delete()
@@ -111,7 +111,10 @@ def reviews_create_update_delete(request):
 
 
 @api_view(['GET'])
-def moviewithgenre(request, genretype):
+@permission_classes((AllowAny, ))
+def moviewithgenre(request):
+    # 번호가 아니라, 이름으로 데이터를 보내줘야 한다.
+    genretype = request.GET.get('genretype')
     genres = Genre.objects.get(genreType=genretype)
     movies = Movie.objects.filter(genres=genres.id)
     serializer = MovieSerializer(movies, many=True)
@@ -134,6 +137,44 @@ def myreviews(request):
 @api_view(['GET'])
 @permission_classes((AllowAny, ))
 def bestmovies(request):
+    # for 돌리기
+    # dictionary=> str-> int datetime lib사용
+    # sort 해서 보내기
+    
     movies = Movie.objects.all().order_by('rank').order_by('-rating').order_by('-audience').order_by('-open_date')[:30]
     serializer = MovieDetailSerializer(movies, many=True)
     return Response(serializer.data)
+
+
+
+# 좋아요 serializer
+@api_view(['POST'])
+def like(request):
+    # movie_pk, user_id 를 받음
+    movie_pk = request.GET.get('movieId')
+    user_id = request.GET.get('userId')
+
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    user = User.objects.get(pk=user_id)
+
+    if user in movie.like_users.all():
+        movie.like_users.remove(user)
+        liked = False
+
+    else:
+        movie.like_users.add(user)
+        liked = True
+
+    context = {'liked': liked, 'count': movie.liked_users.count()}
+    return JsonResponse(context)
+
+
+@api_view(['GET'])
+def myinfo(request):
+    # user_id 를 받음, 내가 좋아요한 영화목록 이므로 해당 user_id로 찾음
+    # user_id = request.GET.get('userId')
+    users = User.objects.all() # 이부분을 특정 user로 받으면 된다.
+    serializer = UserDetailSerializer(users, many=True)
+    print(serializer)
+    return Response(serializer.data)
+

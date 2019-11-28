@@ -35,7 +35,8 @@ def user_signup(request):
 
 
 @api_view(['GET'])
-def user_detail(request, user_id):
+def user_detail(request):
+    user_id = request.GET.get('userId')
     user = get_object_or_404(User, pk=user_id)
     serializer = UserDetailSerializer(instance=user)
     return Response(serializer.data)

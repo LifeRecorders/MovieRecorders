@@ -18,20 +18,22 @@ class Genre(models.Model):
 
 class Movie(models.Model):
     genres = models.ManyToManyField(Genre, related_name='movies')
+    # 좋아요 누른 영화
+    liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_movies')
+    # 보고싶어요 한 영화
+    want_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='want_movies')
+
     title = models.CharField(max_length=150, blank=True)
     title_en = models.CharField(max_length=150, blank=True)
     description = models.TextField(blank=True)
     open_date = models.CharField(max_length=100, blank=True)
+    # open_date_int = models.DateField(blank=True)
     audience = models.IntegerField(blank=True, null=True)
     naver_poster_url = models.TextField(blank=True)
     naver_big_poster_url = models.TextField(blank=True)
     watch_grade = models.CharField(max_length=50, blank=True)
     running_time = models.CharField(max_length=50, blank=True)
     nation = models.CharField(max_length=100, blank=True)
-    # 좋아요 누른 영화
-    liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_movies')
-    # 보고싶어요 한 영화
-    want_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='want_movies')
 
     company = models.CharField(max_length=150, blank=True)
     # jinheungAPI를 위한 정보
@@ -53,12 +55,14 @@ class Scene(models.Model):
 # M:N
 class Director(models.Model):
     movies = models.ManyToManyField(Movie, related_name='directors')
+    # liked_director
     name = models.CharField(max_length=150, blank=True)
     name_en = models.CharField(max_length=150, blank=True)
     img_url = models.TextField(blank=True)
 
 class Actor(models.Model):
     movies = models.ManyToManyField(Movie, related_name='actors', through='Cast')
+    # liked_actor
     name = models.CharField(max_length=150, blank=True)
     name_en = models.CharField(max_length=150, blank=True)
     img_url = models.TextField(blank=True)
@@ -75,9 +79,9 @@ class Cast(models.Model):
 class Review(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='reviews')
+    liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_reviews')
     content = models.CharField(max_length=140)
     score = models.FloatField()
-    liked_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_reviews')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     # 대댓글 기능을 위한 스키마

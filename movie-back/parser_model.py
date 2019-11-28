@@ -27,19 +27,19 @@ movieDicts = {}
 def jinheungAPI():
     global movieDicts, movieCdlist, movieNamelist
     # 현재부터 과거까지의 원하는 주간을 입력
-    key = '1422d55d3a8a9a5dd68eee9a5a5f8e71'
+    key = 'd1de3e876f25122ef07b40f0a7d982e4'
 
     def week(week_number): # 원하는 만큼의 주간을 입력
         week_list = []
         for week in range(1, week_number+1):
-            targetDt = datetime(2005, 12, 28) - timedelta(weeks=week) 
+            targetDt = datetime(2018, 11, 28) - timedelta(weeks=week) 
             targetDt = targetDt.strftime('%Y%m%d') # yyymmdd
             week_list.append(targetDt)
         return week_list
     
     sleep(0.05)
     api_url_list = []
-    for targetDt in week(20): ### data parsing 조절
+    for targetDt in week(50): ### data parsing 조절
         base_url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json'
         # 우리가 원하는 multiMovieYn, repNationCd, wideAreaCd는 이미 default값이므로 따로 지정하지 않습니다.
         api_url = f'{base_url}?key={key}&targetDt={targetDt}'

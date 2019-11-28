@@ -8,4 +8,6 @@ class User(AbstractUser):
     # follwers = followings => 친구라고 생각하면 된다.
     # 팔로잉하는 사람들 가져오기 user.followings
     followers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='followings')
-    # liked_genres = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='liked_users')
+    # liked_users -> Movie
+    # want_users -> Movie
+    # liked_users -> Review

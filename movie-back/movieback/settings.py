@@ -161,8 +161,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+# static files들을 위한 기능
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # 해당 부분 error있었음
 AUTH_USER_MODEL = 'accounts.User'
@@ -170,8 +173,10 @@ AUTH_USER_MODEL = 'accounts.User'
 
 # diaries를 위한 기능
 MEDIA_URL = '/diaries/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'diaries_photo')
+MEDIA_ROOT = [
+    os.path.join(BASE_DIR, 'diaries_photo')
+]
 
 
-
-
+import django_heroku
+django_heroku.settings(locals())

@@ -29,8 +29,7 @@ class Diary(models.Model):
     main_image = models.ImageField(blank=True) # 필수입력 해제
     # 등록한 사용자
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    
-    
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -58,7 +57,6 @@ class Collection(models.Model):
     # 검색한 이미지를 잘 추가 할 수 있을까? 생각해봐야한다.
 
     # 등록한 사용자
-    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

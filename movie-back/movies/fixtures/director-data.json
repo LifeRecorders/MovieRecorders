@@ -93,7 +93,6 @@
     "name_en": "Martin Scorsese",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F117%2F201709181603173771.jpg&type=u111_139&quality=95",
     "movies": [
-      3853,
       2518
     ]
   }
@@ -142,7 +141,7 @@
   "fields": {
     "name": "\uadf8\ub809 \ud2f0\uc5b4\ub10c",
     "name_en": "Greg Tiernan",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2522
     ]
@@ -154,7 +153,7 @@
   "fields": {
     "name": "\ucf58\ub798\ub4dc \ubca0\ub17c",
     "name_en": "Conrad Vernon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2522
     ]
@@ -168,7 +167,6 @@
     "name_en": "Ruben Fleischer",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001688%2FPM168887_185908_000.jpg&type=u111_139&quality=95",
     "movies": [
-      2741,
       2523
     ]
   }
@@ -280,10 +278,7 @@
     "name": "\uc81c\uc784\uc2a4 \uce74\uba54\ub860",
     "name_en": "James Cameron",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F93%2F20150630175035461.gif&type=u111_139&quality=95",
-    "movies": [
-      2809,
-      2532
-    ]
+    "movies": []
   }
 },
 {
@@ -733,7 +728,6 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F7%2F201505181435344121.jpg&type=u111_139&quality=95",
     "movies": [
       3988,
-      3744,
       2963,
       2564
     ]
@@ -760,8 +754,6 @@
     "name_en": "Luc Besson",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F90%2F201406161400364871.jpg&type=u111_139&quality=95",
     "movies": [
-      3642,
-      3281,
       3178,
       2976,
       2566
@@ -881,7 +873,6 @@
     "name_en": "Guy Ritchie",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F141%2F201510161844574431.gif&type=u111_139&quality=95",
     "movies": [
-      3552,
       3462,
       3182,
       3038,
@@ -1073,7 +1064,7 @@
   "fields": {
     "name": "\uc544\ub9ac \uc560\uc2a4\ud130",
     "name_en": "Ari Aster",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2812,
       2590
@@ -1341,7 +1332,7 @@
   "fields": {
     "name": "\uc815\ub2e4\uc6d0",
     "name_en": "JUNG Da-won",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2611
     ]
@@ -1390,7 +1381,7 @@
   "fields": {
     "name": "\ub370\uc774\ube57 \uc57c\ub85c\ubca0\uc2a4\ud0a4",
     "name_en": "David Yarovesky",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2615
     ]
@@ -1402,10 +1393,8 @@
   "fields": {
     "name": "\ud64d\uc2b9\uc644",
     "name_en": "HONG Seung-wan",
-    "img_url": "",
-    "movies": [
-      2616
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -1492,7 +1481,7 @@
   "fields": {
     "name": "\uc564\uc18c\ub2c8 \ub9c8\ub77c\uc2a4",
     "name_en": "Anthony Maras",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2622
     ]
@@ -1541,7 +1530,7 @@
   "fields": {
     "name": "\uce98\ub9ac \uc560\uc2a4\ubc84\ub9ac",
     "name_en": "Kelly Asbury",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3045,
       2626
@@ -1568,7 +1557,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4\ucc2c \ud558\uc2a4",
     "name_en": "Christian Haas",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2628
     ]
@@ -1640,7 +1629,7 @@
   "fields": {
     "name": "\uc774\uc885\uc5b8",
     "name_en": "LEE Jong-un",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2632
     ]
@@ -1690,7 +1679,6 @@
     "name_en": "Neil Marshall",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000077%2FPM7768_181800_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3826,
       2636
     ]
   }
@@ -1701,7 +1689,7 @@
   "fields": {
     "name": "\ubc15\ub204\ub9ac",
     "name_en": "PARK Nu-ri",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2637
     ]
@@ -1739,8 +1727,7 @@
     "name_en": "Adam McKay",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F114%2F201806051634588941.jpg&type=u111_139&quality=95",
     "movies": [
-      3129,
-      2640
+      3129
     ]
   }
 },
@@ -1801,10 +1788,9 @@
   "fields": {
     "name": "\ud53c\uc5d0\ub974 \ubaa8\ub810",
     "name_en": "Pierre Morel",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3903,
-      2644
+      3903
     ]
   }
 },
@@ -1842,7 +1828,6 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F56%2F201405221207464631.jpg&type=u111_139&quality=95",
     "movies": [
       3958,
-      3941,
       3430,
       2647
     ]
@@ -2035,7 +2020,6 @@
     "movies": [
       3739,
       3471,
-      3127,
       2662
     ]
   }
@@ -2121,10 +2105,8 @@
   "fields": {
     "name": "\ube44\uc698 \ub8ec\uac8c",
     "name_en": "Bjorn Runge",
-    "img_url": "",
-    "movies": [
-      2668
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -2366,7 +2348,6 @@
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000009%2FPM966_174617_000.JPG&type=u111_139&quality=95",
     "movies": [
       3879,
-      3191,
       2688
     ]
   }
@@ -2471,8 +2452,7 @@
       3445,
       3348,
       3313,
-      3093,
-      2695
+      3093
     ]
   }
 },
@@ -2519,7 +2499,7 @@
   "fields": {
     "name": "\uc784\uacbd\ud0dd",
     "name_en": "LIM Kyoung-tack",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2699
     ]
@@ -2585,7 +2565,7 @@
   "fields": {
     "name": "\uc2a4\ucf67 \ubaa8\uc2dc\uc5b4",
     "name_en": "Scott Mosier",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2704
     ]
@@ -2611,7 +2591,6 @@
     "name_en": "Peter Ramsey",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F185%2F201211211417453571.jpg&type=u111_139&quality=95",
     "movies": [
-      3394,
       2705
     ]
   }
@@ -2660,7 +2639,6 @@
     "name_en": "Lasse Hallstrom",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000026%2FPM2610_164355_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3336,
       2721,
       2708
     ]
@@ -2674,7 +2652,6 @@
     "name_en": "Joe Johnston",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000035%2FPM3562_174849_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3535,
       2708
     ]
   }
@@ -2700,7 +2677,6 @@
     "name_en": "Paul Feig",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000360%2FPM36042_114543_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3064,
       2710
     ]
   }
@@ -2735,7 +2711,7 @@
   "fields": {
     "name": "\uc774\uc7ac\uaddc",
     "name_en": "LEE Jae-kyoo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2713
     ]
@@ -2795,7 +2771,7 @@
   "fields": {
     "name": "\uc624\ud1a0 \ubc14\uc11c\uc2a4\ud2b8",
     "name_en": "Otto Bathurst",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2718
     ]
@@ -2835,7 +2811,7 @@
   "fields": {
     "name": "\ud398\ub4dc \uc54c\ubc14\ub808\uc988",
     "name_en": "Fede Alvarez",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2722
     ]
@@ -2871,7 +2847,7 @@
   "fields": {
     "name": "\ub178\uaddc\uc5fd",
     "name_en": "NO Gyu-yeop",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2726
     ]
@@ -2946,7 +2922,6 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F152%2F201404231119551031.jpg&type=u111_139&quality=95",
     "movies": [
       3856,
-      3060,
       2733
     ]
   }
@@ -3080,10 +3055,8 @@
   "fields": {
     "name": "\uce7c \uba58\ub370\uc2a4",
     "name_en": "Carl Mendez",
-    "img_url": "",
-    "movies": [
-      2744
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -3277,10 +3250,8 @@
   "fields": {
     "name": "\uc544\ub2c8\uc26c \ucc28\uac04\ud2f0",
     "name_en": "Aneesh Chaganty",
-    "img_url": "",
-    "movies": [
-      2759
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -3302,10 +3273,8 @@
   "fields": {
     "name": "\uc6b8\ud504\uac15 \ub77c\uc6b0\uc5d4\uc288\ud0c0\uc778",
     "name_en": "Wolfgang Lauenstein",
-    "img_url": "",
-    "movies": [
-      2761
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -3314,10 +3283,8 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4\ud1a0\ud504 \ub77c\uc6b0\uc5d4\uc288\ud0c0\uc778",
     "name_en": "Christoph Lauenstein",
-    "img_url": "",
-    "movies": [
-      2761
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -3389,7 +3356,7 @@
   "fields": {
     "name": "\uc250\uc778 \ube14\ub799",
     "name_en": "Shane Black",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2767
     ]
@@ -3428,8 +3395,6 @@
     "name_en": "KIM Yong-hwa",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201803%2F2018030821300648-4393927.jpg&type=u111_139&quality=95",
     "movies": [
-      3836,
-      3602,
       3597,
       2888,
       2770
@@ -3481,7 +3446,6 @@
     "name_en": "Baltasar Kormakur",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000022%2FPM2259_172745_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3201,
       2774
     ]
   }
@@ -3542,7 +3506,7 @@
   "fields": {
     "name": "\uc54c\ud3f0\uc18c \ucfe0\uc544\ub860",
     "name_en": "Alfonso Cuaron",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2779
     ]
@@ -3663,7 +3627,6 @@
     "name_en": "PARK Hoon-jung",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F113%2F201807051646417381.jpg&type=u111_139&quality=95",
     "movies": [
-      3144,
       2979,
       2789
     ]
@@ -3767,7 +3730,6 @@
       3872,
       3781,
       3717,
-      3335,
       3187,
       3004,
       2797
@@ -3882,7 +3844,7 @@
   "fields": {
     "name": "\uc544\ube44 \ucf58",
     "name_en": "Abby Kohn",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2808
     ]
@@ -3894,7 +3856,7 @@
   "fields": {
     "name": "\uce78 \uc6b8\uce74\uc774",
     "name_en": "Can Ulkay",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2810
     ]
@@ -3923,7 +3885,6 @@
       3554,
       3467,
       3466,
-      3393,
       3392,
       3299,
       3147,
@@ -3938,7 +3899,7 @@
   "fields": {
     "name": "\ud1a0\ub9c8\uc2a4 \ubcf4\ub374\uc2a4\ud0c0\uc778",
     "name_en": "Thomas Bodenstein",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2814
     ]
@@ -3999,10 +3960,7 @@
     "name": "\uc70c \uae00\ub7ed",
     "name_en": "Will Gluck",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001605%2FPM160568_182839_000.jpg&type=u111_139&quality=95",
-    "movies": [
-      3494,
-      2819
-    ]
+    "movies": []
   }
 },
 {
@@ -4011,9 +3969,8 @@
   "fields": {
     "name": "\uc774\ucc3d\ub3d9",
     "name_en": "LEE Chang-dong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3832,
       2820
     ]
   }
@@ -4063,7 +4020,7 @@
   "fields": {
     "name": "\ubca4 \ub8e8\uc708",
     "name_en": "Ben Lewin",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2824
     ]
@@ -4087,7 +4044,7 @@
   "fields": {
     "name": "\uc0ac\uc900\uc758",
     "name_en": "Chun-Yi Hsieh",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2826
     ]
@@ -4111,7 +4068,7 @@
   "fields": {
     "name": "\uae40\ub300\uc6c5",
     "name_en": "KIM Dae-woong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2828
     ]
@@ -4189,7 +4146,7 @@
   "fields": {
     "name": "\uc138\ub4dc\ub9ad \ud074\ub798\ud53c\uc26c",
     "name_en": "Cedric Klapisch",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2832
     ]
@@ -4201,7 +4158,7 @@
   "fields": {
     "name": "\ud544\ub9bd \ub9bd\uc2a4\ud0a4",
     "name_en": "Philip Lipski",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2833
     ]
@@ -4358,10 +4315,8 @@
   "fields": {
     "name": "\uc874 \ud06c\ub79c\uc2e0\uc2a4\ud0a4",
     "name_en": "John Krasinski",
-    "img_url": "",
-    "movies": [
-      2844
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -4386,7 +4341,6 @@
     "movies": [
       3468,
       3173,
-      2876,
       2848
     ]
   }
@@ -4423,7 +4377,7 @@
   "fields": {
     "name": "\ub2e4\ube44\ub4dc \uc54c\ub85c",
     "name_en": "David Alaux",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3355,
       2851
@@ -4436,7 +4390,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4\ucc2c \uad6c\ub4dc\uac00\uc2a4\ud2b8",
     "name_en": "Christian Gudegast",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2852
     ]
@@ -4472,7 +4426,7 @@
   "fields": {
     "name": "\uc560\ub860 \uc6b0\ub4e4\ub9ac",
     "name_en": "AARON WOODLEY",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2854
     ]
@@ -4508,7 +4462,7 @@
   "fields": {
     "name": "\uadf8\ub808\ud0c0 \uac70\uc705",
     "name_en": "Greta Gerwig",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2857
     ]
@@ -4582,7 +4536,7 @@
   "fields": {
     "name": "\uc804\uace0\uc6b4",
     "name_en": "JEON Go-woon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2864
     ]
@@ -4681,9 +4635,7 @@
     "name": "\ub77c\uc774\uc5b8 \ucfe0\uae00\ub7ec",
     "name_en": "Ryan Coogler",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F188%2F201804131758395311.jpg&type=u111_139&quality=95",
-    "movies": [
-      2872
-    ]
+    "movies": []
   }
 },
 {
@@ -4742,7 +4694,6 @@
     "name_en": "Francis Lawrence",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000564%2FPM56481_184557_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3736,
       3318,
       3240,
       3161,
@@ -4756,10 +4707,8 @@
   "fields": {
     "name": "\uc2e0\uc7ac\ud638",
     "name_en": "SHIN Jai-ho",
-    "img_url": "",
-    "movies": [
-      2879
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -4817,10 +4766,8 @@
   "fields": {
     "name": "\ub9ac \uc5b8\ud06c\ub9ac\uce58",
     "name_en": "Lee Unkrich",
-    "img_url": "",
-    "movies": [
-      2885
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -4923,8 +4870,7 @@
     "name_en": "JANG Joon-hwan",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F86%2F201403281617333921.jpg&type=u111_139&quality=95",
     "movies": [
-      3339,
-      2895
+      3339
     ]
   }
 },
@@ -5038,10 +4984,8 @@
   "fields": {
     "name": "\uc2a4\ud2f0\ube10 \ud06c\ubcf4\uc2a4\ud0a4",
     "name_en": "Stephen Chbosky",
-    "img_url": "",
-    "movies": [
-      2903
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -5062,7 +5006,7 @@
   "fields": {
     "name": "\uce74\uc2a4\ud150 \ud0ac\ub7ec\ub9ac\uce58",
     "name_en": "Karsten Kiilerich",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2904
     ]
@@ -5088,9 +5032,7 @@
     "name_en": "Carlos Saldanha",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000560%2F00000056086-t.jpg&type=u111_139&quality=95",
     "movies": [
-      3990,
       3618,
-      3533,
       2907
     ]
   }
@@ -5166,7 +5108,6 @@
     "name_en": "Rian Johnson",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000119%2FPM11960_143302_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3421,
       2915
     ]
   }
@@ -5177,7 +5118,7 @@
   "fields": {
     "name": "\ud2f0\ubaa8\uc2dc \ub809\uce74\ud2b8",
     "name_en": "Timothy Reckart",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2916
     ]
@@ -5203,8 +5144,7 @@
     "name_en": "Richard Curtis",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000126%2FPM12667_170910_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3307,
-      2918
+      3307
     ]
   }
 },
@@ -5310,7 +5250,7 @@
   "fields": {
     "name": "\uae38 \uc815\uac70",
     "name_en": "Gil Junger",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2928
     ]
@@ -5322,10 +5262,8 @@
   "fields": {
     "name": "\uc7ad \uc2a4\ub098\uc774\ub354",
     "name_en": "Zack Snyder",
-    "img_url": "",
-    "movies": [
-      2929
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -5444,7 +5382,7 @@
   "fields": {
     "name": "\ud53c\ud130 \uc2a4\ud53c\uc5b4\uc774\uadf8",
     "name_en": "Peter Spierig",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2943
     ]
@@ -5506,7 +5444,7 @@
   "fields": {
     "name": "\ub300\ub2c8 \uce90\ub10c",
     "name_en": "Danny Cannon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2946
     ]
@@ -5518,12 +5456,11 @@
   "fields": {
     "name": "\ubc29\uc740\uc9c4",
     "name_en": "PANG Eun-jin",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3944,
       3415,
-      3308,
-      2947
+      3308
     ]
   }
 },
@@ -5535,7 +5472,6 @@
     "name_en": "HWANG Dong-hyuk",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201405%2F20140519135732154-1452590.jpg&type=u111_139&quality=95",
     "movies": [
-      3788,
       3496,
       2949
     ]
@@ -5612,9 +5548,7 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201009%2F20100927175058334.jpg&type=u111_139&quality=95",
     "movies": [
       3922,
-      3757,
-      3319,
-      2955
+      3319
     ]
   }
 },
@@ -5626,7 +5560,6 @@
     "name_en": "Denis Villeneuve",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F90%2F201702231821075911.jpg&type=u111_139&quality=95",
     "movies": [
-      3353,
       3159,
       2956
     ]
@@ -5650,10 +5583,8 @@
   "fields": {
     "name": "\uc904\ub9ac\uc624 \uc18c\ud1a0 \uac70\ud53c\ub4dc",
     "name_en": "Julio Soto Gurpide",
-    "img_url": "",
-    "movies": [
-      2959
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -5711,7 +5642,7 @@
   "fields": {
     "name": "\uc81c\uc774\ubbf8 \ubbf8\uccbc",
     "name_en": "Jamie Mitchell",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2965
     ]
@@ -5825,6 +5756,7 @@
     "name_en": "Matt Reeves",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000010%2FPM1043_204047_000.jpg&type=u111_139&quality=95",
     "movies": [
+      3999,
       2983
     ]
   }
@@ -5874,10 +5806,8 @@
   "fields": {
     "name": "\uae40\uc885\uad00",
     "name_en": "KIM Jong-kwan",
-    "img_url": "",
-    "movies": [
-      2987
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -5939,8 +5869,8 @@
     "name_en": "RYOO Seung-wan",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F103%2F201507201627433271.jpg&type=u111_139&quality=95",
     "movies": [
+      3996,
       3713,
-      3197,
       2991
     ]
   }
@@ -5953,10 +5883,8 @@
     "name_en": "Christopher Nolan",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F25%2F201411101802253101.jpg&type=u111_139&quality=95",
     "movies": [
-      3861,
       3454,
       3229,
-      3006,
       2992
     ]
   }
@@ -5992,7 +5920,7 @@
   "fields": {
     "name": "\uc5d0\uc774\uc2ac\ub9c1 \uc6d4\uc26c",
     "name_en": "Aisling Walsh",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       2997
     ]
@@ -6016,10 +5944,8 @@
   "fields": {
     "name": "\ub86d \ub77c\uc774\ub108",
     "name_en": "Rob Reiner",
-    "img_url": "",
-    "movies": [
-      3000
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6080,7 +6006,7 @@
   "fields": {
     "name": "\uc774\uc0ac\ub791",
     "name_en": "LEE Sa-rang",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3010
     ]
@@ -6154,7 +6080,7 @@
   "fields": {
     "name": "\uc54c\ub809\uc2a4 \ucee4\uce20\uba3c",
     "name_en": "Alex Kurtzman",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3016
     ]
@@ -6166,10 +6092,8 @@
   "fields": {
     "name": "\uc870\uc120\ud638",
     "name_en": "JO Seon-ho",
-    "img_url": "",
-    "movies": [
-      3017
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6204,7 +6128,7 @@
   "fields": {
     "name": "\uc774\ucc3d\uc7ac",
     "name_en": "LEE Chang-jae",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3020
     ]
@@ -6216,10 +6140,8 @@
   "fields": {
     "name": "\uc81c\uc784\uc2a4 \ud3f0\uc194\ud2b8",
     "name_en": "James Ponsoldt",
-    "img_url": "",
-    "movies": [
-      3021
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6228,10 +6150,8 @@
   "fields": {
     "name": "\ud33b\ud2f0 \uc820\ud0a8\uc2a4",
     "name_en": "Patty Jenkins",
-    "img_url": "",
-    "movies": [
-      3022
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6254,7 +6174,7 @@
   "fields": {
     "name": "\uc5d0\uc2a4\ud39c \uc0cc\ubc84\uadf8",
     "name_en": "Espen Sandberg",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3024
     ]
@@ -6390,7 +6310,6 @@
     "name_en": "James Gunn",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000446%2F00000044614-t.jpg&type=u111_139&quality=95",
     "movies": [
-      3298,
       3036
     ]
   }
@@ -6401,7 +6320,7 @@
   "fields": {
     "name": "\uae40\ud615\uc8fc",
     "name_en": "KIM Hyung-ju",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3037
     ]
@@ -6490,6 +6409,7 @@
     "name_en": "KIM Jee-woon",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F80%2F201611041816343891.jpg&type=u111_139&quality=95",
     "movies": [
+      4008,
       3707,
       3046
     ]
@@ -6503,7 +6423,6 @@
     "name_en": "Timur Bekmambetov",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F89%2F201108081647017971.jpg&type=u111_139&quality=95",
     "movies": [
-      3726,
       3448,
       3047
     ]
@@ -6542,7 +6461,6 @@
     "name_en": "KANG Woo-suk",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F48%2F200901191035153441.jpg&type=u111_139&quality=95",
     "movies": [
-      3914,
       3723,
       3050
     ]
@@ -6591,11 +6509,10 @@
   "fields": {
     "name": "\uc2e0\ub3d9\uc5fd",
     "name_en": "SHIN Dong-yeob",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3338,
-      3215,
-      3055
+      3215
     ]
   }
 },
@@ -6718,7 +6635,7 @@
   "fields": {
     "name": "\uc2a4\ud2f0\ube10 \ud504\ub9ac\uc5b4\uc2a4",
     "name_en": "Stephen Frears",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3070
     ]
@@ -6754,11 +6671,8 @@
   "fields": {
     "name": "\ub370\uc774\ube44\ub4dc \uc5d0\uc774\uc5b4",
     "name_en": "David Ayer",
-    "img_url": "",
-    "movies": [
-      3238,
-      3074
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6845,7 +6759,7 @@
   "fields": {
     "name": "\ud2b8\ub808\ubc84 \uc6d4",
     "name_en": "Trevor Wall",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3083
     ]
@@ -6893,10 +6807,8 @@
   "fields": {
     "name": "\uce98\ube48 \ub9ac \ub9ac\ub354",
     "name_en": "Calvin Lee Reeder",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6905,10 +6817,8 @@
   "fields": {
     "name": "\uc564\ub4dc\ub958 \ub85c\ub9ac\uce58",
     "name_en": "Andrew LAURICH",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6917,10 +6827,8 @@
   "fields": {
     "name": "\uae40\uae30\ubc94",
     "name_en": "KIM Ki-bum",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6929,10 +6837,8 @@
   "fields": {
     "name": "\ub370\uc774\ube44\ub4dc \uc0cc\ub4dc\ubc84\uadf8",
     "name_en": "David SANDBERG",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6941,10 +6847,8 @@
   "fields": {
     "name": "\ub2c9 \ub374\ubcf4\uc5b4",
     "name_en": "Nick DenBoer",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6953,10 +6857,8 @@
   "fields": {
     "name": "\ub370\uc774\ube44 \ud3ec\uc2a4",
     "name_en": "Davy Force",
-    "img_url": "",
-    "movies": [
-      3088
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6977,10 +6879,8 @@
   "fields": {
     "name": "\uc7a5 \ub9c8\ud06c \ubc1c\ub808",
     "name_en": "Jean-Marc Vallee",
-    "img_url": "",
-    "movies": [
-      3090
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -6989,7 +6889,7 @@
   "fields": {
     "name": "\uc774\ucc3d\uc5f4",
     "name_en": "LEE Chang-yeol",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3091
     ]
@@ -7103,10 +7003,8 @@
   "fields": {
     "name": "\uc544\ub9ac\uc5d8 \ube0c\ub85c\uba58",
     "name_en": "Ariel Vromen",
-    "img_url": "",
-    "movies": [
-      3103
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7151,7 +7049,7 @@
   "fields": {
     "name": "\ud37c\uac08 \ub808\uc77c\ub9ac",
     "name_en": "Fergal Reilly",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3108
     ]
@@ -7163,7 +7061,7 @@
   "fields": {
     "name": "\ud074\ub808\uc774 \ucf00\uc774\ud2f0\uc2a4",
     "name_en": "Clay Kaytis",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3108
     ]
@@ -7227,7 +7125,7 @@
   "fields": {
     "name": "\uc70c\ub9ac\uc5c4 \ube0c\ub80c\ud2b8 \ubca8",
     "name_en": "William Brent Bell",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3113
     ]
@@ -7239,7 +7137,7 @@
   "fields": {
     "name": "\ucc3d",
     "name_en": "CHANG",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3706,
       3114
@@ -7304,6 +7202,7 @@
     "name_en": "Robert Schwentke",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000067%2FPM6712_185451_000.jpg&type=u111_139&quality=95",
     "movies": [
+      4002,
       3936,
       3573,
       3374,
@@ -7404,10 +7303,8 @@
   "fields": {
     "name": "\uc5d0\ub9ad\uc2a8 \ucf54\uc5b4",
     "name_en": "Ericson Core",
-    "img_url": "",
-    "movies": [
-      3137
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7416,7 +7313,7 @@
   "fields": {
     "name": "\ub354\uae00\ub77c\uc2a4 \ub9e5\ud0a4\ub10c",
     "name_en": "Douglas Mackinnon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3138
     ]
@@ -7428,7 +7325,7 @@
   "fields": {
     "name": "\uc774\uc724\uc815",
     "name_en": "LEE Yoon-jung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3139
     ]
@@ -7440,7 +7337,7 @@
   "fields": {
     "name": "J.J. \uc5d0\uc774\ube0c\ub7fc\uc2a4",
     "name_en": "J.J. Abrams",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3142
     ]
@@ -7465,7 +7362,7 @@
   "fields": {
     "name": "\ub9c8\ud06c \uc624\uc2a4\ubcf8",
     "name_en": "Mark Osborne",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3722,
       3145
@@ -7527,10 +7424,8 @@
   "fields": {
     "name": "\ube0c\ub77c\uc774\uc5b8 \ud5ec\uac94\ub79c\ub4dc",
     "name_en": "Brian Helgeland",
-    "img_url": "",
-    "movies": [
-      3155
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7565,10 +7460,8 @@
   "fields": {
     "name": "\uac00\ube0c\ub9ac\uc5d8 \ubb34\uce58\ub178",
     "name_en": "Gabriele Muccino",
-    "img_url": "",
-    "movies": [
-      3158
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7627,10 +7520,8 @@
   "fields": {
     "name": "\ud53c\ud130 \ucfe0\uc13c\uc2a4",
     "name_en": "Peter Cousens",
-    "img_url": "",
-    "movies": [
-      3168
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7677,7 +7568,7 @@
   "fields": {
     "name": "\uc724\uc900\ud615",
     "name_en": "YUN Jun-hyeong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3174
     ]
@@ -7714,10 +7605,8 @@
   "fields": {
     "name": "\uae40\ubd09\uc8fc",
     "name_en": "KIM Bong-joo",
-    "img_url": "",
-    "movies": [
-      3177
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -7726,7 +7615,7 @@
   "fields": {
     "name": "\uc874 \uc5d0\ub9ad \ub3c4\ub4e4",
     "name_en": "John Erick Dowdle",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3179
     ]
@@ -7741,7 +7630,6 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F49%2F201510121354064021.gif&type=u111_139&quality=95",
     "movies": [
       3754,
-      3564,
       3180
     ]
   }
@@ -7804,7 +7692,7 @@
   "fields": {
     "name": "\ucfc4\uace0\ucfe0 \ud0c0\uce74\ud788\ucf54",
     "name_en": "Takahiko Kyougoku",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3190
     ]
@@ -7816,7 +7704,7 @@
   "fields": {
     "name": "\ubc15\uc740\uacbd",
     "name_en": "PARK Eun-gyoung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3192
     ]
@@ -7828,7 +7716,7 @@
   "fields": {
     "name": "\uc774\ub3d9\ud558",
     "name_en": "LEE Dong-ha",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3192
     ]
@@ -7901,7 +7789,7 @@
   "fields": {
     "name": "\ucc9c\uc131\uc77c",
     "name_en": "CHEON Sung-il",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3199
     ]
@@ -7949,7 +7837,7 @@
   "fields": {
     "name": "\ubc31",
     "name_en": "BAIK",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3205
     ]
@@ -7961,7 +7849,7 @@
   "fields": {
     "name": "\ucd5c\ub3d9\ud6c8",
     "name_en": "CHOI Dong-hoon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3867,
       3551,
@@ -7989,7 +7877,7 @@
   "fields": {
     "name": "\ud64d\uc6d0\ucc2c",
     "name_en": "HONG Won-chan",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3208
     ]
@@ -8074,11 +7962,8 @@
   "fields": {
     "name": "\ud53c\ud2b8 \ub2e5\ud130",
     "name_en": "Pete Docter",
-    "img_url": "",
-    "movies": [
-      3626,
-      3219
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8112,10 +7997,8 @@
   "fields": {
     "name": "\ub9c8\ud06c \ubc84\ud2bc",
     "name_en": "Mark Burton",
-    "img_url": "",
-    "movies": [
-      3224
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8124,10 +8007,8 @@
   "fields": {
     "name": "\ub9ac\ucc98\ub4dc \uc2a4\ud0c0\uc7ad",
     "name_en": "Richard Starzak",
-    "img_url": "",
-    "movies": [
-      3224
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8163,7 +8044,6 @@
     "name_en": "Peter Jackson",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F29%2F20141210143439671.jpg&type=u111_139&quality=95",
     "movies": [
-      3918,
       3387,
       3306,
       3227
@@ -8236,10 +8116,8 @@
   "fields": {
     "name": "\uc790\ube44\uc5d0 \ub3cc\ub780",
     "name_en": "Xavier Dolan",
-    "img_url": "",
-    "movies": [
-      3235
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8298,10 +8176,8 @@
   "fields": {
     "name": "\ubd80\uc9c0\uc601",
     "name_en": "BOO Ji-young",
-    "img_url": "",
-    "movies": [
-      3243
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8334,8 +8210,9 @@
   "fields": {
     "name": "\ub370\uc774\ube57 \ud540\ucc98",
     "name_en": "David Fincher",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
+      3995,
       3807,
       3247
     ]
@@ -8350,7 +8227,6 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F196%2F200807161959016711.jpg&type=u111_139&quality=95",
     "movies": [
       3919,
-      3804,
       3641,
       3248
     ]
@@ -8388,8 +8264,7 @@
     "name_en": "Nick Cassavetes",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000048%2FPM4867_182533_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3610,
-      3250
+      3610
     ]
   }
 },
@@ -8399,10 +8274,8 @@
   "fields": {
     "name": "\ub370\uc774\ube44\ub4dc \ud5e4\uc774\ud130",
     "name_en": "David Hayter",
-    "img_url": "",
-    "movies": [
-      3251
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8411,10 +8284,8 @@
   "fields": {
     "name": "\ub9c8\uc774\ud074 \ub3c4\uc988",
     "name_en": "Michael Dowse",
-    "img_url": "",
-    "movies": [
-      3252
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8435,7 +8306,7 @@
   "fields": {
     "name": "\ub9ac\ucc28\ub4dc \ub9c1\ud074\ub808\uc774\ud130",
     "name_en": "Richard Linklater",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3254
     ]
@@ -8487,7 +8358,7 @@
   "fields": {
     "name": "\ubc15\ubc94\uc218",
     "name_en": "PARK Bum-su",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3258
     ]
@@ -8511,7 +8382,7 @@
   "fields": {
     "name": "\uac1c\ub9ac \uc1fc\uc5b4",
     "name_en": "Gary Shore",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3260
     ]
@@ -8584,7 +8455,7 @@
   "fields": {
     "name": "\uc2e0\uc7ac\uc601",
     "name_en": "SHIN, Jae-young",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3270
     ]
@@ -8608,7 +8479,7 @@
   "fields": {
     "name": "\ubc15\ud0dc\ub3d9",
     "name_en": "PARK Tae-dong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3272
     ]
@@ -8620,7 +8491,7 @@
   "fields": {
     "name": "\ub9c8\uc6b0\ub9ac\uc2dc\uc624 \ub4dc \ub77c \uc624\ub974\ud0c0",
     "name_en": "Mauricio De la Orta",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3272
     ]
@@ -8681,7 +8552,7 @@
   "fields": {
     "name": "\uc54c\ub809\uc2a4 \uc2a4\ud0c0\ub354\ub9cc",
     "name_en": "Alexs Stadermann",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3279
     ]
@@ -8693,7 +8564,7 @@
   "fields": {
     "name": "\ub808\ub2c8 \uc5d0\uc774\ube0c\ub7ec\ud584\uc2a8",
     "name_en": "Lenny Abrahamson",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3280
     ]
@@ -8769,7 +8640,7 @@
   "fields": {
     "name": "\uc870\ub098\ub2e8 \ub9ac\ube0c\uc2a4\ub9cc",
     "name_en": "Jonathan Liebesman",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3287
     ]
@@ -8807,7 +8678,6 @@
     "name_en": "James DeMonaco",
     "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img111x139.png",
     "movies": [
-      3334,
       3291
     ]
   }
@@ -8858,7 +8728,6 @@
     "movies": [
       3977,
       3772,
-      3586,
       3482,
       3301
     ]
@@ -8894,10 +8763,8 @@
   "fields": {
     "name": "\uc9c0\ubbf8 \ud5e4\uc774\uc6cc\ub4dc",
     "name_en": "Jimmy Hayward",
-    "img_url": "",
-    "movies": [
-      3304
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8906,10 +8773,8 @@
   "fields": {
     "name": "\uc774\ud604\uc885",
     "name_en": "LEE Hyeon-jong",
-    "img_url": "",
-    "movies": [
-      3309
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -8918,7 +8783,7 @@
   "fields": {
     "name": "\ud074\ub808\uc774 \ud640",
     "name_en": "Klay Hall",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3311
     ]
@@ -8954,7 +8819,7 @@
   "fields": {
     "name": "\ucf54\ub514 \uce74\uba54\ub860",
     "name_en": "Cody Cameron",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3315
     ]
@@ -8991,7 +8856,7 @@
   "fields": {
     "name": "\ud64d\uc9c0\uc601",
     "name_en": "HONG Ji-young",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3459,
       3317
@@ -9053,10 +8918,8 @@
   "fields": {
     "name": "\uc815\uc5f0\uc2dd",
     "name_en": "JEONG Yeon-shik",
-    "img_url": "",
-    "movies": [
-      3326
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9065,7 +8928,7 @@
   "fields": {
     "name": "\ubc15\ud64d\uc218",
     "name_en": "PARK Hong-soo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3327
     ]
@@ -9077,7 +8940,7 @@
   "fields": {
     "name": "\uad6d\ub3d9\uc11d",
     "name_en": "GUK Dong-seok",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3330
     ]
@@ -9089,7 +8952,7 @@
   "fields": {
     "name": "\ud788\uc988\uc5e0\ud2f0 \uc120\uad50\ud68c",
     "name_en": "hisMT Ministry",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3331
     ]
@@ -9125,10 +8988,8 @@
   "fields": {
     "name": "\ud5e8\ub9ac \uc54c\ub809\uc2a4 \ub8e8\ube48",
     "name_en": "Henry Alex Rubin",
-    "img_url": "",
-    "movies": [
-      3337
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9137,7 +8998,7 @@
   "fields": {
     "name": "\ubc15\uc911\ud6c8",
     "name_en": "PARK Joong-hoon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3341
     ]
@@ -9161,7 +9022,7 @@
   "fields": {
     "name": "\ud558\uc815\uc6b0",
     "name_en": "HA Jung-woo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3343
     ]
@@ -9173,10 +9034,8 @@
   "fields": {
     "name": "\ud55c\uc7ac\ub9bc",
     "name_en": "HAN Jae-rim",
-    "img_url": "",
-    "movies": [
-      3346
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9234,10 +9093,8 @@
   "fields": {
     "name": "\uc774\uc2b9\uc900",
     "name_en": "LEE Seung-jun",
-    "img_url": "",
-    "movies": [
-      3354
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9306,7 +9163,7 @@
   "fields": {
     "name": "\ud55c\uc885\ud6c8",
     "name_en": "James Han",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3360
     ]
@@ -9342,9 +9199,8 @@
   "fields": {
     "name": "\ub8e8\uc774\uc2a4 \ub9ac\ud14c\ub9ac\uc5b4",
     "name_en": "Louis Leterrier",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3969,
       3956,
       3364
     ]
@@ -9358,8 +9214,7 @@
     "name_en": "Neill Blomkamp",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001184%2FPM118470_113658_000.jpg&type=u111_139&quality=95",
     "movies": [
-      3583,
-      3366
+      3583
     ]
   }
 },
@@ -9369,7 +9224,7 @@
   "fields": {
     "name": "\uae40\uc131\uc218",
     "name_en": "KIM Sung-soo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3368
     ]
@@ -9381,10 +9236,8 @@
   "fields": {
     "name": "\uc870\uc288\uc544 \ub9c8\uc774\ud074 \uc2a4\ud134",
     "name_en": "Joshua Michael Stern",
-    "img_url": "",
-    "movies": [
-      3369
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9396,8 +9249,7 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F70%2F201404171453468421.jpg&type=u111_139&quality=95",
     "movies": [
       3686,
-      3437,
-      3370
+      3437
     ]
   }
 },
@@ -9419,7 +9271,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4 \uc6fb\uc9c0",
     "name_en": "Chris Wedge",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3373
     ]
@@ -9431,7 +9283,7 @@
   "fields": {
     "name": "\uc655\uac00\uc704",
     "name_en": "Kar-wai Wong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3375
     ]
@@ -9443,7 +9295,7 @@
   "fields": {
     "name": "\ub370\uc774\ube57 \uc18c\ub80c",
     "name_en": "David Soren",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3376
     ]
@@ -9505,7 +9357,7 @@
   "fields": {
     "name": "\uae40\ubcd1\uc11c",
     "name_en": "KIM Byeong-seo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3383
     ]
@@ -9542,10 +9394,8 @@
   "fields": {
     "name": "\ud1b0 \ud6c4\ud37c",
     "name_en": "Tom Hooper",
-    "img_url": "",
-    "movies": [
-      3385
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9558,7 +9408,6 @@
     "movies": [
       3957,
       3878,
-      3565,
       3486,
       3388
     ]
@@ -9570,10 +9419,8 @@
   "fields": {
     "name": "\ub860 \uc250\ub974\ud53d",
     "name_en": "Lone Scherfig",
-    "img_url": "",
-    "movies": [
-      3396
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9621,7 +9468,7 @@
   "fields": {
     "name": "\ud53c\ud2b8 \ud2b8\ub798\ube44\uc2a4",
     "name_en": "Pete Travis",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3403
     ]
@@ -9670,7 +9517,7 @@
   "fields": {
     "name": "\uc2a4\ucf67 \ub370\ub9ad\uc2a8",
     "name_en": "Scott Derrickson",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3410
     ]
@@ -9682,7 +9529,7 @@
   "fields": {
     "name": "\ud6c4\uc548 \ub514\uc5d0\uace0 \uc194\ub77c\ub098\uc2a4",
     "name_en": "Juan Diego Solanas",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3411
     ]
@@ -9754,7 +9601,7 @@
   "fields": {
     "name": "\uc62c\ub9ac\ubc84 \uc2a4\ud1a4",
     "name_en": "Oliver Stone",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3875,
       3419
@@ -9805,10 +9652,8 @@
   "fields": {
     "name": "\uae40\ubb38\ud760",
     "name_en": "KIM Mun-heum",
-    "img_url": "",
-    "movies": [
-      3423
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -9819,7 +9664,6 @@
     "name_en": "SHIN Jung-won",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F66%2F201211091128054851.png&type=u111_139&quality=95",
     "movies": [
-      3630,
       3425
     ]
   }
@@ -9868,8 +9712,7 @@
     "name_en": "Olivier Megaton",
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001487%2F00000148772-t.jpg&type=u111_139&quality=95",
     "movies": [
-      3518,
-      3429
+      3518
     ]
   }
 },
@@ -9891,7 +9734,7 @@
   "fields": {
     "name": "\uc5d4\ub9ac\ucf00 \uac00\ud1a0",
     "name_en": "Enrique Gato",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3434
     ]
@@ -9903,7 +9746,7 @@
   "fields": {
     "name": "\uc0ac\ub77c \ud3f4\ub9ac",
     "name_en": "Sarah Polley",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3435
     ]
@@ -9915,7 +9758,7 @@
   "fields": {
     "name": "\uac94\ub77c \ubc14\ube14\ub8e8\uc544\ub2c8",
     "name_en": "Gela Babluani",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3436
     ]
@@ -9927,9 +9770,8 @@
   "fields": {
     "name": "\ud3f4 W.S. \uc564\ub354\uc2a8",
     "name_en": "Paul W.S. Anderson",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3680,
       3495,
       3438
     ]
@@ -10015,7 +9857,7 @@
   "fields": {
     "name": "\ub77c\uc778\ud558\ub4dc \ud074\ub8e8\uc2a4",
     "name_en": "Reinhard Klooss",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3453
     ]
@@ -10027,10 +9869,8 @@
   "fields": {
     "name": "\ub85c\ub4dc\ub9ac\uace0 \ucf54\ub974\ud14c\uc2a4",
     "name_en": "Rodrigo Cortes",
-    "img_url": "",
-    "movies": [
-      3455
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10039,7 +9879,7 @@
   "fields": {
     "name": "\uc784\ub300\uc6c5",
     "name_en": "LIM Dae-woong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3912,
       3459
@@ -10052,10 +9892,8 @@
   "fields": {
     "name": "\uac15\uc81c\uaddc",
     "name_en": "KANG Je-kyu",
-    "img_url": "",
-    "movies": [
-      3461
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10089,7 +9927,7 @@
   "fields": {
     "name": "\uce74\uba54\ub860 \ub9e5\ud0a8\ud1a0\uc2dc",
     "name_en": "Cameron Mackintosh",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3473
     ]
@@ -10113,10 +9951,8 @@
   "fields": {
     "name": "\uc5d8\ub9ac\uc5b4\ud2b8 \ub808\uc2a4\ud130",
     "name_en": "Elliott Lester",
-    "img_url": "",
-    "movies": [
-      3474
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10163,7 +9999,7 @@
   "fields": {
     "name": "\uae40\ubcd1\uace4",
     "name_en": "KIM Byung Gon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3480
     ]
@@ -10187,7 +10023,7 @@
   "fields": {
     "name": "\ubc15\ud5cc\uc218",
     "name_en": "PARK Heon-soo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3483
     ]
@@ -10199,7 +10035,7 @@
   "fields": {
     "name": "\uc138\uc2a4 \uace0\ub4e0",
     "name_en": "Seth Gordon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3484
     ]
@@ -10236,10 +10072,8 @@
   "fields": {
     "name": "\ud14c\uc774\ud2b8 \ud14c\uc77c\ub7ec",
     "name_en": "Tate Taylor",
-    "img_url": "",
-    "movies": [
-      3488
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10274,9 +10108,8 @@
   "fields": {
     "name": "\uc0b0\uc81c\uc774 \ub810\ub77c \ubc18\uc0b4\ub9ac",
     "name_en": "Sanjay Leela Bhansali",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3607,
       3491
     ]
   }
@@ -10299,7 +10132,7 @@
   "fields": {
     "name": "\uc190\uc601\uc131",
     "name_en": "SOHN Young-sung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3493
     ]
@@ -10311,7 +10144,7 @@
   "fields": {
     "name": "\uc774\uc815\ud5a5",
     "name_en": "LEE Jeong-hyang",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3497
     ]
@@ -10323,10 +10156,9 @@
   "fields": {
     "name": "\uc774\uc131\ud55c",
     "name_en": "LEE Seong-han",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3570,
-      3499
+      3570
     ]
   }
 },
@@ -10350,8 +10182,7 @@
     "name_en": "KIM Sang-jin",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F160%2F201507061818394121.gif&type=u111_139&quality=95",
     "movies": [
-      3783,
-      3502
+      3783
     ]
   }
 },
@@ -10361,7 +10192,7 @@
   "fields": {
     "name": "\uc874 \ub9e4\ub4e0",
     "name_en": "John Madden",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3505
     ]
@@ -10413,8 +10244,7 @@
     "name_en": "Steven Soderbergh",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F148%2F201806261127352421.jpg&type=u111_139&quality=95",
     "movies": [
-      3830,
-      3509
+      3830
     ]
   }
 },
@@ -10424,7 +10254,7 @@
   "fields": {
     "name": "\uac1c\ub9ac \ub9e5\ucf04\ub4dc\ub9ac",
     "name_en": "Gary McKendry",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3510
     ]
@@ -10448,11 +10278,8 @@
   "fields": {
     "name": "\uc774\ud658\uacbd",
     "name_en": "LEE Hwan-kyung",
-    "img_url": "",
-    "movies": [
-      3897,
-      3513
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10497,7 +10324,7 @@
   "fields": {
     "name": "\uad6c \uc548 \ud638",
     "name_en": "Goh Aun Hoe",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3519
     ]
@@ -10509,7 +10336,7 @@
   "fields": {
     "name": "\uc548\uc0c1\ud6c8",
     "name_en": "AHN Sang-hoon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3520
     ]
@@ -10521,7 +10348,7 @@
   "fields": {
     "name": "\ubbfc\uc131\uc544",
     "name_en": "Min Sung-Ah",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3521
     ]
@@ -10533,7 +10360,7 @@
   "fields": {
     "name": "\ub77c\uc988\ucfe0\ub9c8\ub974 \ud788\ub77c\ub2c8",
     "name_en": "Rajkumar Hirani",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3523
     ]
@@ -10559,8 +10386,7 @@
     "name_en": "JO Bum-gu",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F0%2F201105241405257001.bmp&type=u111_139&quality=95",
     "movies": [
-      3893,
-      3525
+      3893
     ]
   }
 },
@@ -10607,10 +10433,9 @@
   "fields": {
     "name": "\uc874 \ub77c\uc138\ud130",
     "name_en": "John Lasseter",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3916,
-      3537
+      3916
     ]
   }
 },
@@ -10671,10 +10496,8 @@
   "fields": {
     "name": "\ud504\ub808\ub4dc \uce74\ubc14\uc608",
     "name_en": "Fred Cavaye",
-    "img_url": "",
-    "movies": [
-      3543
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10707,7 +10530,7 @@
   "fields": {
     "name": "\ud6c4\uc9c0\ubaa8\ub9ac \ub9c8\uc0ac\uc57c",
     "name_en": "Masaya Fujimori",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3546
     ]
@@ -10757,10 +10580,9 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4 \uc6e8\uc774\uce20",
     "name_en": "Chris Weitz",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3735,
-      3556
+      3735
     ]
   }
 },
@@ -10770,7 +10592,7 @@
   "fields": {
     "name": "\ubca0\ud2f0 \ud1a0\uba38\uc2a4",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3557
     ]
@@ -10795,7 +10617,7 @@
   "fields": {
     "name": "\uc724\uc7ac\uad6c",
     "name_en": "YOON Jae-gu",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3560
     ]
@@ -10810,8 +10632,7 @@
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F87%2F20070516154251197302332.jpg&type=u111_139&quality=95",
     "movies": [
       3845,
-      3594,
-      3562
+      3594
     ]
   }
 },
@@ -10821,7 +10642,7 @@
   "fields": {
     "name": "\uc81c\uc784\uc2a4 \ub9e5\ud2f0\uadf8",
     "name_en": "James McTeigue",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3563
     ]
@@ -10833,10 +10654,8 @@
   "fields": {
     "name": "\ubc15\uc2e0\uc6b0",
     "name_en": "PARK Sin-woo",
-    "img_url": "",
-    "movies": [
-      3566
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10845,10 +10664,8 @@
   "fields": {
     "name": "\ubc15\uc815\ud6c8",
     "name_en": "Jung-hun PARK",
-    "img_url": "",
-    "movies": [
-      3567
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10881,7 +10698,7 @@
   "fields": {
     "name": "\ucd5c\uc9c4\ud638",
     "name_en": "CHOI Jin-ho",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3574
     ]
@@ -10918,10 +10735,8 @@
   "fields": {
     "name": "\uc7a5\uc6a9\uc6b0",
     "name_en": "Chang Yong-woo",
-    "img_url": "",
-    "movies": [
-      3577
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10966,10 +10781,8 @@
   "fields": {
     "name": "\uc591\uc885\ud604",
     "name_en": "YANG Jong-hyun",
-    "img_url": "",
-    "movies": [
-      3582
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -10990,7 +10803,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\ud2f0\uc559 \uc54c\ubc84\ud2b8",
     "name_en": "Christian Alvart",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3585
     ]
@@ -11003,9 +10816,7 @@
     "name": "\uc54c\ub80c \ud734\uc988",
     "name_en": "Allen Hughes",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11015,9 +10826,7 @@
     "name": "\ud30c\ud2f0 \uc544\ud0a8",
     "name_en": "Fatih Akin",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11027,9 +10836,7 @@
     "name": "\uc870\uc288\uc544 \ub9c8\uc2a4\ud134",
     "name_en": "Joshua Marston",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11039,9 +10846,7 @@
     "name": "\ubbf8\ub77c \ub124\uc774\uc5b4",
     "name_en": "Mira Nair",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11051,9 +10856,7 @@
     "name": "\uc774\uc640\uc774 \uc28c\uc9c0",
     "name_en": "Shunji Iwai",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11063,9 +10866,7 @@
     "name": "\ub098\ud0c8\ub9ac \ud3ec\ud2b8\ub9cc",
     "name_en": "Natalie Portman",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11074,11 +10875,8 @@
   "fields": {
     "name": "\uc138\uc790\ub974 \uce74\ud478\ub974",
     "name_en": "Shekhar Kapur",
-    "img_url": "",
-    "movies": [
-      3756,
-      3586
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11088,9 +10886,7 @@
     "name": "\uc774\ubc18 \uc544\ud0c8",
     "name_en": "Yvan Attal",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11100,9 +10896,7 @@
     "name": "\uac15\ubb38",
     "name_en": "Jiang Wen",
     "img_url": "",
-    "movies": [
-      3586
-    ]
+    "movies": []
   }
 },
 {
@@ -11111,7 +10905,7 @@
   "fields": {
     "name": "\ubc15\uc9c4\ud45c",
     "name_en": "PARK Jin-pyo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3952,
       3587
@@ -11124,10 +10918,9 @@
   "fields": {
     "name": "\uc624\ub2ec\uade0",
     "name_en": "OH Dal-kyun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3865,
-      3588
+      3865
     ]
   }
 },
@@ -11149,7 +10942,7 @@
   "fields": {
     "name": "\ud2b8\ub780 \uc548 \ud64d",
     "name_en": "Anh Hung Tran",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3590
     ]
@@ -11161,7 +10954,7 @@
   "fields": {
     "name": "\ubc15\uc9c0\uc6d0",
     "name_en": "Park Jiwon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3592
     ]
@@ -11173,7 +10966,7 @@
   "fields": {
     "name": "\uc0ac\ud1a0 \ub9c8\uc0ac\ud788\ucf54",
     "name_en": "Masahiko Sato",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3593
     ]
@@ -11185,10 +10978,8 @@
   "fields": {
     "name": "\uc870\ub098\ub2e8 \ubaa8\uc2a4\ud1a0\uc6b0",
     "name_en": "Jonathan Mostow",
-    "img_url": "",
-    "movies": [
-      3595
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11197,10 +10988,8 @@
   "fields": {
     "name": "\ucf00\ube48 \ud0c4\ucc28\ub85c\uc5d4",
     "name_en": "Kevin Tancharoen",
-    "img_url": "",
-    "movies": [
-      3598
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11209,7 +10998,7 @@
   "fields": {
     "name": "\ub370\uc774\ube57 \uc5d8\ub9ac\uc2a8",
     "name_en": "David Ellison",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3599
     ]
@@ -11247,7 +11036,7 @@
   "fields": {
     "name": "\ubb34\ud1a0\uc6b0 \uc720\uc9c0",
     "name_en": "Yuji Mutou",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3601
     ]
@@ -11259,7 +11048,7 @@
   "fields": {
     "name": "\ub85c\ubc84\ud2b8 \ub8e8\uac8c\ud2f1",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3951,
       3603
@@ -11296,10 +11085,9 @@
   "fields": {
     "name": "\uc564 \ud50c\ub808\uccd0",
     "name_en": "Anne Fletcher",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
-      3854,
-      3609
+      3854
     ]
   }
 },
@@ -11309,7 +11097,7 @@
   "fields": {
     "name": "\uc544\ubca8 \ud398\ub9ac",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3611
     ]
@@ -11321,7 +11109,7 @@
   "fields": {
     "name": "\uc250\uc778 \uc561\ucee4",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3612
     ]
@@ -11345,7 +11133,7 @@
   "fields": {
     "name": "\ud558\uc6b0\uba54 \ucf5c\ub81b \uc138\ub77c",
     "name_en": "Jaume Serra",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3614
     ]
@@ -11381,7 +11169,7 @@
   "fields": {
     "name": "\ub3c4\ub110\ub4dc \ud398\ud2b8\ub9ac",
     "name_en": "Donald Mark Petrie",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3620
     ]
@@ -11430,7 +11218,7 @@
   "fields": {
     "name": "\uc81c\ub86c \uc0ec\ub808",
     "name_en": "Jerome Salle",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3624
     ]
@@ -11454,10 +11242,8 @@
   "fields": {
     "name": "\ubc25 \ud53c\ud130\uc2a8",
     "name_en": "Bob Peterson",
-    "img_url": "",
-    "movies": [
-      3626
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11466,7 +11252,7 @@
   "fields": {
     "name": "\uc57c\ub9c8\ubaa8\ud1a0 \ud0c0\uc774\uce58\ub85c",
     "name_en": "Taichiro Yamamoto",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3628
     ]
@@ -11490,10 +11276,8 @@
   "fields": {
     "name": "\ud53c\ud130 \ucf58\uc6f0",
     "name_en": "Peter Cornwell",
-    "img_url": "",
-    "movies": [
-      3634
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11598,7 +11382,7 @@
   "fields": {
     "name": "\ub9c8\ub204\uc5d8 \uc2dc\uc2e4\ub9ac\uc544",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3644
     ]
@@ -11622,7 +11406,7 @@
   "fields": {
     "name": "\uc5d0\ub9ad \ube0c\ub9ac\ube45",
     "name_en": "Eric Brevig",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3647
     ]
@@ -11634,7 +11418,7 @@
   "fields": {
     "name": "\uce90\uc11c\ub9b0 \ud558\ub4dc\uc705",
     "name_en": "Catherine Hardwicke",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3842,
       3649
@@ -11647,10 +11431,8 @@
   "fields": {
     "name": "\ubc14\uc988 \ub8e8\uc5b4\ub9cc",
     "name_en": "Baz Luhrmann",
-    "img_url": "",
-    "movies": [
-      3651
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11659,10 +11441,8 @@
   "fields": {
     "name": "\uc815\uc815\ud654",
     "name_en": "CHUNG Jung-hwa",
-    "img_url": "",
-    "movies": [
-      3652
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11695,10 +11475,8 @@
   "fields": {
     "name": "\ub958\uc7a5\ud558",
     "name_en": "RYU Jang-ha",
-    "img_url": "",
-    "movies": [
-      3656
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11731,10 +11509,8 @@
   "fields": {
     "name": "\uc11c\ubbfc\uc601",
     "name_en": "Seo Min-yeong",
-    "img_url": "",
-    "movies": [
-      3659
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11767,7 +11543,7 @@
   "fields": {
     "name": "\ud544\ub9ac\ub2e4 \ub85c\uc774\ub4dc",
     "name_en": "Phyllida Lloyd",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3664
     ]
@@ -11794,6 +11570,7 @@
     "name_en": "CHONG Yunsu",
     "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F132%2F2008103115072971.jpg&type=u111_139&quality=95",
     "movies": [
+      4000,
       3799,
       3666
     ]
@@ -11805,7 +11582,7 @@
   "fields": {
     "name": "\ud1a0\ub9c8\uc2a4 \uc54c\ud504\ub808\ub4dc\uc2a8",
     "name_en": "Tomas Alfredson",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3669
     ]
@@ -11830,7 +11607,7 @@
   "fields": {
     "name": "\ub79c\ub35c \ubc00\ub7ec",
     "name_en": "Randall Miller",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3671
     ]
@@ -11842,7 +11619,7 @@
   "fields": {
     "name": "\ud0c0\ud0a4\ud0c0 \uc694\uc9c0\ub85c",
     "name_en": "Yojiro Takita",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3674
     ]
@@ -11866,7 +11643,7 @@
   "fields": {
     "name": "\uc9c4\uac00\uc0c1",
     "name_en": "Gordon Chan",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3677
     ]
@@ -11914,10 +11691,8 @@
   "fields": {
     "name": "\ub85c\ubc84\ud2b8 B. \uc6e8\uc774\ub4dc",
     "name_en": "Robert B. Weide",
-    "img_url": "",
-    "movies": [
-      3682
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11938,7 +11713,7 @@
   "fields": {
     "name": "\ub2e4\uc774\uc564 \uc789\uae00\ub9ac\uc26c",
     "name_en": "Diane English",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3688
     ]
@@ -11962,7 +11737,7 @@
   "fields": {
     "name": "\uc774\uc724\uae30",
     "name_en": "LEE Yoon-ki",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3692
     ]
@@ -11974,10 +11749,8 @@
   "fields": {
     "name": "\ub9c8\ub974\uc140 \ub7ad\uac90\uac70",
     "name_en": "Marcel Langenegger",
-    "img_url": "",
-    "movies": [
-      3693
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -11998,7 +11771,7 @@
   "fields": {
     "name": "\ud638\uc149 \ud3ec\uc870",
     "name_en": "Jose Pozo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3695
     ]
@@ -12010,10 +11783,8 @@
   "fields": {
     "name": "\uc54c\ub809\uc0b0\ub354 \uc544\uc57c",
     "name_en": "Alexandre Aja",
-    "img_url": "",
-    "movies": [
-      3696
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12022,10 +11793,8 @@
   "fields": {
     "name": "\ubc14\ub524 \ud53c\uc5bc\uba3c",
     "name_en": "",
-    "img_url": "",
-    "movies": [
-      3697
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12046,7 +11815,7 @@
   "fields": {
     "name": "\ubc15\uc7ac\uc2dd",
     "name_en": "PARK Jae-sik",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3699
     ]
@@ -12058,7 +11827,7 @@
   "fields": {
     "name": "\uc54c\ub798\uc2a4\ud14c\uc5b4 \ud3ec\ub354\uae38",
     "name_en": "Alastair Fothergill, Alastari Fothergill",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3700
     ]
@@ -12070,7 +11839,7 @@
   "fields": {
     "name": "\ub9c8\ud06c \ub9b0\ud544\ub4dc",
     "name_en": "Mark Linfield",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3700
     ]
@@ -12082,7 +11851,7 @@
   "fields": {
     "name": "\uc774\uc2dc\uc774 \uc57c\uc2a4\ud558\ub8e8",
     "name_en": "Yasuharu Ishii",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3701
     ]
@@ -12094,7 +11863,7 @@
   "fields": {
     "name": "\uc625\uc0ac\uc774\ub4dc \ud33d \ucc9c",
     "name_en": "Oxide Pang Chun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3702
     ]
@@ -12166,7 +11935,7 @@
   "fields": {
     "name": "\ub2e4\ub2c8\uc5d8 \ubbf8\ub9ad",
     "name_en": "Daniel Myrick",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3711
     ]
@@ -12214,10 +11983,8 @@
   "fields": {
     "name": "\ub9c8\ud06c \ub808\ube48",
     "name_en": "Mark Levin",
-    "img_url": "",
-    "movies": [
-      3720
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12250,7 +12017,7 @@
   "fields": {
     "name": "\ube0c\ub77c\uc774\uc5b8 \ubc84\ud2f0\ub178",
     "name_en": "Bryan Bertino",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3728
     ]
@@ -12274,7 +12041,7 @@
   "fields": {
     "name": "\ud30c\ucf54 \ud50c\ub77c\uc790",
     "name_en": "Paco Plaza",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3729
     ]
@@ -12298,7 +12065,7 @@
   "fields": {
     "name": "\ub77c\uc778\ud558\ub974\ud2b8 \ud074\ub8e8\uc2a4",
     "name_en": "Reinhard Klooss",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3731
     ]
@@ -12346,7 +12113,7 @@
   "fields": {
     "name": "\ud55c\uc9c0\uc2b9",
     "name_en": "HAN Ji-seung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3743
     ]
@@ -12358,10 +12125,8 @@
   "fields": {
     "name": "\uc544\ub2f4 \uc265\ud06c\ub9cc",
     "name_en": "Adam Shankman",
-    "img_url": "",
-    "movies": [
-      3746
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12382,10 +12147,8 @@
   "fields": {
     "name": "\uc815\uae38\uc601",
     "name_en": "JUNG Gil-young",
-    "img_url": "",
-    "movies": [
-      3750
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12394,7 +12157,7 @@
   "fields": {
     "name": "\uc81c\uc784\uc2a4 \uc655",
     "name_en": "James Wong",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3751
     ]
@@ -12406,7 +12169,7 @@
   "fields": {
     "name": "\uc790\ube44\uc5d0\ub974 \uc820\uc2a4",
     "name_en": "Xavier Gens",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3752
     ]
@@ -12443,10 +12206,8 @@
   "fields": {
     "name": "\ub9c8\uc774\ud06c \ubca0\uc774\ucee4",
     "name_en": "Mike Barker",
-    "img_url": "",
-    "movies": [
-      3761
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12455,10 +12216,8 @@
   "fields": {
     "name": "\uc2a4\uc988\ud0a4 \ub9c8\uc0ac\uc720\ud0a4",
     "name_en": "Masayuki Suzuki",
-    "img_url": "",
-    "movies": [
-      3763
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12479,7 +12238,7 @@
   "fields": {
     "name": "\ube0c\ub77c\uc774\uc5b8 \ub4dc \ud314\ub9c8",
     "name_en": "Brian De Palma",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3766
     ]
@@ -12528,7 +12287,7 @@
   "fields": {
     "name": "\ud55c\uc0c1\ud76c",
     "name_en": "HAN Sang-hee",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3770
     ]
@@ -12600,7 +12359,7 @@
   "fields": {
     "name": "\uc62c\ub9ac\ubc84 \ud788\ub974\ube44\uac94",
     "name_en": "Oliver Hirschbiegel",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3786
     ]
@@ -12636,7 +12395,7 @@
   "fields": {
     "name": "\uc2a4\ucf67 \ud789\uc2a4",
     "name_en": "Scott Hicks",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3793
     ]
@@ -12660,7 +12419,7 @@
   "fields": {
     "name": "\ubc15\uc601\ud6c8",
     "name_en": "PARK Young-hoon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3796
     ]
@@ -12744,10 +12503,8 @@
   "fields": {
     "name": "\uc774\uaddc\ub9cc",
     "name_en": "LEE Kyu-man",
-    "img_url": "",
-    "movies": [
-      3806
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12756,7 +12513,7 @@
   "fields": {
     "name": "\uc2a4\ud2f0\ube0c \ubca4\ub378\ub77d",
     "name_en": "Steve Bendelack",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3808
     ]
@@ -12793,7 +12550,7 @@
   "fields": {
     "name": "\ub370\uc774\ube0c \uba54\uc774\uc5b4\uc2a4",
     "name_en": "Dave Meyers",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3818
     ]
@@ -12854,7 +12611,7 @@
   "fields": {
     "name": "\uc2e0\ud0dc\ub77c",
     "name_en": "SHIN Terra",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3825
     ]
@@ -12903,10 +12660,8 @@
   "fields": {
     "name": "\uc54c\ub809 \ucf00\uc2dc\uc2dc\uc548",
     "name_en": "Alek Keshishian",
-    "img_url": "",
-    "movies": [
-      3833
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -12915,7 +12670,7 @@
   "fields": {
     "name": "\uc7a5\uc724\ud604",
     "name_en": "CHANG Yoon-hyun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3834
     ]
@@ -12951,7 +12706,7 @@
   "fields": {
     "name": "\uc8fc\ub514 \ubaa8\ub9ac\uc2a4",
     "name_en": "Judy Morris",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3840
     ]
@@ -12975,7 +12730,7 @@
   "fields": {
     "name": "\ub85c\uc800 \ucef4\ube14",
     "name_en": "Roger Kumble",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3848
     ]
@@ -12987,7 +12742,7 @@
   "fields": {
     "name": "\ub370\uc774\ube57 \ubcf4\uc6cc\uc2a4",
     "name_en": "David Bowers",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3849
     ]
@@ -12999,7 +12754,7 @@
   "fields": {
     "name": "\uc0d8 \ud3a0",
     "name_en": "Sam Fell",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3849
     ]
@@ -13011,7 +12766,7 @@
   "fields": {
     "name": "\ub370\uc774\ube44\ub4dc \ubcf4",
     "name_en": "",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3849
     ]
@@ -13047,7 +12802,7 @@
   "fields": {
     "name": "\uce74\ub124\ucf54 \uc288\uc2a4\ucf00",
     "name_en": "Shusuke Kaneko",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3860
     ]
@@ -13083,7 +12838,7 @@
   "fields": {
     "name": "\ubc15\uc740\ud615",
     "name_en": "PARK Eun-hyung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3865
     ]
@@ -13095,7 +12850,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4\ud1a0\ud504 \uac31\uc2a4",
     "name_en": "Christophe Gans",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3866
     ]
@@ -13119,10 +12874,8 @@
   "fields": {
     "name": "\uc564\ub4dc\ub958 \ub370\uc774\ube44\uc2a4",
     "name_en": "Andrew Davis",
-    "img_url": "",
-    "movies": [
-      3871
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13143,10 +12896,8 @@
   "fields": {
     "name": "\uc6d0\uaddc",
     "name_en": "Corey Yuen",
-    "img_url": "",
-    "movies": [
-      3874
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13155,7 +12906,7 @@
   "fields": {
     "name": "\uc1a1\ud574\uc131",
     "name_en": "SONG Hae-sung",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3877
     ]
@@ -13203,7 +12954,7 @@
   "fields": {
     "name": "\uc548\uc9c4\uc6b0",
     "name_en": "AHN Jin-woo",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3884
     ]
@@ -13251,7 +13002,7 @@
   "fields": {
     "name": "\ud788\uad6c\uce58 \uc2e0\uc9c0",
     "name_en": "Shinji Higuchi",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3892
     ]
@@ -13287,7 +13038,7 @@
   "fields": {
     "name": "\ubb34\ub77c\uce74\ubbf8 \ub9c8\uc0ac\ub178\ub9ac",
     "name_en": "Masanori Murakami",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3898
     ]
@@ -13311,10 +13062,8 @@
   "fields": {
     "name": "\uc54c\ub808\ud55c\ub4dc\ub85c \uc544\uadf8\ub808\uc2a4\ud2f0",
     "name_en": "Alejandro Agresti",
-    "img_url": "",
-    "movies": [
-      3901
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13335,7 +13084,7 @@
   "fields": {
     "name": "\uae38 \ud0a4\ub10c",
     "name_en": "Gil Kenan",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3904
     ]
@@ -13347,7 +13096,7 @@
   "fields": {
     "name": "\ubd09\ub9cc\ub300",
     "name_en": "BONG Man-dae",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3905
     ]
@@ -13371,7 +13120,7 @@
   "fields": {
     "name": "\uacfd\uc9c0\uade0",
     "name_en": "KWAK Ji-kyoon",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3908
     ]
@@ -13419,7 +13168,7 @@
   "fields": {
     "name": "\ud1a0\ub9c8\uc2a4 \ubca0\uc8fc\ucee4",
     "name_en": "Thomas Bezucha",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3924
     ]
@@ -13431,10 +13180,8 @@
   "fields": {
     "name": "\uc9d0 \uc790\ubb34\uc2dc",
     "name_en": "Jim Jarmusch",
-    "img_url": "",
-    "movies": [
-      3925
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13467,7 +13214,7 @@
   "fields": {
     "name": "\uae40\ud0dc\uc740",
     "name_en": "KIM Tae-eun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3929
     ]
@@ -13479,7 +13226,7 @@
   "fields": {
     "name": "\ub9c8\ud06c S. \uc6cc\ud130\uc2a4",
     "name_en": "Mark S. Waters",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3930
     ]
@@ -13503,7 +13250,7 @@
   "fields": {
     "name": "\uc624\uc11d\uadfc",
     "name_en": "OH Seok Geun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3933
     ]
@@ -13527,10 +13274,8 @@
   "fields": {
     "name": "\uc548\ub4dc\ub808\uc774 \ubc14\ub974\ucf54\ube44\uc545",
     "name_en": "Andrzej Bartkowiak",
-    "img_url": "",
-    "movies": [
-      3935
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13539,7 +13284,7 @@
   "fields": {
     "name": "\ubbf8\ub098\ubaa8\ud1a0 \ud0c0\uce74\uc2dc",
     "name_en": "Takashi Minamoto",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3938
     ]
@@ -13563,10 +13308,8 @@
   "fields": {
     "name": "\ub9c8\uc774\ud06c \uc874\uc2a8",
     "name_en": "Mike Johnson",
-    "img_url": "",
-    "movies": [
-      3941
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13599,10 +13342,8 @@
   "fields": {
     "name": "\uc8fc\ub4dc \uc544\ud328\ud1a0\uc6b0",
     "name_en": "Judd Apatow",
-    "img_url": "",
-    "movies": [
-      3948
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13611,7 +13352,7 @@
   "fields": {
     "name": "\ube0c\ub8e8\uc2a4 \ud5cc\ud2b8",
     "name_en": "Bruce Hunt",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3953
     ]
@@ -13623,10 +13364,8 @@
   "fields": {
     "name": "\ub9c8\uc774\ud074 \ub798\ub4dc\ud3ec\ub4dc",
     "name_en": "Michael Radford",
-    "img_url": "",
-    "movies": [
-      3954
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13671,7 +13410,7 @@
   "fields": {
     "name": "\ubc15\uad11\ud604",
     "name_en": "PARK Kwang-hyun",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3962
     ]
@@ -13683,7 +13422,7 @@
   "fields": {
     "name": "\uc11c\uadf9",
     "name_en": "Hark Tsui",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3965
     ]
@@ -13695,10 +13434,8 @@
   "fields": {
     "name": "\uc2a4\ud2f0\ube10 \ud790\ub80c\ubc84\uadf8",
     "name_en": "Stephen Hillenburg",
-    "img_url": "",
-    "movies": [
-      3966
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13707,10 +13444,8 @@
   "fields": {
     "name": "\uc6e8\uc2a4 \ud06c\ub808\uc774\ube10",
     "name_en": "Wes Craven",
-    "img_url": "",
-    "movies": [
-      3972
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13719,7 +13454,7 @@
   "fields": {
     "name": "\ucf00\ube48 \ub85c\ub4dc\ub2c8 \uc124\ub9ac\ubc18",
     "name_en": "Kevin Rodney Sullivan",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3975
     ]
@@ -13743,7 +13478,7 @@
   "fields": {
     "name": "\uc870\uc9c0 A. \ub85c\uba54\ub85c",
     "name_en": "George A. Romero",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3978
     ]
@@ -13767,7 +13502,7 @@
   "fields": {
     "name": "\ud3f4 \uc6e8\uc774\uce20",
     "name_en": "Paul Weitz",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3980
     ]
@@ -13779,7 +13514,7 @@
   "fields": {
     "name": "\ud06c\ub9ac\uc2a4 \ucf04\ud2f0\uc2a4",
     "name_en": "Chris Kentis",
-    "img_url": "",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
     "movies": [
       3982
     ]
@@ -13791,10 +13526,8 @@
   "fields": {
     "name": "\uc774\uc548 \uc18c\ud504\ud2c0\ub9ac",
     "name_en": "Iain Softley",
-    "img_url": "",
-    "movies": [
-      3983
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13803,10 +13536,8 @@
   "fields": {
     "name": "\uc548\uc824\ub77c \ub85c\ube48\uc2a8",
     "name_en": "Angela Robinson",
-    "img_url": "",
-    "movies": [
-      3989
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13815,10 +13546,8 @@
   "fields": {
     "name": "\ub93d \uc790\ucf00",
     "name_en": "Luc Jacquet",
-    "img_url": "",
-    "movies": [
-      3992
-    ]
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
   }
 },
 {
@@ -13830,6 +13559,72 @@
     "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000064%2FPM6475_164312_000.jpg&type=u111_139&quality=95",
     "movies": [
       3993
+    ]
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2050,
+  "fields": {
+    "name": "\uae40\ubbfc\uc11d",
+    "name_en": "KIM Min-suk",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2051,
+  "fields": {
+    "name": "\ud1a0\ub2c8 \uc2a4\ucf67",
+    "name_en": "Tony Scott",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2052,
+  "fields": {
+    "name": "\ucf00\ube48 \uadf8\ub8e8\ud130\ud2b8",
+    "name_en": "Kevin Greutert",
+    "img_url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000446%2FPM44645_105500_000.jpg&type=u111_139&quality=95",
+    "movies": [
+      4001
+    ]
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2053,
+  "fields": {
+    "name": "\uc2e0\uadfc\ud638",
+    "name_en": "Shin Keun-ho",
+    "img_url": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F96%2F201009071157323731.jpg&type=u111_139&quality=95",
+    "movies": [
+      4003
+    ]
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2054,
+  "fields": {
+    "name": "\ub8e8\ubca4 \uc678\uc2a4\ud2c0\ub8ec\ub4dc",
+    "name_en": "Ruben Ostlund",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": []
+  }
+},
+{
+  "model": "movies.director",
+  "pk": 2055,
+  "fields": {
+    "name": "\ub8e8\uce74 \uad6c\uc544\ub2e4\uadf8\ub2c8\ub178",
+    "name_en": "Luca Guadagnino",
+    "img_url": "https://ssl.pstatic.net/static/movie/2012/06/dft_img120x150.png",
+    "movies": [
+      4010
     ]
   }
 }

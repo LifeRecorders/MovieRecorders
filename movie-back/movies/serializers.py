@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import *
 from django.contrib.auth import get_user_model
+from diaries.serializers import *
+from diaries.models import *
 
 # 이거면 된다. settings.py에 등록되어서 사용
 User = get_user_model()
@@ -15,6 +17,7 @@ class MovieSerializer(serializers.ModelSerializer):
             'open_date', 'audience', 'naver_poster_url', 'naver_big_poster_url', 'watch_grade',
             'nation', 'liked_users', 'company', 'movieCd', 'rank',
             'rating', 'created_at', 'updated_at', 'naver_link', 
+            'diaries', 'collections'
         ]
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -26,7 +29,7 @@ class GenreSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['username', 'email', 'reviews']
+        fields = ['username', 'email', 'reviews', 'followers']
 
 class ActorSerializer(serializers.ModelSerializer):
     class Meta:
@@ -76,3 +79,20 @@ class ReviewDetailSerializer(ReviewSerializer):
     class Meta:
         model = Review
         fields = ReviewSerializer.Meta.fields + ['children']
+
+
+class UserDetailSerializer(UserSerializer):
+    liked_movies = MovieSerializer(many=True) # user.like_movies.all()
+    want_movies = MovieSerializer(many=True)
+    liked_reviews = ReviewDetailSerializer(many=True)
+    # user가 쓴 diary_set을 가져온다.
+    diary_set = DiarySerializer(many=True)
+    collection_set = CollectionSerializer(many=True)
+    class Meta(UserSerializer.Meta):
+        fields = UserSerializer.Meta.fields + [
+            'liked_movies',
+            'want_movies',
+            'liked_reviews',
+            'diary_set',
+            'collection_set',
+        ]
