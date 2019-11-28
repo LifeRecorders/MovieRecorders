@@ -20,7 +20,7 @@ export default new Vuex.Store({
     user: [],
     userMovieList: [],
     diary: [],
-    bestMovies: [],
+    bestMovies: [{}, {}, {}, {}, {}],
     filmography: [],
   },
   getters: {
