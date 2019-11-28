@@ -21,6 +21,7 @@ export default new Vuex.Store({
     userMovieList: [],
     diary: [],
     bestMovies: [],
+    filmography: [],
   },
   getters: {
     isLoggedIn(state) {
@@ -81,6 +82,12 @@ export default new Vuex.Store({
     },
     setBestMovies(state, data) {
       state.bestMovies = data
+    },
+    setFilmography(state, data) {
+      state.filmography = data
+    },
+    clearFilmography(state) {
+      state.filmography = []
     }
   },
   actions: {
@@ -145,6 +152,34 @@ export default new Vuex.Store({
         .catch(error => {
           console.error(error)
         })
+    },
+    setFilmographyDir(context, id) {
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/api/v1/director/?directorId=${id}`)
+        .then(response => {
+          console.log(response.data)
+          context.commit('setFilmography', response.data)
+          router.push('/filmography/')
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
+    setFilmographyActor(context, id) {
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/api/v1/actor/?actorId=${id}`)
+          .then(response => {
+            context.commit('setFilmography', response.data)
+            router.push('/filmography/')
+          })
+          .catch(error => {
+            console.error(error)
+          })
+    },
+    clearFilmography(context) {
+      context.commit('clearFilmography')
     }
   }
 })

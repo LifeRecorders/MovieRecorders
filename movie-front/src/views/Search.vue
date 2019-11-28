@@ -11,7 +11,8 @@
         <div v-if="this.info.movies.length">
         <!-- {{ this.info.movies }} -->
         <hr/>
-        <p class="text-left ml-3">영화</p>
+        <h3 class="text-left ml-1">영화</h3>
+        <br/>
         <b-card-group deck>
             <div v-for="(movie, idx) in this.info.movies" v-bind:key="idx">
               <b-card
@@ -36,25 +37,44 @@
 
 
         </div>
+        <div v-if="this.info.directors.length">
+          <hr/>
+          <h3 class="text-left ml-1">제작</h3>
+          <br/>
+          <div v-for="(director, idx) in this.info.directors" v-bind:key="idx">
+            <b-col v-on:click="this.getFilmographyDirector(director.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
+              <b-img v-bind:src="director.img_url" rounded="circle" alt="director-img" id="director-img" class="mb-2 text-center"></b-img>
+              <br/>
+              {{ director.name }}
+            </b-col>
+          </div>
+        </div>
+
+        <div v-if="this.info.actors.length">
+          <hr/>
+          <h3 class="text-left ml-1">출연</h3>
+          <br>
+          <div v-for="(actor, idx) in this.info.actors" v-bind:key="idx">
+            <b-col v-on:click="this.getFilmographyActor(actor.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
+              <b-img v-bind:src="actor.img_url" rounded="circle" alt="actor-img" id="actor-img" class="mb-2 text-center"></b-img>
+              <br/>
+              {{ actor.name }}
+            </b-col>
+          </div>
+        </div>
+
+        <div v-if="this.info.users.length">
+          <hr/>
+          <p class="text-left ml-3">사용자</p>
+          <div v-for="(user, idx) in this.info.users" v-bind:key="idx">
+            
+          </div>
+        </div>
       </b-card>
       
         
       
-      <div v-if="this.info.directors.length">
-        <hr/>
-        <p class="text-left ml-3">배우/제작</p>
-        <div v-for="(director, idx) in this.info.directors" v-bind:key="idx">
-          {{ director }}
-          
-        </div>
-      </div>
-      <div v-if="this.info.users.length">
-        <hr/>
-        <p class="text-left ml-3">사용자</p>
-        <div v-for="(user, idx) in this.info.users" v-bind:key="idx">
-          
-        </div>
-      </div>
+      
       
     </div>
   </div>
@@ -111,9 +131,18 @@ export default {
       else {
         return false
       }
+      console.log(detailData)
       this.$store.dispatch('showDetail', detailData)
       router.push(`/detail/${keyword}`)
     },
+    getFilmographyDir(id) {
+      this.$store.dispatch('clearFilmography')
+      this.$store.dispatch('setFilmographyDir', id)
+    },
+    getFilmographyActor(id) {
+      this.$store.dispatch('clearFilmography')
+      this.$store.dispatch('setFilmographyActor', id)
+    }
   }
 };
 </script>
@@ -128,5 +157,15 @@ export default {
 #search #searchBarDiv {
   position: relative;
   top: -6.2rem;
+}
+#director-img { 
+  width: 4rem; 
+  height: 4rem; 
+  object-fit: cover; 
+}
+#actor-img { 
+  width: 4rem; 
+  height: 4rem; 
+  object-fit: cover; 
 }
 </style>
