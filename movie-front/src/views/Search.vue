@@ -42,7 +42,7 @@
           <h3 class="text-left ml-1">제작</h3>
           <br/>
           <div v-for="(director, idx) in this.info.directors" v-bind:key="idx">
-            <b-col v-on:click="this.getFilmographyDirector(director.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
+            <b-col v-on:click="getFilmographyDirector(director.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
               <b-img v-bind:src="director.img_url" rounded="circle" alt="director-img" id="director-img" class="mb-2 text-center"></b-img>
               <br/>
               {{ director.name }}
@@ -55,7 +55,7 @@
           <h3 class="text-left ml-1">출연</h3>
           <br>
           <div v-for="(actor, idx) in this.info.actors" v-bind:key="idx">
-            <b-col v-on:click="this.getFilmographyActor(actor.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
+            <b-col v-on:click="getFilmographyActor(actor.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-left mr-3">
               <b-img v-bind:src="actor.img_url" rounded="circle" alt="actor-img" id="actor-img" class="mb-2 text-center"></b-img>
               <br/>
               {{ actor.name }}
