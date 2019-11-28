@@ -171,6 +171,31 @@ def like(request):
     return JsonResponse(context)
 
 
+# 보고싶어요 serializer
+@api_view(['POST'])
+def want(request):
+    # movie_pk, user_id 를 받음
+    movie_pk = request.GET.get('movieId')
+    user_id = request.GET.get('userId')
+
+    movie = get_object_or_404(Movie, pk=movie_pk)
+    user = User.objects.get(pk=user_id)
+
+    if user in movie.want_users.all():
+        movie.want_users.remove(user)
+        wanted = False
+
+    else:
+        movie.want_users.add(user)
+        wanted = True
+
+    context = {'wanted': wanted, 'count': movie.want_users.count()}
+    return JsonResponse(context)
+
+
+
+
+
 @api_view(['GET'])
 def myinfo(request):
     # user_id 를 받음, 내가 좋아요한 영화목록 이므로 해당 user_id로 찾음

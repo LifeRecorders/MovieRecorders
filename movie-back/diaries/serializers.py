@@ -10,20 +10,22 @@ User = get_user_model()
 
 # Diary
 class DiarySerializer(serializers.ModelSerializer):
+    # manytomanyfields는 serializer에 넣지않는다.
     class Meta:
         model = Diary
         fields = [
-            'title', 'content', 'watched_at', 'movies', 'user', 
+            'title', 'content', 'watched_at', 'user', 
             ]
 
 
 
 # Collection
 class CollectionSerializer(serializers.ModelSerializer):
+    # manytomanyfields는 serializer에 넣지않는다.
     class Meta:
         model = Collection
         fields = [
-            'title', 'content', 'movies', 'user', 
+            'title', 'content', 'user', 
         ]
 
 
