@@ -82,6 +82,8 @@ def review_detail(request):
         serializer = ReviewDetailSerializer(reviews, many=True)
         return Response(serializer.data)
 
+
+
 @api_view(['POST', 'PUT', 'DELETE'])
 def reviews_create_update_delete(request):
     if request.method == 'POST':
