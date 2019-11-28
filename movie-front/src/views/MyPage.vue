@@ -104,11 +104,9 @@ export default {
       this.$store.dispatch('clearDiary')
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
       
-      axios.get(`${SERVER_IP}/diaries/diaries/?userId=${this.userId}&datetime=${this.dateToStr(selectedDate)}`, this.options)
+      axios.get(`${SERVER_IP}/diaries/diaries_create_update_delete/?userId=${this.userId}&datetime=${this.dateToStr(selectedDate)}`, this.options)
         .then(response => {
-          if(response.data === false) {
-            router.push()
-          }
+          console.log(response)
         })
         .catch(error => {
           console.error(error)
