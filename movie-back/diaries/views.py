@@ -8,6 +8,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 # from accounts/models.. import User
 from .models import *
+from movies.models import *
 from .serializers import *
 import json
 import os
@@ -49,21 +50,18 @@ def diaries_create_update_delete(request):
 
     # 등록
     if request.method == 'POST':
-        diary = Diary()
         result = {}
         # {'title': '겨울왕국', 'content': '너무 좋았죠', 'watched_at': '2019-11-26', 'movies': 2512, 'user': 2}
         # movies => pk를 가지고 다르게 구성함
-        serializer = DiarySerializer(data=request.data, allow_null=True)
-        print(serializer)
-        print('---')
+        serializer = DiarySerializer(data=request.data, allow_null=True)    
         if serializer.is_valid(raise_exception=True):
-            print('----')
-            serializer.save(user_id=user_id)
+            diary = serializer.save(user_id=user_id)
             movie_pk = request.data['movies']
             movie = Movie.objects.get(pk=movie_pk)
+            diary.movies.add(movie)
+            # print(diary.movies.all())
+            # print(diary)
             result['serializer'] = serializer.data
-            result['movie'] = movie
-            print(result)
             return Response(result)
     # 수정
     if request.method == 'PUT':

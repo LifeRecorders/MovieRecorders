@@ -88,6 +88,7 @@ def reviews_create_update_delete(request):
     if request.method == 'POST':
         movie_id = request.GET.get('movieId')
         serializer = ReviewSerializer(data=request.data, allow_null=True)
+        print(serializer)
         if serializer.is_valid(raise_exception=True):
             serializer.save(movie_id=movie_id)
             return Response(serializer.data)
