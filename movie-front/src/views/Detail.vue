@@ -26,7 +26,7 @@
               <h6 style="font-size:small;">{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
               <h6 style="font-size:small;" class="mt-2">{{ this.detail.watch_grade }}</h6>
               <h6 class="rating mr-3">평점 ★{{ this.detail.rating }}</h6>
-              <b-button size="sm" class="mr-3" id="likeButton">보고 싶어요</b-button>
+              <b-button size="sm" class="mr-3" id="likeButton" v-on:click="want">보고 싶어요</b-button>
               <b-button v-b-modal.modal-diary size="sm" variant="light">내 다이어리 쓰기</b-button>
                 <b-modal
                 id="modal-diary"
@@ -303,19 +303,17 @@ export default {
         }
       }
     },
-    getUsername(userId) {
-      console.log(userId)
+    want() {
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
 
-      axios.get(`${SERVER_IP}/accounts/users/?userId=${userId}`)
+      axios.get(`${SERVER_IP}/api/v1/want/${this.detail.pk}/${this.userId}/`)
         .then(response => {
-          console.log(response)
-          return response.data.username
+          console.log(response.data)
         })
         .catch(error => {
           console.error(error)
         })
-    },
+    }
 
   },
   mounted() {
