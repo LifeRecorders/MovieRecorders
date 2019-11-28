@@ -69,7 +69,7 @@
           <b-row>
             <br/>
             <div style="font-size:small;" v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
-              <b-col style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
+              <b-col v-on:click="getFilmographyDir(director.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
                 <b-img v-bind:src="director.img_url" rounded="circle" alt="director-img" id="director-img" class="mb-2"></b-img>
                 <br/>
                 {{ director.name }}
@@ -80,7 +80,7 @@
           <b-row>
             <br/>
             <div style="font-size:small;" v-for="(actor, idx) in this.detail.actors" v-bind:key="idx">
-              <b-col style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
+              <b-col v-on:click="getFilmographyActor(actor.pk)" style="padding-left: 1rem; padding-right: 0;" class="text-center mr-3">
                 <b-img v-bind:src="actor.img_url" rounded="circle" alt="actor-img" id="actor-img" class="mb-2"></b-img>
                 <br/>
                 {{ actor.name }}
@@ -313,6 +313,14 @@ export default {
         .catch(error => {
           console.error(error)
         })
+    },
+    getFilmographyDir(id) {
+      this.$store.dispatch('clearFilmography')
+      this.$store.dispatch('setFilmographyDir', id)
+    },
+    getFilmographyActor(id) {
+      this.$store.dispatch('clearFilmography')
+      this.$store.dispatch('setFilmographyActor', id)
     }
 
   },
