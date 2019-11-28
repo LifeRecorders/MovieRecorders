@@ -2,7 +2,7 @@
 
 **01150813** 
 
-<div style="text-align:center">
+<div align="center">
 <img src="README.assets/logo_small.png">
 </div>
 
@@ -59,13 +59,15 @@ makeartweek@gmail.com
 
 #### **Backend**
 
-<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:15%;" />   [**정승원**](https://github.com/tesschung): DB / 장고 REST API 설계, 장고 로직 구현, 데이터 스크래핑
+<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:15%;" />  
+[**정승원**](https://github.com/tesschung): DB / 장고 REST API 설계, 장고 로직 구현, 데이터 스크래핑
 
 
 
 #### **Frontend**
 
-<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:15%;" />   [**이인동**](https://github.com/IndongLee): 화면 설계 및 디자인, Vue 로직 구현, REST API 활용
+<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:15%;" />   
+[**이인동**](https://github.com/IndongLee): 화면 설계 및 디자인, Vue 로직 구현, REST API 활용
 
 
 
@@ -291,7 +293,7 @@ $ python manage.py dumpdata movies.actor --indent 2 > actor-data.json
 
 ### :information_source: [개인정보처리방침](https://github.com/makeartweek/bixby/tree/master/Privacy-policy) 
 
-<div style="text-align:center">
+<div align="center">
 <img src="README.assets/logo_small.png">
 </div>
 "from `LifeRecorders` import `inspiration`"
