@@ -34,14 +34,16 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['username', 'email', 'reviews', 'followers']
 
 class ActorSerializer(serializers.ModelSerializer):
+    movies = serializers.PrimaryKeyRelatedField(queryset=Movie.objects.all(), many=True)
     class Meta:
         model = Actor
-        fields = ['pk', 'name', 'name_en', 'img_url']
+        fields = ['pk', 'name', 'name_en', 'img_url', 'movies']
 
 class DirectorSerializer(serializers.ModelSerializer):
+    movies = serializers.PrimaryKeyRelatedField(queryset=Movie.objects.all(), many=True)
     class Meta:
         model = Director
-        fields = ['pk', 'name', 'name_en', 'img_url']
+        fields = ['pk', 'name', 'name_en', 'img_url', 'movies']
 
 # 관련된 모든 사진
 class SceneSerializer(serializers.ModelSerializer):

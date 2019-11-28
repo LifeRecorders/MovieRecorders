@@ -194,6 +194,9 @@ def want(request):
     return JsonResponse(context)
 
 
+# 감독/배우 id 줬을 때 그 사람이 제작/출연한 모든 영화 데이터 주는 api 
+
+
 
 
 
