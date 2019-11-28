@@ -78,10 +78,10 @@ class ReviewSerializer(serializers.ModelSerializer):
 # review 대댓글
 class ReviewDetailSerializer(ReviewSerializer):
     children = ReviewSerializer(many=True)
-    username = UserSerializer(many=True)
+    user = UserSerializer()
     class Meta:
         model = Review
-        fields = ReviewSerializer.Meta.fields + ['children', 'username']
+        fields = ReviewSerializer.Meta.fields + ['children', 'user']
 
 
 class UserDetailSerializer(UserSerializer):
