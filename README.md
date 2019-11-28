@@ -298,12 +298,5 @@ $ python manage.py dumpdata movies.actor --indent 2 > actor-data.json
 <div align="center">
 <img src="README.assets/logo_small.png">
 </div>
+
 "from `LifeRecorders` import `inspiration`"
-
-
-
-
-
-/movie/bi/pi/mediaView.nhn?code=189053&mid=
-
-44240
