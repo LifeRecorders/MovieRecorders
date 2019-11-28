@@ -9,7 +9,7 @@
       </div>
       </header>
       <b-container>
-        <b-card class="cdBackground mt-5" v-bind:style="{ backgroundImage: 'url(' + this.bgImageUrl + ')' }">
+        <b-card style="padding-bottom: 0;" class="cdBackground mt-5 mb-5" v-bind:style="{ backgroundImage: 'url(' + this.bgImageUrl + ')' }">
           <b-row class="mb-4">
             <b-col md="8">
             <div style="visibility:hidden; width:15rem; height:15rem;"></div>
@@ -19,8 +19,8 @@
             
           </b-row>
 
-          <b-row class='text-left mt-2'>
-            <b-col>
+          <b-row class="text-left mt-2 mb-0">
+            <b-col md="4">
               <h2>{{ this.detail.title }}</h2>
               <h6 style="font-size:small;">{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
               <h6 style="font-size:small;" class="mt-2">{{ this.detail.watch_grade }}</h6>
@@ -48,30 +48,37 @@
                   </b-form-group>
                 </b-modal>
               <hr style="border: 0.5px solid white"/>
-              <h6>제작</h6>
-              <b-row>
-                <br/>
-                <div style="font-size:small;" v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
-                  <b-col style="padding-left: 1rem; padding-right: 0;">
-                    {{ director.name }}
-                  </b-col>
-                </div>
-              </b-row>
-              <br>
-              <h6>출연</h6>
-              <b-row>
-                <br/>
-                <div style="font-size:small;" v-for="(actor, idx) in this.detail.actors" v-bind:key="idx">
-                  <b-col style="padding-left: 1rem; padding-right: 0;">
-                    {{ actor.name }}
-                  </b-col>
-                </div>
-              </b-row>
-
+              
             </b-col>
+          </b-row>
+          <br/>
+          
+        </b-card>
+        <b-card class="text-left">
+          <h6>제작</h6>
+          <b-row>
+            <br/>
+            <div style="font-size:small;" v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
+              <b-col style="padding-left: 1rem; padding-right: 0;">
+                {{ director.name }}
+              </b-col>
+            </div>
+          </b-row>
+          <br>
+          <h6>출연</h6>
+          <b-row>
+            <br/>
+            <div style="font-size:small;" v-for="(actor, idx) in this.detail.actors" v-bind:key="idx">
+              <b-col style="padding-left: 1rem; padding-right: 0;">
+                {{ actor.name }}
+              </b-col>
+            </div>
+          </b-row>
+          <hr style="border: 0.5px solid white"/>
+          <b-row>
             <b-col>
-              <h4>감상평</h4>
-              <div v-if="isLoggedIn" class="container text-left">
+              <span style="font-size:x-large; position: relative; top: -1.2rem;">감상평</span>
+              <div id="review-button" v-if="isLoggedIn" style="position: relative; top: -1.55rem; right: -1rem;" class="container text-left pl-0">
                 <b-button v-b-modal.modal-review size="sm" variant="light" class="ml-auto">감상평 남기기</b-button>
                 <b-modal
                 id="modal-review"
@@ -89,12 +96,10 @@
                 </b-modal>
               </div>
               <br/>
-              {{ this.reviews }}
               <b-row>
-                <div v-for="(review, idx) in this.reviews.slice(0, 4)" v-bind:key="idx">
-                  {{ review.user }}
+                <div v-for="(review, idx) in this.reviews.slice(0, 3)" v-bind:key="idx">
                   <b-col>
-                    <!-- {{ this.getUsername(review.user) }} -->
+                    {{ review.user.username }}
                     ★{{ review.score }}
                     <hr/>
                     {{ review.content }}<br/>
@@ -104,6 +109,7 @@
               
             </b-col>
           </b-row>
+
         </b-card>
       </b-container>
     </div>
@@ -285,22 +291,23 @@ export default {
 /* html { overflow: hidden; } */
 /* .bgBlur { overflow: auto; } */
 .bgBlur {
-  background-size: cover;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(15px);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: scale(1.02);
-  z-index: -1;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  background-size: cover; 
+  -webkit-filter: blur(5px); 
+  -moz-filter: blur(5px); 
+  -o-filter: blur(5px); 
+  -ms-filter: blur(5px); 
+  filter: blur(15px); 
+  transform: scale(1.02); 
+  z-index: -1; 
   content: "";
+  width:100%;
+  height:100%;
+
 }
 #detail > header {
   background-color: white;
@@ -320,6 +327,9 @@ export default {
   color: aliceblue;
 }
 .rating {
+  display: inline;
+}
+#review-button {
   display: inline;
 }
 </style>
