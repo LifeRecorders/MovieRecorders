@@ -29,8 +29,6 @@
 3. [목표 서비스 구현 및 실제 구현 정도](https://github.com/LifeRecorders/)
    - 일자별 업무 진행
 4. [데이터베이스 모델링(ERD)](https://github.com/LifeRecorders/)
-5. [Backend :: Django](https://github.com/LifeRecorders/)
-6. [Frontend :: View](https://github.com/LifeRecorders/)
 8. [핵심 기능](https://github.com/LifeRecorders/)
 9. [배포 서버 URL](https://github.com/LifeRecorders/)
    - Heroku 서버
@@ -74,12 +72,7 @@ makeartweek@gmail.com
 
 ## 목표 서비스 구현 및 실제 구현 정도
 
-### 사용 기술 :: 
-
-### Django REST API 서버(djangorestframework)
-
-### VueJS (Node, SFC) 
-
+#### Django REST API 서버(djangorestframework)
 #### Backend
 
 - Django : 2.1
@@ -88,6 +81,8 @@ makeartweek@gmail.com
 
 
 
+
+#### VueJS (Node, SFC) 
 #### Frontend
 
 - Vue : 2.6.10
@@ -160,9 +155,6 @@ makeartweek@gmail.com
 
 
 
-
-## Backend :: Django
-
 ### 데이터 스크래핑
 
 - 최대한 깨끗한 영화 데이터를 얻기위해서 데이터 스크래핑시 수집-정제라는 큰 틀에서 총 6단계를 거치게 됩니다.
@@ -184,14 +176,6 @@ makeartweek@gmail.com
     - 불필요한 데이터 모두 정제
 
 > 이러한 6단계를 통하여 데이터에 대한 위험요소를 최대한 줄이면서, 최대한 다양하고 많은 데이터를 스크래핑하였습니다. 이를 통하여 사용자는 풍부한 데이터에 대한 사용자 경험을 보장합니다.
-
-
-
-## Frontend :: View
-
-
-
-
 
 
 
@@ -312,3 +296,10 @@ $ python manage.py dumpdata movies.actor --indent 2 > actor-data.json
 </div>
 "from `LifeRecorders` import `inspiration`"
 
+
+
+
+
+/movie/bi/pi/mediaView.nhn?code=189053&mid=
+
+44240
