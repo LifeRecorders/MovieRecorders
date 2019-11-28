@@ -34,5 +34,13 @@ urlpatterns = [
 
     # 유저가 행동한 모든 정보 / 내가 좋아요한 영화 목록
     path('myinfo/', views.myinfo, name="myinfo"),
+
+
+    # 감독정보
+    path('director/', views.director, name="director"),
+
+
+    # 배우정보
+    path('actor/', views.actor, name="actor"),
 ]
 

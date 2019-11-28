@@ -195,9 +195,42 @@ def want(request):
 
 
 # 감독/배우 id 줬을 때 그 사람이 제작/출연한 모든 영화 데이터 주는 api 
+# MovieDetailSerializer
+# serializer 사용시 꼭 api_view추가
+@api_view(['GET'])
+@permission_classes((AllowAny, ))
+def director(request):
+    director_id = request.GET.get('directorId')
+    director = get_object_or_404(Director, pk=director_id)
+    serializer = DirectorSerializer(instance=director)
+    movie_list = []
+    for movie_id in serializer.data['movies']:
+        movie = get_object_or_404(Movie, pk=movie_id)
+        movie_serializer = MovieSerializer(instance=movie)
+        movie_list.append(movie_serializer.data)
+
+    result = serializer.data
+    result['movies'] = movie_list
+    return JsonResponse(result)
 
 
+# ActorSerializer
+# serializer 사용시 꼭 api_view추가
+@api_view(['GET'])
+@permission_classes((AllowAny, ))
+def actor(request, actor_id):
+    actor_id = request.GET.get('actorId')
+    actor = get_object_or_404(Actor, pk=actor_id)
+    serializer = ActorSerializer(instance=actor)
+    movie_list = []
+    for movie_id in serializer.data['movies']:
+        movie = get_object_or_404(Movie, pk=movie_id)
+        movie_serializer = MovieSerializer(instance=movie)
+        movie_list.append(movie_serializer.data)
 
+    result = serializer.data
+    result['movies'] = movie_list
+    return JsonResponse(result)
 
 
 @api_view(['GET'])
