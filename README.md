@@ -1,4 +1,4 @@
-# <movie프로젝트이름>
+# MovieRecorders :: 영화 추천 사이트
 
 **01150813** 
 
@@ -18,13 +18,14 @@
 </p>
 
 <p align="center">
-"We record your film life."
+"We record your film life. We support your film life."
 </p>
+
 
 
 ## 목차
 
-1. [<movie프로젝트이름>란?](https://github.com/LifeRecorders/)
+1. [MovieRecorders 란?](https://github.com/LifeRecorders/)
 2. [팀원 정보 및 업무 분담 내역]([https://github.com/LifeRecorders/1126/blob/master/README.md#%ED%8C%80%EC%9B%90-%EC%A0%95%EB%B3%B4-%EB%B0%8F-%EC%97%85%EB%AC%B4-%EB%B6%84%EB%8B%B4-%EB%82%B4%EC%97%AD](https://github.com/LifeRecorders/1126/blob/master/README.md#팀원-정보-및-업무-분담-내역))
 3. [목표 서비스 구현 및 실제 구현 정도]([https://github.com/LifeRecorders/1126/blob/master/README.md#%EB%AA%A9%ED%91%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84-%EB%B0%8F-%EC%8B%A4%EC%A0%9C-%EA%B5%AC%ED%98%84-%EC%A0%95%EB%8F%84](https://github.com/LifeRecorders/1126/blob/master/README.md#목표-서비스-구현-및-실제-구현-정도))
    - 일자별 업무 진행
@@ -41,7 +42,7 @@
 
 
 
-## <movie프로젝트이름>란?
+## MovieRecorders 란?
 
 LifeRecorders 팀은 문화를 향유하는 당신의 삶을 언제나 지지합니다. 더욱 풍부한 문화를 향유의 삶을 위해 기존 영화 추천 사이트와 차별화된 영화 일기를 작성할 수 있는 기능을 구현하였습니다. 
 
@@ -192,6 +193,8 @@ makeartweek@gmail.com
 
 - 메인 화면에서 관람객 수, 최신순, 주간 박스오피스순으로 BEST 영화 추천
 
+![image-20191129083237021](README.assets/image-20191129083237021.png)
+
 - 메인 화면에서 평론가 추천의 영화 컬렉션 확인
 
 
@@ -199,19 +202,28 @@ makeartweek@gmail.com
 ### 2) 리뷰 작성
 
 - 로그인 사용자는 ⭐️ 를 조작해 평점과 리뷰 등록
+
+![image-20191129084203411](README.assets/image-20191129084203411.png)
+
 - 내가 남긴 리뷰 수정, 삭제 기능
+
+![image-20191129084257815](README.assets/image-20191129084257815.png)
 
 
 
 ### 3) 영화 검색
 
-- 다른 사용자 검색
+- 직관적인 검색창
 
-- 작품으로 검색
-- 배우로 검색
-- 감독으로 검색
+![image-20191129083309290](README.assets/image-20191129083309290.png)
 
+- 작품, 배우, 감독, 다른 사용자 중복 검색 기능
 
+![image-20191129083430637](README.assets/image-20191129083430637.png)
+
+![image-20191129083541666](README.assets/image-20191129083541666.png)
+
+![image-20191129083515492](README.assets/image-20191129083515492.png)
 
 ### 4) 사용자 프로필
 
@@ -219,19 +231,35 @@ makeartweek@gmail.com
 
 
 
-### 5) 사용자 자신만의 영화 일기(Diary) 등록
+### 5) 영화 상세정보 
+
+![image-20191129083744729](README.assets/image-20191129083744729.png)
+
+![image-20191129083801383](README.assets/image-20191129083801383.png)
+
+![image-20191129083902952](README.assets/image-20191129083902952.png)
+
+- 갤러리 사진 자동 넘김 및 사용자 임의 넘김 가능
+
+![image-20191129084102733](README.assets/image-20191129084102733.png)
+
+
+
+### 6) 사용자 자신만의 영화 일기(Diary) 등록
 
 - 달력 UI로 직관적인 날짜 선택과 함께 영화 일기를 보거나, 쓰거나, 수정하거나, 삭제 가능
 
+![image-20191129084422651](README.assets/image-20191129084422651.png)
 
 
-### 6) 사용자의 영화 컬렉션(Collection) 등록
+
+### 7) 사용자의 영화 컬렉션(Collection) 등록
 
 - 좋아하는 영화들을 모아서 컬렉션을 만들 수 있고, 만든 컬렉션은 다른 사용자들에게 메인화면에서 추천 가능
 
 
 
-### 10) UI/UX
+### 8) UI/UX
 
 - Vuetify와 Bootstrap 프레임워크 이용으로 사용자에게 직관적인 UI/UX 제공
 - Single Page App으로 페이지 리로드 최소화
