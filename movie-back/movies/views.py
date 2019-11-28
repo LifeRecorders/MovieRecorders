@@ -218,7 +218,7 @@ def director(request):
 # serializer 사용시 꼭 api_view추가
 @api_view(['GET'])
 @permission_classes((AllowAny, ))
-def actor(request, actor_id):
+def actor(request):
     actor_id = request.GET.get('actorId')
     actor = get_object_or_404(Actor, pk=actor_id)
     serializer = ActorSerializer(instance=actor)
