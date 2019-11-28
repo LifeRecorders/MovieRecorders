@@ -59,14 +59,16 @@ makeartweek@gmail.com
 
 #### **Backend**
 
-<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:15%;" />  
+<img src="https://avatars3.githubusercontent.com/u/50973824?s=460&amp;v=4" alt="img" style="zoom:15%;" /> 
+
 [**정승원**](https://github.com/tesschung): DB / 장고 REST API 설계, 장고 로직 구현, 데이터 스크래핑
 
 
 
 #### **Frontend**
 
-<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:15%;" />   
+<img src="https://avatars3.githubusercontent.com/u/52685214?s=460&v=4" alt="img" style="zoom:15%;" />  
+
 [**이인동**](https://github.com/IndongLee): 화면 설계 및 디자인, Vue 로직 구현, REST API 활용
 
 
