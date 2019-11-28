@@ -1,15 +1,25 @@
 <template>
-  <div class="container mt-5 text-left">
-    <h2>{{ this.user.username }}</h2>
-    <br/>
-    <router-link to="/user-movie-list/" id="router-movie-list">
-      <h6>내가 본 영화 {{ this.userMovieList.length }} </h6>
-    </router-link>
-    <h6>앞으로 볼 영화 </h6>
-    <br/>
-    <hr/>
-    <DiaryCalendar v-on:openDiary="openDiary" />
+  <div class="myPage">
+    <header v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/maincolor.png') +')'}">
+      <MovieHeader />
+      <div id="searchBarDiv" class="container col-6 mt-5">
+        <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>
+      </div>
+      <div class="container text-left text-light">
+        <h2>{{ this.user.username }}</h2>
+        <br/>
+        <router-link to="/user-movie-list/" id="router-movie-list">
+          <h6 class="router-movie">내가 본 영화 {{ this.userMovieList.length }} </h6>
+        </router-link>
+        <h6>앞으로 볼 영화 </h6>
+        <br/>
+      </div>
+    </header>
+    <div class="mt-5">
+      <DiaryCalendar v-on:openDiary="openDiary" />
+    </div>
   </div>
+  
 </template>
 
 <script>
@@ -17,6 +27,8 @@ import { mapGetters, mapState } from 'vuex'
 import router from '@/router'
 import axios from 'axios'
 import DiaryCalendar from '@/components/DiaryCalendar'
+import MovieHeader from '@/components/MovieHeader'
+import SearchBar from '@/components/SearchBar'
 
 
 export default {
@@ -28,7 +40,9 @@ export default {
   //   }
   // },
   components: {
-    DiaryCalendar
+    DiaryCalendar,
+    MovieHeader,
+    SearchBar
   },
   computed: {
     ...mapGetters([
@@ -44,6 +58,9 @@ export default {
     },
   },
   methods: {
+    searchInfo(keyword) {
+      this.$store.dispatch('searchInfo', keyword)
+    },
     checkLoggedIn() {
       if(!this.isLoggedIn) {
         // 로그인 페이지로 보내겠다.
@@ -107,5 +124,14 @@ export default {
 </script>
 
 <style>
-
+.myPage > header {
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  background-position-x: center;
+}
+.myPage #searchBarDiv {
+  position: relative;
+  top: -5rem;
+}
 </style>

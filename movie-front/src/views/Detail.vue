@@ -1,127 +1,111 @@
 <template>
-  <div class="container">
-    {{ this.detail }}
-    <!-- 상단 이미지 + 정보 -->
-    <b-card
-    border-variant="white"
-    align="left"
-    img-alt="Image"
-    v-bind:img-src="this.detail.naver_big_poster_url"
-    img-width="160rem"
-    img-left
-    tag="article"
-    style="max-width: 100rem;">
-      <b-card-title>
-        <h3>{{ this.detail.title }}</h3>
-      </b-card-title>
-      <b-card-sub-title>
-        {{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}
-        <hr/>
-      </b-card-sub-title>
-      <b-card-text>
-        <p>평점 {{ this.detail.rating }}</p>
-      </b-card-text>
+  <div>
+    <div class="bgBlur" v-bind:style="{ backgroundImage: 'url(' + this.bgImageUrl + ')' }"></div>
+    <div id="detail">
+      <header>
+      <MovieHeader />
+      <div id="searchBarDiv" class="container col-6 mt-5">
+        <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>
+      </div>
+      </header>
+      <b-container>
+        <b-card class="cdBackground mt-5" v-bind:style="{ backgroundImage: 'url(' + this.bgImageUrl + ')' }">
+          <b-row class="mb-4">
+            <b-col md="8">
+            <div style="visibility:hidden; width:15rem; height:15rem;"></div>
+            </b-col>
+            <b-col>
+            </b-col>
+            
+          </b-row>
 
-      <b-button v-b-modal.modal-diary size="md" variant="outline-secondary">내 다이어리 쓰기</b-button>
-        <b-modal
-        id="modal-diary"
-        ref="modal"
-        v-bind:title="this.detail.title"
-        v-on:show="resetDiaryModal"
-        v-on:hidden="resetDiaryModal"
-        v-on:ok="diaryOk">
-          <b-form-group v-bind:state="diaryTitleState">
-            <DiaryCalendar v-on:openDiary="openDiary" />
-            <br/>
-            <div class="text-center" v-text="this.watched_at"></div>
-            <br/>
-            <b-form-input id="title-input" v-model="diaryTitle" v-bind:state="diaryTitleState" placeholder="Title" required>
-            </b-form-input>
-          </b-form-group>
-          <b-form-group v-bind:state="diaryContentState">
-            <b-form-input id="content-input" v-model="diaryContent" v-bind:state="diaryContentState" placeholder="이 영화를 본 날은 어땠나요?" required>
-            </b-form-input>
-          </b-form-group>
-        </b-modal>
+          <b-row class='text-left mt-2'>
+            <b-col>
+              <h2>{{ this.detail.title }}</h2>
+              <h6 style="font-size:small;">{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
+              <h6 style="font-size:small;" class="mt-2">{{ this.detail.watch_grade }}</h6>
+              <h6 class="rating mr-3">평점 ★{{ this.detail.rating }}</h6>
+              <b-button size="sm" class="mr-3" id="likeButton">보고 싶어요</b-button>
+              <b-button v-b-modal.modal-diary size="sm" variant="light">내 다이어리 쓰기</b-button>
+                <b-modal
+                id="modal-diary"
+                ref="modal"
+                v-bind:title="this.detail.title"
+                v-on:show="resetDiaryModal"
+                v-on:hidden="resetDiaryModal"
+                v-on:ok="diaryOk">
+                  <b-form-group v-bind:state="diaryTitleState">
+                    <DiaryCalendar v-on:openDiary="openDiary" />
+                    <br/>
+                    <div class="text-center" v-text="this.watched_at"></div>
+                    <br/>
+                    <b-form-input id="title-input" v-model="diaryTitle" v-bind:state="diaryTitleState" placeholder="Title" required>
+                    </b-form-input>
+                  </b-form-group>
+                  <b-form-group v-bind:state="diaryContentState">
+                    <b-form-input id="content-input" v-model="diaryContent" v-bind:state="diaryContentState" placeholder="이 영화를 본 날은 어땠나요?" required>
+                    </b-form-input>
+                  </b-form-group>
+                </b-modal>
+              <hr style="border: 0.5px solid white"/>
+              <h6>제작</h6>
+              <b-row>
+                <br/>
+                <div style="font-size:small;" v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
+                  <b-col style="padding-left: 1rem; padding-right: 0;">
+                    {{ director.name }}
+                  </b-col>
+                </div>
+              </b-row>
+              <br>
+              <h6>출연</h6>
+              <b-row>
+                <br/>
+                <div style="font-size:small;" v-for="(actor, idx) in this.detail.actors" v-bind:key="idx">
+                  <b-col style="padding-left: 1rem; padding-right: 0;">
+                    {{ actor.name }}
+                  </b-col>
+                </div>
+              </b-row>
 
-    </b-card>
-    
-    <!-- 감상평 남기기 -->
-    <div v-if="isLoggedIn" class="container mt-5 text-left">
-      <b-card align="right" border-variant="secondary" style="max-width: 100rem;">
-        <b-button v-b-modal.modal-review size="md" variant="outline-secondary">감상평 남기기</b-button>
-
-        <b-modal
-        id="modal-review"
-        ref="modal"
-        v-bind:title="this.detail.title"
-        v-on:show="resetModal"
-        v-on:hidden="resetModal"
-        v-on:ok="reviewOk">
-          <star-rating v-bind:increment="0.5" v-bind:star-size="30" v-on:rating-selected="setScore"></star-rating>
-          <br/>
-          <b-form-group v-bind:state="reviewState">
-            <b-form-input id="review-input" v-model="review" v-bind:state="reviewState" placeholder="이 작품은 어떠셨나요?" required>
-            </b-form-input>
-          </b-form-group>
-        </b-modal>
-      </b-card>
-    </div>
-
-    <!-- 영화 상세 정보 -->
-    <div class="container mt-3 text-left">
-      <b-card
-      border-variant="secondary"
-      aligh="left"
-      img-alt="Image"
-      img-left
-      style="max-width: 100rem;">
-        <b-card-text>
-          <h4>기본 정보</h4>
-          <br/>
-          <h6>{{ this.detail.title }}</h6>
-          <h6>{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
-          <h6>{{ this.detail.watch_grade }}</h6>
-          <br/>
-          <h6 v-html="replaceAll(this.detail.description)"></h6>
-          <br/>
-          <hr/>
-          <br/>
-        </b-card-text>
-
-        <b-card-text>
-          <h4>출연/제작</h4>
-          <br/>
-          <dir v-for="(director, idx) in this.detail.directors" v-bind:key="idx">
-            <div>
-              <b-img width="100rem" height="100rem" left v-bind:src="director.img_url" rounded="circle"></b-img>
-              {{ director.name }}
+            </b-col>
+            <b-col>
+              <h4>감상평</h4>
+              <div v-if="isLoggedIn" class="container text-left">
+                <b-button v-b-modal.modal-review size="sm" variant="light" class="ml-auto">감상평 남기기</b-button>
+                <b-modal
+                id="modal-review"
+                ref="modal"
+                v-bind:title="this.detail.title"
+                v-on:show="resetModal"
+                v-on:hidden="resetModal"
+                v-on:ok="reviewOk">
+                  <star-rating v-bind:increment="0.5" v-bind:star-size="30" v-on:rating-selected="setScore"></star-rating>
+                  <br/>
+                  <b-form-group v-bind:state="reviewState">
+                    <b-form-input id="review-input" v-model="review" v-bind:state="reviewState" placeholder="이 작품은 어떠셨나요?" required>
+                    </b-form-input>
+                  </b-form-group>
+                </b-modal>
+              </div>
               <br/>
-              제작
-            </div>
-          </dir>
-          <br/>
-          <hr/>
-          <br/>
-        </b-card-text>
-
-        <b-card-text>
-          <h4>감상평</h4>
-          <br>
-        </b-card-text>
-        <div>
-          <b-card no-body>
-            <b-tabs card>
-              <b-tab title="전체" active>
-                <b-card-text>{{ this.reviews }}</b-card-text>
-              </b-tab>
-              <b-tab title="친구">
-                <b-card-text>Tab contents 2</b-card-text>
-              </b-tab>
-            </b-tabs>
-          </b-card>
-        </div>
-      </b-card>
+              {{ this.reviews }}
+              <b-row>
+                <div v-for="(review, idx) in this.reviews.slice(0, 4)" v-bind:key="idx">
+                  {{ review.user }}
+                  <b-col>
+                    <!-- {{ this.getUsername(review.user) }} -->
+                    ★{{ review.score }}
+                    <hr/>
+                    {{ review.content }}<br/>
+                  </b-col>
+                </div>
+              </b-row>
+              
+            </b-col>
+          </b-row>
+        </b-card>
+      </b-container>
     </div>
   </div>
 </template>
@@ -131,6 +115,8 @@ import axios from'axios'
 import { mapState, mapGetters } from 'vuex'
 import StarRating from 'vue-star-rating'
 import DiaryCalendar from '@/components/DiaryCalendar'
+import MovieHeader from '@/components/MovieHeader'
+import SearchBar from '@/components/SearchBar'
 
 export default {
   name: "Detail",
@@ -146,11 +132,15 @@ export default {
       diaryFile: '',
       diaryTitleState: null,
       diaryContentState: null,
+      bgImageUrl: '',
+      mainReview: [],
     }
   },
   components: {
     StarRating,
-    DiaryCalendar
+    DiaryCalendar,
+    MovieHeader,
+    SearchBar
   },
   computed: {
     ...mapGetters([
@@ -163,6 +153,9 @@ export default {
     },
   },
   methods: {
+    searchInfo(keyword) {
+      this.$store.dispatch('searchInfo', keyword)
+    },
     resetModal () {
       this.review = ''
       this.reviewState = null
@@ -256,14 +249,77 @@ export default {
         this.$nextTick(() => {
         this.$refs.modal.hide()
       })
+    },
+    setBgImage() {
+      if(this.detail.scenes.length > 0) {
+        if(this.detail.scenes.length > 1) {
+          this.bgImageUrl = this.detail.scenes[1]['scene']
+        }
+        else {
+          this.bgImageUrl = this.detail.scenes[0]['scene']
+        }
+      }
+    },
+    getUsername(userId) {
+      console.log(userId)
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/accounts/users/?userId=${userId}`)
+        .then(response => {
+          console.log(response)
+          return response.data.username
+        })
+        .catch(error => {
+          console.error(error)
+        })
     }
   },
   mounted() {
     this.getReview(this.detail.pk)
+    this.setBgImage()
   },
 }
 </script>
 
 <style>
-
+/* html { overflow: hidden; } */
+/* .bgBlur { overflow: auto; } */
+.bgBlur {
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(1.02);
+  z-index: -1;
+  content: "";
+}
+#detail > header {
+  background-color: white;
+  background-size: cover;
+  height: 3rem;
+  width: 100%;
+  background-position-x: center;
+}
+#detail #searchBarDiv {
+  position: relative;
+  top: -6.2rem;
+}
+.cdBackground {
+  background-position: center;
+  background-size: cover; 
+  text-align: left;
+  color: aliceblue;
+}
+.rating {
+  display: inline;
+}
 </style>

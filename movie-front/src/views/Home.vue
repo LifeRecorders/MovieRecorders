@@ -1,15 +1,18 @@
 <template>
   <div class="home">
-    <h1>검색하기</h1>
-    <div class="container col-6">
-      <SearchBar v-on:searchInfo="searchInfo"/>
-    </div>
+    <header v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/maincolor.png') +')'}">
+      <MovieHeader />
+      <div id="searchBarDiv" class="container col-6 mt-5">
+        <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>
+      </div>
+    </header>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
 // import { mapGetters } from 'vuex'
+import MovieHeader from '@/components/MovieHeader'
 import SearchBar from '@/components/SearchBar'
 import router from '@/router'
 
@@ -21,30 +24,27 @@ export default {
   //   ])
   // },
   components: {
+    MovieHeader,
     SearchBar,
   },
   methods: {
-    searchInfo(keyword) {
-      const SERVER_IP = process.env.VUE_APP_SERVER_IP
-      // const data = {
-      //   keyword,
-      // }
-      // console.log(data)
-      axios.get(`${SERVER_IP}/api/v1/search/?q=${keyword}`)
-        .then(response => {
-          console.log(response.data.movie)
-          this.$store.dispatch('searchInfo', response.data)
-        })
-        .catch(error => {
-          console.error(error)
-        })
-        
+    async searchInfo(keyword) {
+      await this.$store.dispatch('searchInfo', keyword)
       router.push(`/search/${keyword}`)
-    }
+    },
   }
 }
 </script>
 
 <style>
-
+.home > header {
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  background-position-x: center;
+}
+.home #searchBarDiv {
+  position: relative;
+  top: 7rem;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="signup-div">
-    <b-button variant="primary" v-b-modal.signupModal>회원가입</b-button>
+    <b-button variant="white" v-b-modal.signupModal>회원가입</b-button>
 
     <div v-if="loading" class="spinner-border" role="status">
       <span class="sr-only">loading...</span>
