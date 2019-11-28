@@ -1,18 +1,18 @@
 <template>
   <div id="movie_header">
-    <b-navbar toggleable="lg" type="light" variant="white">
+    <b-navbar toggleable="lg">
       <b-navbar-brand>
         <router-link to="/" id="router_home" class="text-dark">Home</router-link>
       </b-navbar-brand>
+      <!-- <b-navbar-brand>
+        <img src="@/assets/images/logo_small.png" v-on:click="homeRouter" v-bind="mainProps"/>
+      </b-navbar-brand> -->
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
         <b-navbar-nav v-if="isLoggedIn" class="ml-auto">
-          <!-- <a v-on:click.prevent="logout" href="/logout">로그아웃</a>   -->
           <b-nav-item-dropdown class="text-dark" right>
-            <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
               <em>User</em>
             </template> 
@@ -37,6 +37,18 @@ import LoginForm from "@/components/LoginForm";
 
 export default {
   name: "movie_header",
+  data() {
+    return {
+      mainProps: {
+        blank: true,
+        blankColor:'#777',
+        width: 75,
+        height: 75,
+        class: 'm1'
+      }
+    }
+    
+  },
   components: {
     LoginForm,
     SignUpForm
@@ -47,6 +59,9 @@ export default {
     }
   },
   methods: {
+    homeRouter() {
+      router.push('/');
+    },
     logout() {
       this.$session.destroy();
       this.$store.dispatch("logout");

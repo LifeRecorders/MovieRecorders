@@ -1,7 +1,7 @@
 <template>
   <div class="movie-input">
     <form class="input-group mb-3" v-on:submit.prevent="onSubmit">
-      <input v-on:keyup.enter="onSubmit" v-model="keyword" type="text" class="form-control" placeholder="작품명, 배우, 감독, 사용자 검색">
+      <input v-model="keyword" type="text" class="form-control" placeholder="작품명, 배우, 감독, 사용자 검색">
     </form>
   </div>
   
@@ -30,5 +30,7 @@ export default {
 </script>
 
 <style>
-
+.movie-input {
+  display: inline;
+}
 </style>

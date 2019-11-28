@@ -17,7 +17,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/search/:keyword',
+    path: '/search/',
     name: 'search',
     component: Search
   },

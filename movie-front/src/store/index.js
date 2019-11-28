@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import jwtDecode from 'jwt-decode'
+import axios from 'axios'
+import router from '@/router'
+
 
 Vue.use(Vuex)
 
@@ -83,12 +86,26 @@ export default new Vuex.Store({
     logout(context) {
       context.commit('setToken', null)
     },
+    searchInfo(context, keyword) {
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+      console.log(keyword)
+
+      axios.get(`${SERVER_IP}/api/v1/search/?q=${keyword}`)
+        .then(response => {
+          console.log(response)
+          context.commit('setInfo', response.data)
+          router.push(`/search/?q=${keyword}`)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
     clearInfo(context) {
       context.commit('setClearInfo')
     },
-    searchInfo(context, data) {
-      context.commit('setInfo', data)
-    },
+    // setInfo(context, data) {
+    //   context.commit('setInfo', data)
+    // },
     clearDetail(context) {
       context.commit('clearDetail')
     },
