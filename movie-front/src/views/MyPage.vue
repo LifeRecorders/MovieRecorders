@@ -16,7 +16,14 @@
       </div>
     </header>
     <div class="mt-5">
-      <DiaryCalendar v-on:openDiary="openDiary" />
+      <DiaryCalendar v-b-modal.modal-diary-page v-on:openDiary="openDiary" />
+      <b-modal
+      id="modal-diary-page"
+      ref="modal"
+      v-bind:title="this.diary.title"
+      v-on:show="resetDiaryModal"
+      v-on:hidden="resetDiaryModal">
+      </b-modal>
     </div>
   </div>
   
@@ -51,7 +58,8 @@ export default {
     ]),
     ...mapState([
       'user',
-      'userMovieList'
+      'userMovieList',
+      'diary'
     ]),
     isLoggedIn() {
       return this.$store.getters.isLoggedIn;
@@ -104,8 +112,9 @@ export default {
       this.$store.dispatch('clearDiary')
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
       
-      axios.get(`${SERVER_IP}/diaries/diaries_create_update_delete/?userId=${this.userId}&datetime=${this.dateToStr(selectedDate)}`, this.options)
+      axios.get(`${SERVER_IP}/diaries/diaries/diaries_create_update_delete/?userId=${this.userId}&datetime=${this.dateToStr(selectedDate)}`, this.options)
         .then(response => {
+          this.$store.dispatch('setDiary', response.data)
           console.log(response)
         })
         .catch(error => {

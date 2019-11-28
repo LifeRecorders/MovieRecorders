@@ -6,6 +6,7 @@ import Detail from '@/views/Detail'
 import MyPage from '@/views/MyPage'
 import UserMovieList from '@/views/UserMovieList'
 import DiaryPage from '@/views/DiaryPage'
+import Filmography from '@/views/Filmography'
 
 
 Vue.use(VueRouter)
@@ -40,6 +41,11 @@ const routes = [
     path: '/diarypage/',
     name: 'diarypage',
     component: DiaryPage
+  },
+  {
+    path: '/filmography/',
+    name: 'filmography',
+    component: Filmography
   }
 ]
 
