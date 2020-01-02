@@ -38,6 +38,8 @@ urlpatterns = [
 
     # 감독정보
     path('director/', views.director, name="director"),
+    # 관계자들로부터 영화 상세로 넘어가는 경우
+    path('personsmovie/', views.personsmovie, name="personsmovie"),
 
 
     # 배우정보

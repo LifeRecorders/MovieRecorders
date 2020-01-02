@@ -26,7 +26,8 @@
               <h6 style="font-size:small;">{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
               <h6 style="font-size:small;" class="mt-2">{{ this.detail.watch_grade }}</h6>
               <h6 class="rating mr-3">평점 ★{{ this.detail.rating }}</h6>
-              <b-button size="sm" class="mr-3" id="likeButton" v-on:click="want">보고 싶어요</b-button>
+              <b-button v-if="this.wantMovie" size="sm" class="mr-3" id="wantButton" v-on:click="want" variant="danger">✔보고 싶어요</b-button>
+              <b-button v-else size="sm" class="mr-3" id="wantButton" v-on:click="want" variant="secondary">보고 싶어요</b-button>
               <b-button v-b-modal.modal-diary size="sm" variant="light">내 다이어리 쓰기</b-button>
                 <b-modal
                 id="modal-diary"
@@ -177,6 +178,7 @@ export default {
       diaryContentState: null,
       bgImageUrl: '',
       mainReview: [],
+      wantMovie: false,
     }
   },
   components: {
@@ -303,12 +305,19 @@ export default {
         }
       }
     },
+    checkWant() {
+      for(let i in this.detail.want_users) {
+        if(this.detail.want_users[i] === this.userId) {
+          this.wantMovie = true
+        }
+      }
+    },
     want() {
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
 
       axios.get(`${SERVER_IP}/api/v1/want/${this.detail.pk}/${this.userId}/`)
         .then(response => {
-          console.log(response.data)
+          this.wantMovie = response.data.wanted
         })
         .catch(error => {
           console.error(error)
@@ -326,6 +335,7 @@ export default {
   },
   mounted() {
     this.getReview(this.detail.pk)
+    this.checkWant()
     this.setBgImage()
   },
 }

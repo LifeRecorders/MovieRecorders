@@ -2,7 +2,7 @@
   <div class="home">
     <header v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/maincolor.png') +')'}">
       <MovieHeader />
-      <h1 class="title">MovieRecoders</h1>
+      <h1 class="title">MovieRecorders</h1>
       <p class="subtitle">We record your film life.</p>
       <div id="searchBarDiv" class="container col-6 mt-5">
         <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>

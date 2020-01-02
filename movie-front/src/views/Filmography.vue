@@ -24,7 +24,7 @@
             tag="article"
             style="max-width: 10rem;"
             class="mb-2">
-            <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="this.getDetail(idx)">
+            <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail(idx)">
             </b-card-img>
             <b-card-title>
                 <h6>{{ movie.title }}</h6>
@@ -43,7 +43,7 @@
 
 <script>
 import { mapState } from 'vuex'
-// import axios from 'axios'
+import axios from 'axios'
 import router from '@/router'
 import MovieHeader from '@/components/MovieHeader'
 import SearchBar from '@/components/SearchBar'
@@ -72,11 +72,21 @@ export default {
     },
     getDetail(idx) {
       this.$store.dispatch('clearDetail')
-      let detailData = this.filmography.movies[idx]
+      let pk = this.filmography.movies[idx].pk
       let keyword = this.filmography.movies[idx].title
-      console.log(detailData, keyword)
-      this.$store.dispatch('showDetail', detailData)
-      router.push(`/detail/${keyword}`)
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/api/v1/personsmovie/?q=${pk}`)
+        .then(response => {
+          const info = response.data
+          console.log(info.movie)
+          this.$store.dispatch('showDetail', info.movie[0])
+          router.push(`/detail/${keyword}`)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+      
     },
   }
 };

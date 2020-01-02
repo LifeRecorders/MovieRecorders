@@ -17,7 +17,7 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = [
             'pk', 'genres', 'title', 'title_en', 'description', 
             'open_date', 'audience', 'naver_poster_url', 'naver_big_poster_url', 'watch_grade',
-            'nation', 'liked_users', 'company', 'movieCd', 'rank',
+            'nation', 'liked_users', 'want_users', 'company', 'movieCd', 'rank',
             'rating', 'created_at', 'updated_at', 'naver_link', 
             'diaries', 'collections'
         ]

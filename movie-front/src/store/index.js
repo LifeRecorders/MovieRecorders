@@ -37,6 +37,9 @@ export default new Vuex.Store({
     userId(state) {
       return state.token ? jwtDecode(state.token).user_id : null
     },
+    getInfo(state) {
+      return state.info
+    },
   },
   mutations: {
     setToken(state, token) {

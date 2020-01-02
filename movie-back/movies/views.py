@@ -214,6 +214,25 @@ def director(request):
     return JsonResponse(result)
 
 
+@api_view(['GET'])
+@permission_classes((AllowAny, ))
+def personsmovie(request):
+    searchKeyword = request.GET.get('q')
+    if searchKeyword == '':
+        context = {}
+        return JsonResponse(context)
+    else:
+        movie = ''
+        results = {}
+        if Movie.objects.filter(pk=searchKeyword).exists() == True: # pk값으로 처리하여 식별함
+            movie = Movie.objects.filter(pk=searchKeyword)
+        moviedetailserializer = MovieDetailSerializer(movie, many=True)
+        results['movie'] = moviedetailserializer.data
+        return Response(results)
+
+
+
+
 # ActorSerializer
 # serializer 사용시 꼭 api_view추가
 @api_view(['GET'])
