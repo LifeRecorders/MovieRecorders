@@ -127,13 +127,24 @@ def moviewithgenre(request):
 def myreviews(request):
     user_id = request.GET.get('userId')
     user = User.objects.get(pk=user_id)
-    myReviewedMovies = set()
     userReviews = user.reviews.all()
+    userWants = user.want_movies.all()
+    result = {}
+    review_movie_list = []
+    want_movie_list = []
     for review in userReviews:
-        mymovie = review.movie
-        myReviewedMovies.add(mymovie.title)
-    myReviewedMovies = list(myReviewedMovies)
-    return Response(myReviewedMovies)
+        print(review.movie.pk)
+        movie = get_object_or_404(Movie, pk=review.movie.pk)
+        movie_serializer = MovieDetailSerializer(instance=movie)
+        review_movie_list.append(movie_serializer.data)
+    for want in userWants:
+        print(want.pk)
+        movie = get_object_or_404(Movie, pk=want.pk)
+        movie_serializer = MovieDetailSerializer(instance=movie)
+        want_movie_list.append(movie_serializer.data)
+    result['review'] = review_movie_list
+    result['want'] = want_movie_list
+    return Response(result)
 
 # serializer 사용시 꼭 api_view추가
 @api_view(['GET'])

@@ -5,6 +5,7 @@ import Search from '@/views/Search'
 import Detail from '@/views/Detail'
 import MyPage from '@/views/MyPage'
 import UserMovieList from '@/views/UserMovieList'
+import UserWantList from '@/views/UserWantList'
 import DiaryPage from '@/views/DiaryPage'
 import Filmography from '@/views/Filmography'
 
@@ -36,6 +37,11 @@ const routes = [
     path: '/user-movie-list/',
     name:'user-movie-list',
     component: UserMovieList
+  },
+  {
+    path: '/user-want-list/',
+    name:'user-want-list',
+    component: UserWantList
   },
   {
     path: '/diarypage/',

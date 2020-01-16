@@ -19,6 +19,7 @@ export default new Vuex.Store({
     detail: [],
     user: [],
     userMovieList: [],
+    userWantList: [],
     diary: [],
     bestMovies: [{}, {}, {}, {}, {}],
     filmography: [],
@@ -76,6 +77,12 @@ export default new Vuex.Store({
     },
     clearUserMovie(state) {
       state.userMovieList = []
+    },
+    setWantMovie(state, data) {
+      state.userWantList = data
+    },
+    clearWantMovie(state) {
+      state.userWantList = []
     },
     setDiary(state, data) {
       state.diary = data
@@ -137,6 +144,12 @@ export default new Vuex.Store({
     },
     clearUserMovie(context) {
       context.commit('clearUserMovie')
+    },
+    setWantMovie(context, data) {
+      context.commit('setWantMovie', data)
+    },
+    clearWantMovie(context) {
+      context.commit('clearWantMovie')
     },
     setDiary(context, data) {
       context.commit('setDiary', data)

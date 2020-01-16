@@ -11,7 +11,9 @@
         <router-link to="/user-movie-list/" id="router-movie-list">
           <h6 class="router-movie">내가 본 영화 {{ this.userMovieList.length }} </h6>
         </router-link>
-        <h6>앞으로 볼 영화 </h6>
+        <router-link to="/user-want-list/" id="router-want-list">
+          <h6 class="router-movie">앞으로 볼 영화 {{ this.userWantList.length }} </h6>
+        </router-link>
         <br/>
       </div>
     </header>
@@ -59,6 +61,7 @@ export default {
     ...mapState([
       'user',
       'userMovieList',
+      'userWantList',
       'diary'
     ]),
     isLoggedIn() {
@@ -81,6 +84,7 @@ export default {
 
       axios.get(`${SERVER_IP}/accounts/users/${this.userId}`, this.options)
         .then(response => {
+          console.log(response.data)
           this.$store.dispatch('setUser', response.data)
         })
         .then(error => {
@@ -93,8 +97,8 @@ export default {
 
       axios.get(`${SERVER_IP}/api/v1/myreviews/?userId=${this.userId}`, this.options)
         .then(response => {
-          this.$store.dispatch('setUserMovie', response.data)
-          console.log(response.data)
+          this.$store.dispatch('setUserMovie', response.data.review)
+          this.$store.dispatch('setWantMovie', response.data.want)
         })
         .catch(error => {
           console.error(error)
