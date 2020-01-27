@@ -21,7 +21,7 @@
           </b-row>
 
           <b-row class="text-left mt-2 mb-0">
-            <b-col md="4">
+            <b-col md="5">
               <h2>{{ this.detail.title }}</h2>
               <h6 style="font-size:small;">{{ getYear(this.detail.open_date) }} · {{ this.detail.nation }}</h6>
               <h6 style="font-size:small;" class="mt-2">{{ this.detail.watch_grade }}</h6>

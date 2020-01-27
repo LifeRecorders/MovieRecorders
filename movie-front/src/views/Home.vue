@@ -45,7 +45,7 @@
           img-alt="Image"
           img-top
           tag="article"
-          style="max-width: 13rem;"
+          style="max-width: 12rem;"
           class="mb-2">
             <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail(idx)">
             </b-card-img>

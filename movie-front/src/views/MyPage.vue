@@ -21,9 +21,12 @@
         <br/>
       </div>
     </header>
-    <v-row justify="center">
-      <v-date-picker v-model="picker"></v-date-picker>
-    </v-row>
+    <v-container>
+      <v-row justify="center">
+        <v-date-picker v-model="picker"></v-date-picker>
+      </v-row>
+    </v-container>
+    
     <!-- <div class="mt-5">
       <DiaryCalendar v-b-modal.modal-diary-page v-on:openDiary="openDiary" />
       <b-modal
@@ -49,12 +52,11 @@ import SearchBar from '@/components/SearchBar'
 
 export default {
   name: "MyPage",
-  // data () {
-  //   return {
-  //     user: [],
-  //     userMovie: []
-  //   }
-  // },
+  data () {
+    return {
+        picker: new Date().toISOString().substr(0, 10),
+      }
+  },
   components: {
     // DiaryCalendar,
     MovieHeader,

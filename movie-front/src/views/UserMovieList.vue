@@ -1,35 +1,49 @@
 <template>
-  <div class="container mt-5">
-    <b-card-group deck>
-      <div v-for="(movie, idx) in this.userMovieList" v-bind:key="idx">
-        <b-card
-        border-variant="white"
-        align="left"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 10rem;"
-        class="mb-2">
-          <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail('movie', idx)">
-          </b-card-img>
-          <b-card-title>
-            <h6>{{ movie.title }}</h6>
-          </b-card-title>
-          <b-card-text style="font-size:small;">
-            <p>{{ getYear(movie.open_date) }} · {{ movie.nation }}</p>
-          </b-card-text>
-        </b-card>
+  <div id="user-movie-list" v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/backgroundcolor.png') +')'}">
+    <header>
+      <MovieHeader />
+      <div id="searchBarDiv" class="container col-6 mt-5">
+        <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>
       </div>
-    </b-card-group>
+    </header>
+    <div id="movie-list-body" class="container mt-5">
+      <b-card-group deck>
+        <div v-for="(movie, idx) in this.userMovieList" v-bind:key="idx">
+          <b-card
+          border-variant="white"
+          align="left"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 10rem;"
+          class="mb-2">
+            <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail('movie', idx)">
+            </b-card-img>
+            <b-card-title>
+              <h6>{{ movie.title }}</h6>
+            </b-card-title>
+            <b-card-text style="font-size:small;">
+              <p>{{ getYear(movie.open_date) }} · {{ movie.nation }}</p>
+            </b-card-text>
+          </b-card>
+        </div>
+      </b-card-group>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapState } from 'vuex'
 import router from '@/router'
+import MovieHeader from '@/components/MovieHeader'
+import SearchBar from '@/components/SearchBar'
 
 export default {
   name: 'UserMovieList',
+  components: {
+    MovieHeader,
+    SearchBar
+  },
   computed: {
     ...mapGetters([
       'options',
@@ -69,5 +83,17 @@ export default {
 </script>
 
 <style>
-
+#movie-list-body {
+  background: white;
+}
+#user-movie-list > header {
+  background-size: cover;
+  height: 3rem;
+  width: 100%;
+  background-position-x: center;
+}
+#user-movie-list #searchBarDiv {
+  position: relative;
+  top: -4.6rem;
+}
 </style>
