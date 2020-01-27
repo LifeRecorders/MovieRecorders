@@ -32,7 +32,7 @@ def jinheungAPI():
     def week(week_number): # 원하는 만큼의 주간을 입력
         week_list = []
         for week in range(1, week_number+1):
-            targetDt = datetime(2018, 11, 28) - timedelta(weeks=week) 
+            targetDt = datetime(2020, 1, 27) - timedelta(weeks=week) 
             targetDt = targetDt.strftime('%Y%m%d') # yyymmdd
             week_list.append(targetDt)
         return week_list
