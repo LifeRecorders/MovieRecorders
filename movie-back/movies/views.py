@@ -117,9 +117,11 @@ def reviews_create_update_delete(request):
 def moviewithgenre(request):
     # 번호가 아니라, 이름으로 데이터를 보내줘야 한다.
     genretype = request.GET.get('genretype')
+    print(genretype)
     genres = Genre.objects.get(genreType=genretype)
-    movies = Movie.objects.filter(genres=genres.id)
-    serializer = MovieSerializer(movies, many=True)
+    print(genres)
+    movies = Movie.objects.filter(genres=genres.id).order_by('rank').order_by('-rating').order_by('-audience').order_by('-open_date')[:20]
+    serializer = MovieDetailSerializer(movies, many=True)
     return Response(serializer.data)
 
 # 평가를 남긴 애들 목록 보여주기
@@ -154,7 +156,7 @@ def bestmovies(request):
     # dictionary=> str-> int datetime lib사용
     # sort 해서 보내기
     
-    movies = Movie.objects.all().order_by('rank').order_by('-rating').order_by('-audience').order_by('-open_date')[:30]
+    movies = Movie.objects.all().order_by('rank').order_by('-rating').order_by('-audience').order_by('-open_date')[:20]
     serializer = MovieDetailSerializer(movies, many=True)
     return Response(serializer.data)
 

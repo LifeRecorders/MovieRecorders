@@ -10,9 +10,8 @@
     <div class="container">
       <b-card>
         <!-- {{ this.info.movies }} -->
-        <b-img v-bind:src="this.filmography.img_url" rounded="circle" alt="artist-img" id="artist-img" class="mb-2"></b-img>
-        <br/>
-        {{ filmography.name }}
+        <b-img v-bind:src="this.filmography.img_url" rounded="circle" alt="artist-img" id="artist-img" class="mb-2" center></b-img>
+        <h6 style="text-align:center">{{ filmography.name }}</h6>
         <hr/>
         <b-card-group deck>
           <div v-for="(movie, idx) in this.filmography.movies" v-bind:key="idx">
@@ -101,11 +100,12 @@ export default {
 }
 #filmography #searchBarDiv {
   position: relative;
-  top: -6.2rem;
+  top: -5.2rem;
 }
 #artist-img { 
   width: 4rem; 
   height: 4rem; 
-  object-fit: cover; 
+  object-fit: cover;
+  text-align: center;
 }
 </style>

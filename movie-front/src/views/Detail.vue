@@ -131,22 +131,17 @@
           <hr/>
           <h4>갤러리</h4>
           <div>
-            <b-carousel
-              id="carousel-fade"
-              class="mt-5 mb-5"
-              style="text-shadow: 0px 0px 2px #000"
-              fade
-              controls
-              indicators
-              img-width="500"
-              img-height="200"
+            <v-carousel
+              cycle
+              height="600"
+              hide-delimiter-background
+              shows-arrows-on-hover
             >
-              <div v-for="(scene, idx) in this.detail.scenes.slice(1, this.detail.scenes.length)" v-bind:key="idx">
-                <b-carousel-slide
-                v-bind:img-src="scene.scene">
-                </b-carousel-slide>
-              </div>
-            </b-carousel>
+              <v-carousel-item v-for="(scene, idx) in this.detail.scenes.slice(1, this.detail.scenes.length)"
+              v-bind:key="idx"
+              v-bind:src="scene.scene">
+              </v-carousel-item>
+            </v-carousel>
           </div>
         </b-card>
       </b-container>
@@ -372,7 +367,7 @@ export default {
 }
 #detail #searchBarDiv {
   position: relative;
-  top: -6.2rem;
+  top: -5.2rem;
 }
 .cdBackground {
   background-position: center;
@@ -395,8 +390,5 @@ export default {
   width: 4rem; 
   height: 4rem; 
   object-fit: cover; 
-}
-b-carousel-slide {
-  overflow: hidden;
 }
 </style>

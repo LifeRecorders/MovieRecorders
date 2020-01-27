@@ -10,28 +10,65 @@
     </header>
     <br/>
     <br/>
-    <h2>이런 영화는 어때요?</h2>
-    <carousel-3d :width="200" :height="280">
-      <div v-for="(movie, idx) in this.bestMovies" v-bind:key="idx">
-        <slide v-bind:index="idx">
-          <img v-bind:src="movie.naver_big_poster_url" alt="">
-          <p>{{ movie.title }}</p>
-        </slide>
-      </div>
-    </carousel-3d>
+    <div class="container">
+      <v-menu
+        transition="slide-y-transition"
+        bottom
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn
+            class="purple mb-5"
+            color="primary"
+            dark
+            v-on="on"
+          >
+            어떤 영화를 좋아하세요?
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item
+            v-for="(genre, i) in this.genres"
+            :key="i"
+            v-on:click="getGenreMovies(genre)"
+          >
+            <v-list-item-title>{{ genre }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+      <h5 class="genre-type"> {{this.genre}} </h5>
+      <!-- {{ this.genreMovies }} -->
+      <b-card-group deck>
+        <div v-for="(movie, idx) in this.genreMovies" v-bind:key="idx">
+          <b-card
+          border-variant="white"
+          align="left"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 13rem;"
+          class="mb-2">
+            <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail(idx)">
+            </b-card-img>
+            <b-card-title>
+              <h5 class="mb-0">{{ movie.title }}</h5>
+            </b-card-title>
+            <b-card-text>
+              <p>{{ getYear(movie.open_date) }} · {{ movie.nation }}</p>
+            </b-card-text>
+          </b-card>
+        </div>
+      </b-card-group>
+    </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import Carousel3d from 'vue-carousel-3d'
-// import axios from 'axios'
 import { mapState } from 'vuex'
 import MovieHeader from '@/components/MovieHeader'
 import SearchBar from '@/components/SearchBar'
 import router from '@/router'
+import axios from 'axios'
 
-Vue.use(Carousel3d)
 
 export default {
   name: 'Home',
@@ -42,17 +79,66 @@ export default {
     MovieHeader,
     SearchBar,
   },
+  data() {
+    return {
+      genre: '인기 영화',
+      genres: ['인기 영화', '애니메이션', '범죄', '드라마', '액션', '어드벤처', 'SF', '멜로/로맨스',
+      '스릴러', '판타지', '코미디', '가족', '공포(호러)', '다큐멘터리', '전쟁', '사극', '미스터리'],
+      genreMovies: []
+    }
+  },
   methods: {
     async searchInfo(keyword) {
       await this.$store.dispatch('searchInfo', keyword)
       router.push(`/search/${keyword}`)
     },
-    getBestMovies() {
-      return this.$store.dispatch('setBestMovies')
+    setBestMovies() {
+      this.genreMovies = this.bestMovies
     },
+    getGenreMovies(genre) {
+      if ("인기 영화" === genre) {
+        this.genre = genre
+        this.setBestMovies()
+        return
+      }
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP
+      console.log(genre)
+
+      axios.get(`${SERVER_IP}/api/v1/movies_with_genre/?genretype=${genre}`)
+        .then(response => {
+          console.log(response)
+          this.genreMovies = response.data
+          this.genre = genre
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
+    getYear(date) {
+      const year = date.substring(0, 4)
+      return year
+    },
+    getDetail(idx) {
+      const detailData = this.genreMovies[idx]
+      console.log(detailData)
+      const keyword = this.genreMovies[idx].title
+      this.$store.dispatch('showDetail', detailData)
+      router.push(`/detail/${keyword}`)
+    },    
   },
-  mounted() {
-    this.getBestMovies()
+  created: function() {
+    const SERVER_IP = process.env.VUE_APP_SERVER_IP
+
+      axios.get(`${SERVER_IP}/api/v1/bestmovies/`)
+        .then(response => {
+          console.log(response.data)
+          this.$store.dispatch('setBestMovies', response.data)
+          this.genreMovies = response.data
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    console.log(this.genreMovies)
   }
 }
 </script>
@@ -72,14 +158,16 @@ export default {
   position: relative;
   top: 3rem;
   color: white;
+  text-align: center;
 }
 .subtitle {
   position: relative;
   top: 3rem;
   color: white;
+  text-align: center;
 }
-carousel-3d {
-  border-color: white;
-  background-color: white;
+
+.genre-type {
+  text-align: center;
 }
 </style>

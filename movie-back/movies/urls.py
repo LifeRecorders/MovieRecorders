@@ -18,7 +18,7 @@ urlpatterns = [
     path('reviews/', views.review_detail, name="review_detail"), 
     path('reviews_create_update_delete/', views.reviews_create_update_delete, name="reviews_create_update_delete"),
     # 장르별 영화검색
-    path('movies/<str:genretype>/', views.moviewithgenre, name="moviewithgenre"),
+    path('movies_with_genre/', views.moviewithgenre, name="moviewithgenre"),
     
     # 영화 최신순, 평점높고, 관객수 상위 30개
     path('bestmovies/', views.bestmovies, name="bestmovies"),

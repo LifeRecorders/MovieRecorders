@@ -8,16 +8,23 @@
       <div class="container text-left text-light">
         <h2>{{ this.user.username }}</h2>
         <br/>
-        <router-link to="/user-movie-list/" id="router-movie-list">
-          <h6 class="router-movie">내가 본 영화 {{ this.userMovieList.length }} </h6>
-        </router-link>
-        <router-link to="/user-want-list/" id="router-want-list">
-          <h6 class="router-movie">앞으로 볼 영화 {{ this.userWantList.length }} </h6>
-        </router-link>
+        <div class="my-2">
+          <router-link to="/user-movie-list/" id="router-movie-list">
+            <v-btn depressed normal class="router-movie">내가 본 영화 {{ this.userMovieList.length }}</v-btn>
+          </router-link>
+        </div>
+        <div>
+          <router-link to="/user-want-list/" id="router-want-list">
+            <v-btn depressed normal class="router-movie">앞으로 볼 영화 {{ this.userWantList.length }}</v-btn>
+          </router-link>
+        </div>
         <br/>
       </div>
     </header>
-    <div class="mt-5">
+    <v-row justify="center">
+      <v-date-picker v-model="picker"></v-date-picker>
+    </v-row>
+    <!-- <div class="mt-5">
       <DiaryCalendar v-b-modal.modal-diary-page v-on:openDiary="openDiary" />
       <b-modal
       id="modal-diary-page"
@@ -26,7 +33,7 @@
       v-on:show="resetDiaryModal"
       v-on:hidden="resetDiaryModal">
       </b-modal>
-    </div>
+    </div> -->
   </div>
   
 </template>
@@ -35,7 +42,7 @@
 import { mapGetters, mapState } from 'vuex'
 import router from '@/router'
 import axios from 'axios'
-import DiaryCalendar from '@/components/DiaryCalendar'
+// import DiaryCalendar from '@/components/DiaryCalendar'
 import MovieHeader from '@/components/MovieHeader'
 import SearchBar from '@/components/SearchBar'
 
@@ -49,7 +56,7 @@ export default {
   //   }
   // },
   components: {
-    DiaryCalendar,
+    // DiaryCalendar,
     MovieHeader,
     SearchBar
   },

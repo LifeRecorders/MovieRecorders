@@ -1,7 +1,8 @@
 <template>
-  <div id="app">    
+  <v-app id="inspire">
+    <meta charset="utf-8"/>
     <router-view/>
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -33,5 +34,7 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+#inspire {
+  background: none;
+}
 </style>

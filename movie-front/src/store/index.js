@@ -157,17 +157,8 @@ export default new Vuex.Store({
     clearDiary(context) {
       context.commit('clearDiary')
     },
-    setBestMovies(context) {
-      const SERVER_IP = process.env.VUE_APP_SERVER_IP
-
-      axios.get(`${SERVER_IP}/api/v1/bestmovies/`)
-        .then(response => {
-          context.commit('setBestMovies', response.data)
-          console.log(this.state.bestMovies)
-        })
-        .catch(error => {
-          console.error(error)
-        })
+    setBestMovies(context, data) {
+      context.commit('setBestMovies', data)
     },
     setFilmographyDir(context, id) {
       const SERVER_IP = process.env.VUE_APP_SERVER_IP
