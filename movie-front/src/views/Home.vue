@@ -1,29 +1,21 @@
 <template>
   <div class="home">
-    <header v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/maincolor.png') +')'}">
+    <header
+      v-bind:style="{ backgroundImage: 'url(' + require('@/assets/images/maincolor.png') +')'}"
+    >
       <MovieHeader />
       <h1 class="title">MovieRecorders</h1>
       <p class="subtitle">We record your film life.</p>
       <div id="searchBarDiv" class="container col-6 mt-5">
-        <SearchBar id="searchBar" v-on:searchInfo="searchInfo"/>
+        <SearchBar id="searchBar" v-on:searchInfo="searchInfo" />
       </div>
     </header>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <div class="container">
-      <v-menu
-        transition="slide-y-transition"
-        bottom
-      >
+      <v-menu transition="slide-y-transition" bottom>
         <template v-slot:activator="{ on }">
-          <v-btn
-            class="purple mb-5"
-            color="primary"
-            dark
-            v-on="on"
-          >
-            어떤 영화를 좋아하세요?
-          </v-btn>
+          <v-btn class="purple mb-5" color="primary" dark v-on="on">어떤 영화를 좋아하세요?</v-btn>
         </template>
         <v-list>
           <v-list-item
@@ -35,112 +27,142 @@
           </v-list-item>
         </v-list>
       </v-menu>
-      <h5 class="genre-type"> {{this.genre}} </h5>
+      <h5 class="genre-type">{{this.genre}}</h5>
       <!-- {{ this.genreMovies }} -->
-      <b-card-group deck>
-        <div v-for="(movie, idx) in this.genreMovies" v-bind:key="idx">
-          <b-card
-          border-variant="white"
-          align="left"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 12rem;"
-          class="mb-2">
-            <b-card-img rounded alt="Rounded image" class="mb-3" v-bind:src="movie.naver_big_poster_url" v-on:click="getDetail(idx)">
-            </b-card-img>
-            <b-card-title>
-              <h5 class="mb-0">{{ movie.title }}</h5>
-            </b-card-title>
-            <b-card-text>
-              <p>{{ getYear(movie.open_date) }} · {{ movie.nation }}</p>
-            </b-card-text>
-          </b-card>
-        </div>
-      </b-card-group>
+      <v-container>
+        <v-row style="height: 150px;">
+          <v-col
+            v-for="(movie, idx) in this.genreMovies"
+            v-bind:key="idx"
+            cols="6"
+            sm="4"
+            md="3"
+            lg="2"
+            xl="2"
+            class="mb-5"
+          >
+            <v-card
+              class="mx-auto"
+              max-width="12rem"
+              align="left"
+              outlined="false"
+              style="border-width:0;"
+            >
+              <v-img
+                rounded
+                alt="Rounded image"
+                v-bind:src="movie.naver_big_poster_url"
+                v-on:click="getDetail(idx)"
+              ></v-img>
+              <v-card-title class="mb-0 py-2 px-1">
+                <h5>{{ movie.title }}</h5>
+              </v-card-title>
+              <v-card-subtitle class="py-2 px-1">{{ getYear(movie.open_date) }} · {{ movie.nation }}</v-card-subtitle>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import MovieHeader from '@/components/MovieHeader'
-import SearchBar from '@/components/SearchBar'
-import router from '@/router'
-import axios from 'axios'
-
+import { mapState } from "vuex";
+import MovieHeader from "@/components/MovieHeader";
+import SearchBar from "@/components/SearchBar";
+import router from "@/router";
+import axios from "axios";
 
 export default {
-  name: 'Home',
+  name: "Home",
   computed: {
-    ...mapState(['bestMovies'])
+    ...mapState(["bestMovies"])
   },
   components: {
     MovieHeader,
-    SearchBar,
+    SearchBar
   },
   data() {
     return {
-      genre: '인기 영화',
-      genres: ['인기 영화', '애니메이션', '범죄', '드라마', '액션', '어드벤처', 'SF', '멜로/로맨스',
-      '스릴러', '판타지', '코미디', '가족', '공포(호러)', '다큐멘터리', '전쟁', '사극', '미스터리'],
+      genre: "인기 영화",
+      genres: [
+        "인기 영화",
+        "애니메이션",
+        "범죄",
+        "드라마",
+        "액션",
+        "어드벤처",
+        "SF",
+        "멜로/로맨스",
+        "스릴러",
+        "판타지",
+        "코미디",
+        "가족",
+        "공포(호러)",
+        "다큐멘터리",
+        "전쟁",
+        "사극",
+        "미스터리"
+      ],
       genreMovies: []
-    }
+    };
   },
   methods: {
     async searchInfo(keyword) {
-      await this.$store.dispatch('searchInfo', keyword)
-      router.push(`/search/${keyword}`)
+      await this.$store.dispatch("searchInfo", keyword);
+      router.push(`/search/${keyword}`);
     },
     setBestMovies() {
-      this.genreMovies = this.bestMovies
+      this.genreMovies = this.bestMovies;
     },
     getGenreMovies(genre) {
       if ("인기 영화" === genre) {
-        this.genre = genre
-        this.setBestMovies()
-        return
+        this.genre = genre;
+        this.setBestMovies();
+        return;
       }
-      const SERVER_IP = process.env.VUE_APP_SERVER_IP
-      console.log(genre)
+      const SERVER_IP = process.env.VUE_APP_SERVER_IP;
+      console.log(genre);
 
-      axios.get(`${SERVER_IP}/api/v1/movies_with_genre/?genretype=${genre}`)
+      axios
+        .get(`${SERVER_IP}/api/v1/movies_with_genre/?genretype=${genre}`)
         .then(response => {
-          console.log(response)
-          this.genreMovies = response.data
-          this.genre = genre
+          console.log(response);
+          this.genreMovies = response.data;
+          this.genre = genre;
         })
         .catch(error => {
-          console.error(error)
-        })
+          console.error(error);
+        });
     },
     getYear(date) {
-      const year = date.substring(0, 4)
-      return year
+      const year = date.substring(0, 4);
+      return year;
     },
     getDetail(idx) {
-      const detailData = this.genreMovies[idx]
-      console.log(detailData)
-      const keyword = this.genreMovies[idx].title
-      this.$store.dispatch('showDetail', detailData)
-      router.push(`/detail/${keyword}`)
-    },    
+      const detailData = this.genreMovies[idx];
+      console.log(detailData);
+      const keyword = this.genreMovies[idx].title;
+      this.$store.dispatch("showDetail", detailData);
+      router.push(`/detail/${keyword}`);
+    }
   },
   created: function() {
-    const SERVER_IP = process.env.VUE_APP_SERVER_IP
+    const SERVER_IP = process.env.VUE_APP_SERVER_IP;
 
-      axios.get(`${SERVER_IP}/api/v1/bestmovies/`)
-        .then(response => {
-          console.log(response.data)
-          this.$store.dispatch('setBestMovies', response.data)
-          this.genreMovies = response.data
-        })
-        .catch(error => {
-          console.error(error)
-        })
-    console.log(this.genreMovies)
+    axios
+      .get(`${SERVER_IP}/api/v1/bestmovies/`)
+      .then(response => {
+        console.log(response.data);
+        this.$store.dispatch("setBestMovies", response.data);
+        this.genreMovies = response.data;
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    console.log(this.genreMovies);
   }
-}
+};
 </script>
 
 <style>
@@ -169,5 +191,9 @@ export default {
 
 .genre-type {
   text-align: center;
+}
+
+.card-body {
+  padding: 0;
 }
 </style>
