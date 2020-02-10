@@ -4,10 +4,8 @@
 
 <div align="center">
 <img src="README.assets/logo_small.png">
-  
 https://movierecorders-22092.web.app/
 </div>
-
 
 
 <p align="center">
@@ -114,7 +112,7 @@ makeartweek@gmail.com
 
 ![1574919405808](README.assets/1574919405808.png)
 
-- 진행 기간 : 2019.11.21 - 2019.11.30
+- 진행 기간 : 2019.11.21 - 2019.11.30 (10일)
 - 목표 : 영화 기록 중심의 영화 정보 포털 사이트 구현
 
 
